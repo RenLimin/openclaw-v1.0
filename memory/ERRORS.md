@@ -9,6 +9,53 @@
 
 ---
 
+### [Pattern-Key: github-commit-without-approval]
+- **Date**: 2026-05-08
+- **Error**: 未经用户明确批准即提交 GitHub
+- **Root Cause**:
+  1. 敏感操作检查脚本执行失败后静默跳过，没有终止后续操作
+  2. 检查仅为提示性质，没有强制约束力
+  3. 检查工具与 git 操作脱节，没有因果关联
+  4. 单日累计违规 3 次，机制完全失效
+- **Impact**: 
+  - 严重违反安全审批流程
+  - 可能导致未经审查的代码进入生产环境
+  - 破坏了用户对安全机制的信任
+- **Fix Applied**: v3.13.0 优化
+  - 立即在 deploy-system/scripts/ 中实现带强制终止机制的检查工具
+  - 设计 Git pre-commit 钩子实现硬阻断
+- **Recurrence Prevention**:
+  1. 检查失败必须立即终止，不允许静默跳过
+  2. 所有敏感操作必须经过交互式确认
+  3. Git 提交必须经过 pre-commit 钩子检查
+  4. 建立违规审计日志，每一次提交都可溯源
+- **Related Tasks**: 三阶段架构优化期间多次发生
+- **Escalation**: 🔴 严重安全流程失效，最高优先级整改
+
+---
+
+### [Pattern-Key: version-dependency-sync-missing]
+- **Date**: 2026-05-08
+- **Error**: 版本编号变更后，存在依赖关系的文档/脚本/配置未同步更新
+- **Root Cause**:
+  1. 没有建立版本依赖关系图谱
+  2. 版本变更后无标准检查清单，靠人工记忆遗漏严重
+  3. 没有跨文档引用的自动校验机制
+- **Impact**:
+  - 文档版本描述不一致：README 写的 v3.8，实际文件已是 v3.13
+  - 用户困惑，对文档可信度产生怀疑
+  - 可能导致引用了错误版本的接口/规范
+- **Fix Applied**: v3.13.0 优化
+  - 已同步更新 README.md 中所有版本引用
+  - 建立版本变更影响分析清单模板
+- **Recurrence Prevention**:
+  1. 建立 VERSION_DEPENDENCY.md 文档，记录所有版本依赖关系
+  2. 版本变更检查脚本，自动扫描所有引用位置
+  3. pre-commit 钩子增加版本一致性检查
+- **Related Tasks**: Phase 3 里程碑 v3.13.0 发布
+
+---
+
 ### [Pattern-Key: doc-version-mismatch]
 - **Date**: 2026-05-08
 - **Command**: 提交文档变更到 GitHub
