@@ -1,0 +1,11 @@
+{
+  "name": "{AgentName}",
+  "emoji": "{Emoji}",
+  "role": "{角色描述}",
+  "description": "{详细职责描述}",
+  "workspace": "~/.openclaw/agents/{name}/workspace",
+  "sessions": "~/.openclaw/agents/{name}/sessions",
+  "memory": "~/.openclaw/agents/{name}/memory",
+  "teamRules": "~/.openclaw/workspace/team-rules/",
+  "model": "bailian/qwen3.6-plus"
+}
