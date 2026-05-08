@@ -1,0 +1,44 @@
+# ==============================================
+# OpenClaw 预发布环境配置 v1.0
+# ==============================================
+
+env: staging
+log_level: INFO
+
+# 服务配置
+service:
+  name: openclaw-staging
+  port: 8080
+  host: 0.0.0.0
+
+# LLM 配置（预发布环境使用与生产相同的模型）
+llm:
+  provider: openai
+  model: gpt-4
+  temperature: 0.5
+  max_tokens: 4000
+
+# 功能开关
+features:
+  auto_backup: true
+  monitoring_enabled: true
+  evolution_engine: true
+  verbose_logging: false
+
+# 路径配置
+paths:
+  config_dir: /data/openclaw/core-config
+  memory_dir: /data/openclaw/memory
+  knowledge_dir: /data/openclaw/knowledge-base
+  data_dir: /data/openclaw/data
+
+# 备份配置
+backup:
+  enabled: true
+  schedule: "0 2 * * *"  # 每天凌晨2点
+  retention_days: 30
+  destination: /data/backup
+
+# ==============================================
+# 版本：v1.0 | 最后更新：2026-05-08
+# ==============================================

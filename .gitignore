@@ -1,4 +1,48 @@
-# Python
+# ==============================================
+# OpenClaw .gitignore v1.0
+# ==============================================
+
+# --------------------------
+# 敏感信息与密钥
+# --------------------------
+.env
+.env.local
+.env.*
+secrets/
+*.key
+*.pem
+*.p12
+api_keys.json
+credentials.json
+
+# --------------------------
+# 配置文件（模板保留，实际配置排除）
+# --------------------------
+core-config/*
+!core-config/*.template
+!core-config/*.md
+
+# --------------------------
+# 临时文件
+# --------------------------
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --------------------------
+# 日志文件
+# --------------------------
+*.log
+logs/
+*.log.*
+
+# --------------------------
+# Python 相关
+# --------------------------
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,61 +64,72 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
+# --------------------------
+# 虚拟环境
+# --------------------------
 venv/
 env/
 ENV/
+.venv/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-logs/
-*.log.*
-
-# Temp files
-tmp/
-temp/
-*.tmp
-output/
-analysis_result/
-
-# Database
+# --------------------------
+# 数据库
+# --------------------------
 *.db
 *.sqlite
 *.sqlite3
 
-# Backup
+# --------------------------
+# 备份文件
+# --------------------------
 backup/
 *.bak
+*.backup
 
-# Test results
-test_report_*
-*test*.log
-acceptance-reports/
+# --------------------------
+# 测试与覆盖率
+# --------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
 
-# Large media files
-*.docx
-*.xlsx
-*.pdf
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.mp4
+# --------------------------
+# IDE
+# --------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# OpenClaw specific
-.openclaw/
-.clawhub/
-agents/registry.json.bak
-memory/.dreams/
-*.pyc
+# --------------------------
+# Docker
+# --------------------------
+docker-compose.override.yml
+
+# --------------------------
+# 多租户数据
+# --------------------------
+tenants/*
+!tenants/README.md
+!tenants/tenant_template/
+
+# --------------------------
+# 记忆与学习数据（可选择是否提交）
+# --------------------------
+memory/*
+!memory/ERRORS.md
+!memory/README.md
+knowledge-base/*_local.json
+
+# ==============================================
+# 版本：v1.0 | 最后更新：2026-05-08
+# ==============================================

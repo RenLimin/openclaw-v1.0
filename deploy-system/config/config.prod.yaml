@@ -1,0 +1,63 @@
+# ==============================================
+# OpenClaw 生产环境配置 v1.0
+# ==============================================
+
+env: production
+log_level: WARNING
+
+# 服务配置
+service:
+  name: openclaw-prod
+  port: 8080
+  host: 0.0.0.0
+
+# LLM 配置（生产环境使用最稳定的模型）
+llm:
+  provider: openai
+  model: gpt-4
+  temperature: 0.3
+  max_tokens: 8000
+  timeout: 120
+  max_retries: 3
+
+# 功能开关
+features:
+  auto_backup: true
+  monitoring_enabled: true
+  evolution_engine: true
+  verbose_logging: false
+  error_alert: true
+
+# 路径配置
+paths:
+  config_dir: /data/openclaw/core-config
+  memory_dir: /data/openclaw/memory
+  knowledge_dir: /data/openclaw/knowledge-base
+  data_dir: /data/openclaw/data
+  backup_dir: /data/backup
+
+# 备份配置
+backup:
+  enabled: true
+  schedule: "0 2 * * *"  # 每天凌晨2点
+  retention_days: 90
+  destination: /data/backup
+  encrypt: true
+
+# 监控告警
+monitoring:
+  prometheus_enabled: true
+  grafana_enabled: true
+  alert_email: ""
+  alert_webhook: ""
+
+# 安全配置
+security:
+  rate_limit: true
+  max_requests_per_minute: 60
+  ip_whitelist: []
+  input_sanitization: true
+
+# ==============================================
+# 版本：v1.0 | 最后更新：2026-05-08
+# ==============================================

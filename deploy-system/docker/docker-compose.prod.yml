@@ -1,0 +1,76 @@
+# ==============================================
+# OpenClaw docker-compose.prod.yml v1.0
+# 生产环境配置
+# ==============================================
+
+version: '3.8'
+
+services:
+  openclaw:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: openclaw-prod
+    restart: always
+    environment:
+      - OPENCLAW_ENV=production
+      - LOG_LEVEL=INFO
+    ports:
+      - "8080:8080"
+    volumes:
+      - /data/openclaw/core-config:/app/core-config:ro
+      - /data/openclaw/memory:/app/memory
+      - /data/openclaw/knowledge-base:/app/knowledge-base:ro
+      - /data/openclaw/data:/app/data
+    networks:
+      - openclaw-network
+    healthcheck:
+      test: ["CMD", "python", "/app/scripts/health_check.py"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4G
+        reservations:
+          cpus: '0.5'
+          memory: 1G
+
+  # --------------------------
+  # 生产环境：完整监控栈
+  # --------------------------
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: openclaw-prometheus
+    restart: always
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - /data/openclaw/prometheus:/prometheus
+    networks:
+      - openclaw-network
+    ports:
+      - "127.0.0.1:9090:9090"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: openclaw-grafana
+    restart: always
+    volumes:
+      - /data/openclaw/grafana:/var/lib/grafana
+    networks:
+      - openclaw-network
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
+
+networks:
+  openclaw-network:
+    driver: bridge
+
+# ==============================================
+# 版本：v1.0 | 最后更新：2026-05-08
+# ==============================================

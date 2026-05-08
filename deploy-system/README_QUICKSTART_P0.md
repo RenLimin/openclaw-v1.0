@@ -24,40 +24,63 @@
 
 ---
 
-## 🚀 三步快速部署
+## 🚀 部署方式选择
 
-### 第1步：克隆部署包
+### 🐳 方式一：Docker 一键部署（推荐，生产环境）
+
+**只需 2 步，5 分钟完成！**
 
 ```bash
+# 第1步：克隆代码
+cd deploy-system/docker
+cp .env.example .env
+# 编辑 .env，填入你的 API Key 等配置
+
+# 第2步：启动服务
+docker-compose up -d
+```
+
+✅ 完成！访问 http://localhost:8080 即可使用
+
+**详细 Docker 指南：** 查看 `docker/README_DOCKER.md`
+
+---
+
+### 💻 方式二：传统脚本部署（开发环境）
+
+```bash
+# 第1步：克隆部署包
 git clone https://github.com/RenLimin/openclaw-v1.0.git
 cd openclaw-v1.0/deploy-system
-```
 
-### 第2步：执行一键安装
-
-```bash
-# 方式一：全自动安装
-./install.sh
-
-# 方式二：手动分步安装（推荐）
-# 1. 安装依赖
+# 第2步：安装依赖
 pip install -r requirements.txt
 
-# 2. 复制配置模板
+# 第3步：配置环境
+# 复制配置模板并编辑
 cp config-templates/*.md ../core-config/
 
-# 3. 个性化配置
-# 编辑 ../core-config/IDENTITY.md - 配置 Agent 身份
-# 编辑 ../core-config/AGENT.md - 配置 Agent 行为规则
+# 第4步：启动系统
+python scripts/bootstrap.py
 ```
 
-### 第3步：启动系统
+---
+
+## 🔄 环境切换（支持 dev/staging/prod）
 
 ```bash
-./start.sh
-```
+# 查看当前环境
+python scripts/config_manager.py current
 
-访问 http://localhost:8080 即可使用！
+# 切换到生产环境
+python scripts/config_manager.py switch --env prod
+
+# 验证配置
+python scripts/config_manager.py validate
+
+# 健康检查
+python scripts/health_check.py
+```
 
 ---
 

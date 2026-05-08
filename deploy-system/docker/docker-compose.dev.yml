@@ -1,0 +1,33 @@
+# ==============================================
+# OpenClaw docker-compose.dev.yml v1.0
+# 开发环境配置
+# ==============================================
+
+version: '3.8'
+
+services:
+  openclaw:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: openclaw-dev
+    environment:
+      - OPENCLAW_ENV=development
+      - PYTHONPATH=/app
+      - LOG_LEVEL=DEBUG
+    volumes:
+      - ..:/app:cached
+    ports:
+      - "8080:8080"
+    command: python /app/scripts/bootstrap.py --dev
+    networks:
+      - openclaw-network
+    restart: "no"
+
+networks:
+  openclaw-network:
+    driver: bridge
+
+# ==============================================
+# 版本：v1.0 | 最后更新：2026-05-08
+# ==============================================
