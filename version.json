@@ -1,0 +1,58 @@
+{
+  "system": {
+    "name": "OpenClaw",
+    "version": "3.13.0",
+    "release_date": "2026-05-08",
+    "codename": "Enterprise Ready",
+    "release_type": "stable"
+  },
+  "modules": {
+    "roadmap": {
+      "version": "3.13.0",
+      "path": "roadmap/智能体进阶规划_v3.13.0.md",
+      "role": "core_documentation",
+      "dependencies": []
+    },
+    "jerry-role": {
+      "version": "2.0.1",
+      "path": "roadmap/Jerry_智能体团队创建者_进阶计划_v2.0.1.md",
+      "role": "agent_role",
+      "dependencies": ["roadmap>=3.10.0"]
+    },
+    "deploy-system": {
+      "version": "1.0.0",
+      "path": "deploy-system/",
+      "role": "deployment",
+      "dependencies": ["roadmap>=3.8.0"]
+    },
+    "deploy-team": {
+      "version": "1.0.0",
+      "path": "deploy-team/",
+      "role": "team_creation",
+      "dependencies": ["roadmap>=3.8.0"]
+    },
+    "security-guard": {
+      "version": "1.0.0",
+      "path": "deploy-system/scripts/security_guard.py",
+      "role": "security",
+      "dependencies": ["deploy-system>=1.0.0"]
+    },
+    "version-manager": {
+      "version": "1.0.0",
+      "path": "scripts/version_manager.py",
+      "role": "core_tool",
+      "dependencies": []
+    }
+  },
+  "compatibility_rules": {
+    "breaking_change_levels": ["major"],
+    "requires_full_sync_levels": ["minor", "major"],
+    "auto_backward_compatible": ["patch"],
+    "manual_review_required": ["major"]
+  },
+  "metadata": {
+    "schema_version": "1.0",
+    "created_at": "2026-05-08",
+    "last_updated": "2026-05-08"
+  }
+}
