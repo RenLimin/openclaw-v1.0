@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temp files
+tmp/
+temp/
+*.tmp
+output/
+analysis_result/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup
+backup/
+*.bak
+
+# Test results
+test_report_*
+*test*.log
+acceptance-reports/
+
+# Large media files
+*.docx
+*.xlsx
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+
+# OpenClaw specific
+.openclaw/
+.clawhub/
+agents/registry.json.bak
+memory/.dreams/
+*.pyc
