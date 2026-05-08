@@ -1,0 +1,91 @@
+# ==============================================
+# OpenClaw 告警规则 v1.0
+# ==============================================
+
+groups:
+  - name: openclaw_alerts
+    rules:
+      # --------------------------
+      # 服务可用性告警
+      # --------------------------
+      - alert: 服务离线
+        expr: up{job="openclaw"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "OpenClaw 服务已离线"
+          description: "服务 {{ $labels.instance }} 已停止超过 1 分钟"
+
+      - alert: 高 CPU 使用率
+        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "CPU 使用率超过 80%"
+          description: "实例 {{ $labels.instance }} CPU 使用率已达 {{ $value | printf \"%.2f\" }}%"
+
+      - alert: 高内存使用率
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "内存使用率超过 85%"
+          description: "实例 {{ $labels.instance }} 内存使用率已达 {{ $value | printf \"%.2f\" }}%"
+
+      - alert: 磁盘空间不足
+        expr: (1 - (node_filesystem_avail_bytes{fstype!="tmpfs"} / node_filesystem_size_bytes{fstype!="tmpfs"}} * 100 > 90
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "磁盘空间不足 10%"
+          description: "实例 {{ $labels.instance }} 磁盘 {{ $labels.mountpoint }} 可用空间不足 {{ $value | printf \"%.2f\" }}%"
+
+      # --------------------------
+      # LLM API 相关告警
+      # --------------------------
+      - alert: LLM API 高错误率
+        expr: rate(llm_api_errors_total[5m]) / rate(llm_api_requests_total[5m]) * 100 > 10
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "LLM API 错误率超过 10%"
+          description: "过去 5 分钟内错误率 {{ $value | printf \"%.2f\" }}%"
+
+      - alert: LLM API 高延迟
+        expr: histogram_quantile(0.95, sum(rate(llm_api_request_duration_seconds_bucket[5m])) by (le)) > 30
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "LLM API P95 延迟超过 30 秒"
+          description: "95% 的请求延迟超过 30 秒，当前 {{ $value | printf \"%.2f\" }} 秒"
+
+      # --------------------------
+      # 智能体团队告警
+      # --------------------------
+      - alert: Agent 任务堆积
+        expr: agent_pending_tasks > 10
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Agent 待处理任务超过 10 个"
+          description: "当前待处理任务数 {{ $value }}，系统可能过载"
+
+      - alert: Agent 高失败率
+        expr: rate(agent_task_failures_total[10m]) / rate(agent_task_total[10m]) * 100 > 20
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Agent 任务失败率超过 20%"
+          description: "过去 10 分钟任务失败率 {{ $value | printf \"%.2f\" }}%"
+
+# ==============================================
+# 版本：v1.0 | 最后更新：2026-05-08
+# ==============================================
