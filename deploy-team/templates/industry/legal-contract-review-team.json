@@ -1,0 +1,85 @@
+{
+  "template_id": "industry-legal-contract-review-v1.0",
+  "template_name": "法律合同审核团队",
+  "template_category": "industry",
+  "industry": "legal",
+  "description": "专业法律合同审核团队，适用于企业法务部门、律所，支持各类合同审查、风险识别、合规审核",
+  "version": "1.0.0",
+  "min_maturity_level": "enterprise",
+  "estimated_cost_usd_per_month": 150,
+  "estimated_setup_time_minutes": 30,
+
+  "team_structure": {
+    "lead_counsel": {
+      "role": "首席法务官",
+      "goal": "整体负责审核质量、复杂问题决策、标准制定、团队管理",
+      "skills": ["公司法务", "合同审查", "风险控制", "合规管理", "诉讼经验"],
+      "system_prompt": "你是首席法务官，整体负责合同审核质量、复杂问题决策、审核标准制定和团队管理。"
+    },
+    "contract_reviewer_1": {
+      "role": "合同审核专员",
+      "goal": "负责常用合同模板审核、标准条款检查、常见风险识别",
+      "skills": ["合同审查", "条款分析", "风险识别", "常用合同模板"],
+      "system_prompt": "你是合同审核专员，负责常用合同审核、标准条款检查、常见法律风险识别。"
+    },
+    "contract_reviewer_2": {
+      "role": "合同审核专员",
+      "goal": "负责特殊类型合同、专业条款审核、行业惯例应用",
+      "skills": ["专业合同", "条款解读", "行业惯例", "案例分析"],
+      "system_prompt": "你是合同审核专员，负责特殊类型合同、专业条款审核和行业惯例应用。"
+    },
+    "compliance_officer": {
+      "role": "合规审核官",
+      "goal": "负责合规审查、法律法规适用、监管政策跟踪",
+      "skills": ["合规管理", "法律法规", "监管政策", "行业标准", "合规审计"],
+      "system_prompt": "你是合规审核官，负责合同合规审查、法律法规适用检查和监管政策跟踪更新。"
+    },
+    "ip_specialist": {
+      "role": "知识产权专员",
+      "goal": "负责知识产权条款审核、IP保护、侵权风险评估",
+      "skills": ["知识产权", "专利商标", "著作权", "IP保护", "侵权风险"],
+      "system_prompt": "你是知识产权专员，负责IP条款审核、知识产权保护方案和侵权风险评估。"
+    },
+    "document_manager": {
+      "role": "文档管理专员",
+      "goal": "合同版本管理、模板维护、审核记录、知识库更新",
+      "skills": ["文档管理", "版本控制", "模板维护", "知识库", "索引分类"],
+      "system_prompt": "你是文档管理专员，负责合同版本管理、审核模板维护、审核记录归档和知识库更新。"
+    }
+  },
+
+  "workflow": {
+    "contract_review": {
+      "name": "合同审核流程",
+      "steps": [
+        "1. 合同提交，文档管理专员进行分类和版本编号",
+        "2. 根据合同类型分配给对应审核专员",
+        "3. 审核专员进行条款审查，标记风险点和修改建议",
+        "4. 合规审核官进行合规性审查",
+        "5. 如涉及知识产权条款，IP专员审核",
+        "6. 首席法务官进行最终审核和质量把关",
+        "7. 文档管理专员记录审核结果，更新知识库",
+        "8. 输出审核报告和修改后的合同版本"
+      ]
+    }
+  },
+
+  "risk_categories": [
+    "主体资格风险",
+    "条款完整性风险",
+    "权利义务不对等风险",
+    "违约责任风险",
+    "争议解决条款风险",
+    "合规性风险",
+    "知识产权风险",
+    "保密条款风险"
+  ],
+
+  "quality_standards": {
+    "average_review_time": "4 hours",
+    "required_review_level": "two-eyes",
+    "escalation_threshold": "high-risk"
+  },
+
+  "tags": ["legal", "contract-review", "compliance", "intellectual-property", "enterprise"]
+}

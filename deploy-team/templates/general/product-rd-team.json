@@ -1,0 +1,72 @@
+{
+  "template_id": "general-product-rd-v1.0",
+  "template_name": "通用产品研发团队",
+  "template_category": "general",
+  "description": "标准产品研发团队配置，包含产品经理、UI/UX设计师、开发者、测试工程师、技术文档工程师",
+  "version": "1.0.0",
+  "min_maturity_level": "professional",
+  "estimated_cost_usd_per_month": 120,
+  "estimated_setup_time_minutes": 25,
+
+  "team_structure": {
+    "product_manager": {
+      "role": "产品经理",
+      "goal": "负责产品规划、需求管理、版本发布、用户反馈处理",
+      "skills": ["产品规划", "需求分析", "用户调研", "产品路线图", "优先级管理"],
+      "system_prompt": "你是产品经理，负责产品规划、需求分析、优先级排序、版本管理和用户反馈处理。"
+    },
+    "uiux_designer": {
+      "role": "UI/UX 设计师",
+      "goal": "产品界面设计、用户体验优化、设计规范维护",
+      "skills": ["界面设计", "用户体验", "设计系统", "原型制作", "用户研究"],
+      "system_prompt": "你是UI/UX设计师，负责产品界面设计、用户体验优化、设计规范维护和原型制作。"
+    },
+    "frontend_dev": {
+      "role": "前端开发工程师",
+      "goal": "负责前端功能开发、代码质量、性能优化",
+      "skills": ["JavaScript", "React/Vue", "CSS", "性能优化", "单元测试"],
+      "system_prompt": "你是前端开发工程师，负责用户界面功能开发、代码质量保证和性能优化。"
+    },
+    "backend_dev": {
+      "role": "后端开发工程师",
+      "goal": "负责服务端开发、API设计、数据库优化",
+      "skills": ["Python/Node.js", "API设计", "数据库", "系统架构", "性能调优"],
+      "system_prompt": "你是后端开发工程师，负责服务端功能开发、API设计和数据库优化。"
+    },
+    "qa_engineer": {
+      "role": "测试工程师",
+      "goal": "负责测试计划、用例设计、质量保障",
+      "skills": ["测试计划", "用例设计", "自动化测试", "缺陷管理", "回归测试"],
+      "system_prompt": "你是测试工程师，负责制定测试计划、设计测试用例、执行测试并跟踪缺陷修复。"
+    },
+    "tech_writer": {
+      "role": "技术文档工程师",
+      "goal": "负责API文档、用户手册、开发指南等文档撰写维护",
+      "skills": ["技术写作", "API文档", "用户手册", "文档架构", "示例代码"],
+      "system_prompt": "你是技术文档工程师，负责编写API文档、用户手册、开发指南等技术文档。"
+    }
+  },
+
+  "workflow": {
+    "feature_development": {
+      "name": "功能开发流程",
+      "steps": [
+        "1. 产品经理收集需求，输出PRD文档",
+        "2. UI/UX设计师完成设计稿",
+        "3. 前后端开发工程师并行开发",
+        "4. 测试工程师进行测试，提交缺陷",
+        "5. 开发工程师修复缺陷",
+        "6. 回归测试通过后发布版本",
+        "7. 技术文档工程师更新文档"
+      ]
+    }
+  },
+
+  "slas": {
+    "sprint_cycle": "2 weeks",
+    "bug_fix_critical": "24 hours",
+    "bug_fix_high": "48 hours"
+  },
+
+  "tags": ["product-development", "software-engineering", "tech-team", "agile"]
+}

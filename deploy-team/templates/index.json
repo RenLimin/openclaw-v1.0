@@ -1,0 +1,77 @@
+{
+  "marketplace_version": "1.0.0",
+  "last_updated": "2026-05-08",
+  "total_templates": 4,
+
+  "categories": {
+    "general": {
+      "name": "通用模板",
+      "description": "适用于大多数企业的通用团队配置",
+      "count": 3,
+      "templates": [
+        {
+          "id": "general-customer-support-v1.0",
+          "name": "通用客户支持团队",
+          "path": "general/customer-support-team.json",
+          "size": 5,
+          "difficulty": "beginner",
+          "estimated_cost": 50
+        },
+        {
+          "id": "general-product-rd-v1.0",
+          "name": "通用产品研发团队",
+          "path": "general/product-rd-team.json",
+          "size": 6,
+          "difficulty": "intermediate",
+          "estimated_cost": 120
+        },
+        {
+          "id": "general-content-creation-v1.0",
+          "name": "通用内容创作团队",
+          "path": "general/content-creation-team.json",
+          "size": 6,
+          "difficulty": "beginner",
+          "estimated_cost": 80
+        }
+      ]
+    },
+    "industry": {
+      "name": "行业模板",
+      "description": "针对特定行业的专业团队配置",
+      "count": 1,
+      "templates": [
+        {
+          "id": "industry-legal-contract-review-v1.0",
+          "name": "法律合同审核团队",
+          "path": "industry/legal-contract-review-team.json",
+          "size": 6,
+          "difficulty": "advanced",
+          "estimated_cost": 150,
+          "industry": "legal"
+        }
+      ]
+    },
+    "custom": {
+      "name": "自定义模板",
+      "description": "用户自定义的团队模板",
+      "count": 0,
+      "templates": []
+    }
+  },
+
+  "difficulty_levels": {
+    "beginner": "入门级 - 结构简单，易于配置和使用",
+    "intermediate": "中级 - 需要一定配置和业务理解",
+    "advanced": "高级 - 专业领域，需要专家配置"
+  },
+
+  "tags": [
+    "customer-support",
+    "product-development",
+    "content-creation",
+    "legal",
+    "contract-review",
+    "general",
+    "enterprise"
+  ]
+}

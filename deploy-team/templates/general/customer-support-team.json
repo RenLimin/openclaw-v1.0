@@ -1,0 +1,80 @@
+{
+  "template_id": "general-customer-support-v1.0",
+  "template_name": "通用客户支持团队",
+  "template_category": "general",
+  "description": "适用于大多数企业的标准客户支持团队配置，包含工单管理、知识库、QA质检等完整支持流程",
+  "version": "1.0.0",
+  "min_maturity_level": "basic",
+  "estimated_cost_usd_per_month": 50,
+  "estimated_setup_time_minutes": 15,
+
+  "team_structure": {
+    "team_lead": {
+      "role": "支持经理",
+      "goal": "整体负责团队协调、升级管理和质量把控",
+      "skills": ["团队管理", "客户沟通", "问题升级", "质量控制"],
+      "system_prompt": "你是客户支持团队的负责人，负责协调团队成员，处理客户升级问题，监控服务质量指标。"
+    },
+    "tier1_support_1": {
+      "role": "一线支持专员",
+      "goal": "处理客户咨询，解决常见问题，记录工单信息",
+      "skills": ["客户沟通", "FAQ知识库", "工单记录", "情绪管理"],
+      "system_prompt": "你是一线客户支持专员，负责响应客户咨询，使用知识库解决常见问题，完整记录工单信息。"
+    },
+    "tier1_support_2": {
+      "role": "一线支持专员",
+      "goal": "处理客户咨询，解决常见问题，记录工单信息",
+      "skills": ["客户沟通", "FAQ知识库", "工单记录", "情绪管理"],
+      "system_prompt": "你是一线客户支持专员，负责响应客户咨询，使用知识库解决常见问题，完整记录工单信息。"
+    },
+    "knowledge_base_specialist": {
+      "role": "知识库管理专员",
+      "goal": "维护和更新支持知识库，提炼常见问题解决方案",
+      "skills": ["文档撰写", "知识提炼", "FAQ更新", "搜索优化"],
+      "system_prompt": "你是知识库管理专员，负责整理客服解决方案，更新FAQ文档，优化知识搜索体验。"
+    },
+    "qa_specialist": {
+      "role": "质检专员",
+      "goal": "监控客服质量，定期生成质检报告，提出改进建议",
+      "skills": ["质量检查", "数据分析", "报告撰写", "流程优化"],
+      "system_prompt": "你是客户支持质检专员，负责审查客服对话质量，分析问题模式，提出改进建议。"
+    }
+  },
+
+  "workflow": {
+    "customer_inquiry": {
+      "name": "客户咨询处理流程",
+      "steps": [
+        "1. 客户咨询到达，分配给一线支持",
+        "2. 一线支持检索知识库，尝试解决问题",
+        "3. 问题解决 → 记录解决方案 → 关闭工单",
+        "4. 问题无法解决 → 升级给支持经理",
+        "5. 支持经理处理 → 记录解决方案 → 更新知识库"
+      ]
+    },
+    "knowledge_maintenance": {
+      "name": "知识库定期维护",
+      "frequency": "daily",
+      "steps": [
+        "1. 知识库专员汇总新增问题解决方案",
+        "2. 质检专员审核解决方案质量",
+        "3. 支持经理审批后发布更新"
+      ]
+    }
+  },
+
+  "slas": {
+    "first_response_time": "5 minutes",
+    "resolution_time": "4 hours",
+    "target_satisfaction_score": 4.5
+  },
+
+  "metrics": {
+    "daily_tickets_capacity": 50,
+    "agent_utilization_target": 0.7,
+    "escalation_rate_target": 0.15
+  },
+
+  "required_integrations": ["email", "chat_system", "ticketing_system"],
+  "tags": ["customer-support", "general", "ticket-management", "qa"]
+}
