@@ -1,0 +1,10 @@
+# 🔥 纲领性文档版本号
+# 独立演进，与系统版本、团队创建工具版本解耦
+
+VERSION=3.10.0
+RELEASE_DATE=2026-05-08
+RELEASE_NOTES="v3.10.0 架构重构里程碑：目录结构分层优化，P0/P1-P3/roadmap 三层架构，支持独立部署与分发"
+
+# 版本兼容说明
+COMPATIBLE_WITH_SYSTEM=">=1.0.0"
+COMPATIBLE_WITH_TEAM_CREATION=">=1.0.0"

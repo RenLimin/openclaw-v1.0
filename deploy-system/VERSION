@@ -1,0 +1,9 @@
+# 🚀 智能体系统部署包版本号
+# 生产环境按 TAG 发布，独立 git clone 部署
+
+VERSION=1.0.0
+RELEASE_DATE=2026-05-08
+RELEASE_NOTES="v1.0.0 初始版本，支持 P0 一键部署"
+
+# 兼容的纲领文档版本
+REQUIRES_ROADMAP=">=3.9.0"
