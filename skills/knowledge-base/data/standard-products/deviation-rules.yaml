@@ -1,0 +1,56 @@
+version: '1.0'
+updated: '2026-04-24'
+description: 合同约定与标准产品/服务定义偏差识别与风险分级规则
+deviation_types:
+- code: PRICE_DEVIATION
+  name: 价格偏差
+  risk_level: 高
+  description: 合同价格与标准产品价格偏差超过阈值
+  threshold: 0.15
+  rules:
+  - 合同单价低于标准价15%以上 → 高风险
+  - 合同单价高于标准价30%以上 → 中风险
+- code: SCOPE_DEVIATION
+  name: 服务范围偏差
+  risk_level: 高
+  description: 合同约定服务范围与标准定义不一致
+  rules:
+  - 合同缺少标准服务必选项 → 高风险
+  - 合同增加标准服务以外内容 → 中风险
+- code: DELIVERY_DEVIATION
+  name: 交付条款偏差
+  risk_level: 中
+  description: 交付时间/方式与标准不一致
+  rules:
+  - 交付时间比标准短且无法满足 → 高风险
+  - 交付地点超出标准范围 → 中风险
+- code: ACCEPTANCE_DEVIATION
+  name: 验收条款偏差
+  risk_level: 高
+  description: 验收标准与标准产品不一致
+  rules:
+  - 验收标准比标准更严格 → 高风险
+  - 验收流程比标准更复杂 → 中风险
+- code: WARRANTY_DEVIATION
+  name: 维保条款偏差
+  risk_level: 中
+  description: 质保/维保条款与标准不一致
+  rules:
+  - 维保期比标准短 → 中风险
+  - 维保范围比标准小 → 中风险
+  - 维保响应时间比标准长 → 低风险
+- code: CUSTOMIZATION_REQUIRED
+  name: 定制化需求
+  risk_level: 中
+  description: 合同包含定制化需求，超出标准产品范围
+  rules:
+  - 有定制开发需求 → 中风险（需评估工作量）
+  - 有功能点增减 → 中风险
+risk_scoring:
+  高风险: 10
+  中风险: 5
+  低风险: 2
+review_advice_templates:
+  高风险: 【高风险】本项合同约定与标准产品/服务定义存在重大偏差，建议法务/产品部门审核确认后签署。
+  中风险: 【中风险】本项合同约定与标准产品/服务定义存在差异，需确认交付能力满足要求。
+  低风险: 【低风险】本项合同约定与标准产品/服务定义存在细微差异，正常执行即可。

@@ -1,0 +1,1176 @@
+# 履约义务拆分规则库
+# 版本: v1.0
+# 创建日期: 2026-04-24
+# 说明: 用于从合同条款中自动识别和结构化提取各类履约义务
+
+metadata:
+  version: "1.0"
+  created_date: "2026-04-24"
+  author: "Jerry 🦞"
+  description: "履约义务拆分专项规则库，支持8大类义务的自动识别与提取"
+  language: "zh-CN"
+
+# =============================================================================
+# 1. 义务分类体系
+# =============================================================================
+obligation_categories:
+  OBJ-01:
+    name: "交付义务"
+    description: "产品交付、服务交付、文档交付等相关义务"
+    subcategories:
+      - "产品交付"
+      - "服务交付"
+      - "文档交付"
+    priority: "high"
+    risk_level: "medium"
+
+  OBJ-02:
+    name: "验收义务"
+    description: "验收标准、验收流程、验收时限、不合格处理等相关义务"
+    subcategories:
+      - "验收标准"
+      - "验收流程"
+      - "验收时限"
+      - "不合格处理"
+    priority: "high"
+    risk_level: "high"
+
+  OBJ-03:
+    name: "付款义务"
+    description: "预付款、进度款、验收款、质保金等相关义务"
+    subcategories:
+      - "预付款"
+      - "进度款"
+      - "验收款"
+      - "质保金"
+    priority: "critical"
+    risk_level: "critical"
+
+  OBJ-04:
+    name: "维保义务"
+    description: "保修期、保修范围、维保服务内容等相关义务"
+    subcategories:
+      - "保修期"
+      - "保修范围"
+      - "维保服务内容"
+    priority: "medium"
+    risk_level: "medium"
+
+  OBJ-05:
+    name: "技术支持义务"
+    description: "支持方式、响应时间、支持范围等相关义务"
+    subcategories:
+      - "支持方式"
+      - "响应时间"
+      - "支持范围"
+    priority: "medium"
+    risk_level: "low"
+
+  OBJ-06:
+    name: "培训义务"
+    description: "培训内容、培训对象、培训时长等相关义务"
+    subcategories:
+      - "培训内容"
+      - "培训对象"
+      - "培训时长"
+    priority: "low"
+    risk_level: "low"
+
+  OBJ-07:
+    name: "知识产权义务"
+    description: "知识产权归属、许可范围等相关义务"
+    subcategories:
+      - "权利归属"
+      - "许可范围"
+    priority: "high"
+    risk_level: "high"
+
+  OBJ-08:
+    name: "违约责任"
+    description: "针对义务履行的违约条款"
+    subcategories:
+      - "违约金"
+      - "违约救济"
+      - "违约解除"
+    priority: "high"
+    risk_level: "critical"
+
+# =============================================================================
+# 2. 每类义务的识别规则
+# =============================================================================
+recognition_rules:
+  OBJ-01:
+    name: "交付义务"
+    keywords:
+      high_weight:
+        - "交付"
+        - "交货"
+        - "供货"
+        - "送货"
+        - "发货"
+        - "到货"
+        - "移交"
+        - "提交"
+        - "提供"
+        - "送达"
+      medium_weight:
+        - "交付时间"
+        - "交付地点"
+        - "交付方式"
+        - "交付内容"
+        - "交付标准"
+        - "包装"
+        - "运输"
+        - "装运"
+        - "卸货"
+        - "安装"
+        - "调试"
+        - "部署"
+        - "上线"
+        - "文档"
+        - "资料"
+        - "报告"
+        - "手册"
+        - "源代码"
+        - "介质"
+        - "光盘"
+    feature_patterns:
+      - "乙方应在.*前将.*交付给甲方"
+      - "交付地点为.*"
+      - "交付方式为.*"
+      - "乙方应向甲方提供.*"
+      - "货物到达.*后"
+      - "甲方收到.*后"
+      - "乙方应提交.*文档"
+      - "产品应于.*前上线"
+      - "完成.*的安装调试"
+      - "交付的产品包括.*"
+      - "乙方应在.*日内交付"
+      - "交付清单见附件.*"
+    regex_patterns:
+      - name: "交付时间"
+        pattern: "乙方应[在于](.*?)[前日内]?将.*交付"
+        field: "deadline"
+      - name: "交付地点"
+        pattern: "交付地点[为是](.*?)(?:[，。]|$)"
+        field: "location"
+      - name: "交付内容"
+        pattern: "交付(?:的|内容包括)?(.*?)(?:[，。；]|$)"
+        field: "content"
+    required_fields:
+      - "content"
+      - "deadline"
+      - "responsible_party"
+    optional_fields:
+      - "location"
+      - "method"
+      - "acceptance_criteria"
+      - "packaging_requirements"
+    ambiguity_rules:
+      - "若同时出现'交付'和'验收'关键词，优先判定为交付义务，验收相关内容作为交付条件提取"
+      - "若'提供'后接服务内容，需结合上下文判断是否属于服务交付"
+
+  OBJ-02:
+    name: "验收义务"
+    keywords:
+      high_weight:
+        - "验收"
+        - "检验"
+        - "检测"
+        - "测试"
+        - "试运行"
+        - "初验"
+        - "终验"
+        - "验收合格"
+        - "验收通过"
+        - "验收不合格"
+      medium_weight:
+        - "验收标准"
+        - "验收流程"
+        - "验收时间"
+        - "验收期限"
+        - "验收报告"
+        - "验收证书"
+        - "验收申请"
+        - "复验"
+        - "重新验收"
+        - "验收组"
+        - "验收委员会"
+        - "验收资料"
+        - "验收条件"
+        - "验收方法"
+        - "验收依据"
+        - "验收范围"
+        - "验收内容"
+        - "验收结论"
+        - "验收意见"
+        - "验收签字"
+    feature_patterns:
+      - "甲方应在收到.*后.*日内进行验收"
+      - "验收标准按照.*执行"
+      - "验收合格后.*日内"
+      - "如验收不合格，乙方应在.*日内整改"
+      - "验收流程如下"
+      - "验收通过后签署.*"
+      - "试运行.*天后进行终验"
+      - "乙方应提交验收申请"
+      - "验收依据包括.*"
+      - "验收小组由.*组成"
+      - "验收不合格的，甲方有权拒收"
+      - "复验费用由责任方承担"
+    regex_patterns:
+      - name: "验收期限"
+        pattern: "验收期限为(.*?)[，。]"
+        field: "acceptance_period"
+      - name: "验收标准"
+        pattern: "验收标准[为是](.*?)(?:[，。；]|$)"
+        field: "acceptance_criteria"
+      - name: "整改期限"
+        pattern: "整改期限为(.*?)[，。]"
+        field: "rectification_period"
+    required_fields:
+      - "acceptance_criteria"
+      - "acceptance_period"
+      - "responsible_party"
+    optional_fields:
+      - "acceptance_process"
+      - "rectification_requirements"
+      - "reinspection_rules"
+      - "acceptance_authority"
+    ambiguity_rules:
+      - "若同时出现'验收'和'付款'关键词，验收义务与付款义务分别提取"
+      - "试运行期条款优先判定为验收义务的一部分"
+
+  OBJ-03:
+    name: "付款义务"
+    keywords:
+      high_weight:
+        - "付款"
+        - "支付"
+        - "款项"
+        - "货款"
+        - "合同款"
+        - "价款"
+        - "费用"
+        - "预付款"
+        - "进度款"
+        - "验收款"
+      medium_weight:
+        - "质保金"
+        - "定金"
+        - "订金"
+        - "首付款"
+        - "尾款"
+        - "结算"
+        - "发票"
+        - "收据"
+        - "付款方式"
+        - "付款时间"
+        - "付款条件"
+        - "支付比例"
+        - "支付金额"
+        - "转账"
+        - "汇款"
+        - "电汇"
+        - "承兑"
+        - "支票"
+        - "现金"
+        - "人民币"
+    feature_patterns:
+      - "甲方应在.*后.*日内支付.*%的货款"
+      - "预付款为合同总金额的.*%"
+      - "验收合格后支付.*%"
+      - "质保金为.*%，质保期满后支付"
+      - "付款方式为.*"
+      - "乙方应先开具发票，甲方再付款"
+      - "进度款按每月完成工作量的.*%支付"
+      - "合同总价为人民币.*元"
+      - "款项付至以下账户"
+      - "逾期付款的，按每日.*%支付违约金"
+      - "第二次付款条件为.*"
+      - "付款前乙方应提交.*资料"
+    regex_patterns:
+      - name: "支付比例"
+        pattern: "支付(.*?%)"
+        field: "payment_ratio"
+      - name: "支付金额"
+        pattern: "(人民币|￥)?([0-9,]+\\.?[0-9]*)(元|万元)"
+        field: "payment_amount"
+      - name: "付款期限"
+        pattern: "付款期限为(.*?)[，。]"
+        field: "payment_deadline"
+    required_fields:
+      - "payment_amount"
+      - "payment_ratio"
+      - "payment_deadline"
+      - "payer"
+    optional_fields:
+      - "payment_method"
+      - "payment_conditions"
+      - "invoice_requirements"
+      - "bank_account"
+      - "late_payment_penalty"
+    ambiguity_rules:
+      - "违约金条款中的支付优先判定为违约责任，而非付款义务"
+      - "赔偿金额优先判定为违约责任，除非明确是货款"
+      - "发票条款作为付款义务的附加条件提取"
+
+  OBJ-04:
+    name: "维保义务"
+    keywords:
+      high_weight:
+        - "保修"
+        - "维保"
+        - "维护"
+        - "保养"
+        - "维修"
+        - "保修期"
+        - "质保期"
+        - "免费保修"
+        - "上门维修"
+        - "故障修复"
+      medium_weight:
+        - "保修范围"
+        - "保修期限"
+        - "保修责任"
+        - "保修服务"
+        - "质保服务"
+        - "免费维修"
+        - "更换配件"
+        - "备件"
+        - "耗材"
+        - "技术支持"
+        - "远程支持"
+        - "现场支持"
+        - "7×24小时"
+        - "5×8小时"
+        - "响应时间"
+        - "解决时间"
+        - "保修凭证"
+        - "保修卡"
+        - "延保"
+        - "续保"
+    feature_patterns:
+      - "保修期为.*年，自.*起计算"
+      - "保修范围包括.*"
+      - "乙方提供.*小时上门维修服务"
+      - "响应时间不超过.*小时"
+      - "故障应在.*小时内解决"
+      - "质保期内免费提供.*服务"
+      - "保修期内，非人为损坏免费维修"
+      - "下列情况不属于保修范围"
+      - "保修期满后，可签订续保协议"
+      - "乙方应定期进行保养维护"
+      - "备件供应期不少于.*年"
+      - "维修期间提供备用设备"
+    regex_patterns:
+      - name: "保修期限"
+        pattern: "(保修期|质保期)为(.*?)[，。]"
+        field: "warranty_period"
+      - name: "保修范围"
+        pattern: "保修范围包括(.*?)(?:[。；]|$)"
+        field: "warranty_scope"
+      - name: "响应时间"
+        pattern: "响应时间不超过(.*?)[，。]"
+        field: "response_time"
+    required_fields:
+      - "warranty_period"
+      - "warranty_scope"
+      - "responsible_party"
+    optional_fields:
+      - "service_level"
+      - "response_time"
+      - "resolution_time"
+      - "spare_parts_guarantee"
+      - "exclusions"
+    ambiguity_rules:
+      - "技术支持条款如果与维保相关且不可分割，并入维保义务"
+      - "保修期后的收费维保服务仍属于维保义务"
+
+  OBJ-05:
+    name: "技术支持义务"
+    keywords:
+      high_weight:
+        - "技术支持"
+        - "技术服务"
+        - "技术咨询"
+        - "技术指导"
+        - "技术援助"
+        - "远程支持"
+        - "电话支持"
+        - "邮件支持"
+        - "在线支持"
+        - "现场支持"
+      medium_weight:
+        - "支持热线"
+        - "支持邮箱"
+        - "支持平台"
+        - "技术人员"
+        - "技术专家"
+        - "响应时间"
+        - "服务时间"
+        - "服务等级"
+        - "SLA"
+        - "问题升级"
+        - "故障处理"
+        - "问题解决"
+        - "技术文档"
+        - "知识库"
+        - "FAQ"
+        - "版本升级"
+        - "补丁"
+        - "漏洞修复"
+        - "性能优化"
+        - "架构咨询"
+    feature_patterns:
+      - "乙方提供.*小时技术支持服务"
+      - "技术支持方式包括.*"
+      - "支持热线为.*"
+      - "响应时间为.*小时内"
+      - "乙方指派技术人员提供现场支持"
+      - "技术支持范围包括.*"
+      - "乙方应协助甲方解决.*问题"
+      - "通过远程方式进行技术支持"
+      - "支持服务时间为.*"
+      - "重大问题应在.*小时内响应"
+      - "技术支持费用包含在合同总价中"
+      - "乙方提供.*版本的升级服务"
+    regex_patterns:
+      - name: "支持方式"
+        pattern: "支持方式包括(.*?)(?:[。；]|$)"
+        field: "support_method"
+      - name: "服务时间"
+        pattern: "服务时间为(.*?)[，。]"
+        field: "service_hours"
+      - name: "响应时限"
+        pattern: "在(.*?)[年内日月小时]内响应"
+        field: "response_time"
+    required_fields:
+      - "support_method"
+      - "service_hours"
+      - "responsible_party"
+    optional_fields:
+      - "contact_info"
+      - "response_time"
+      - "support_scope"
+      - "escalation_procedure"
+      - "sla_level"
+    ambiguity_rules:
+      - "若技术支持条款与维保义务重叠，优先按产品类型归类"
+      - "软件产品的技术支持与维保可合并提取"
+
+  OBJ-06:
+    name: "培训义务"
+    keywords:
+      high_weight:
+        - "培训"
+        - "授课"
+        - "教学"
+        - "讲解"
+        - "实操"
+        - "演示"
+        - "培训师"
+        - "讲师"
+        - "学员"
+        - "参训人员"
+      medium_weight:
+        - "培训内容"
+        - "培训对象"
+        - "培训时间"
+        - "培训地点"
+        - "培训方式"
+        - "培训时长"
+        - "培训天数"
+        - "培训教材"
+        - "培训考核"
+        - "培训证书"
+        - "上岗培训"
+        - "操作培训"
+        - "管理培训"
+        - "技术培训"
+        - "业务培训"
+        - "线下培训"
+        - "线上培训"
+        - "远程培训"
+        - "现场培训"
+        - "集中培训"
+    feature_patterns:
+      - "乙方应为甲方提供.*培训"
+      - "培训内容包括.*"
+      - "培训对象为.*"
+      - "培训时间为.*天"
+      - "培训地点在.*"
+      - "乙方应指派专业培训师授课"
+      - "培训教材由乙方提供"
+      - "培训后进行考核"
+      - "考核合格颁发证书"
+      - "甲方应组织.*人员参加培训"
+      - "培训费用包含在合同总价中"
+      - "乙方提供.*人次的免费培训"
+    regex_patterns:
+      - name: "培训内容"
+        pattern: "培训内容包括(.*?)(?:[。；]|$)"
+        field: "training_content"
+      - name: "培训时长"
+        pattern: "培训时间为(.*?)[，。]"
+        field: "training_duration"
+      - name: "培训人数"
+        pattern: "(\\d+)人次"
+        field: "trainee_count"
+    required_fields:
+      - "training_content"
+      - "training_duration"
+      - "responsible_party"
+    optional_fields:
+      - "training_target"
+      - "training_location"
+      - "trainer_qualification"
+      - "training_materials"
+      - "assessment_method"
+    ambiguity_rules:
+      - "若培训条款与技术支持重叠，培训义务优先提取"
+      - "免费培训次数限制作为培训义务的条件提取"
+
+  OBJ-07:
+    name: "知识产权义务"
+    keywords:
+      high_weight:
+        - "知识产权"
+        - "版权"
+        - "著作权"
+        - "专利权"
+        - "商标权"
+        - "专利"
+        - "软件著作权"
+        - "归属"
+        - "所有"
+        - "许可"
+      medium_weight:
+        - "使用权"
+        - "许可使用权"
+        - "独家许可"
+        - "非独家许可"
+        - "永久许可"
+        - "转让"
+        - "保密"
+        - "侵权"
+        - "第三方知识产权"
+        - "知识产权担保"
+        - "源代码"
+        - "目标代码"
+        - "技术秘密"
+        - "商业秘密"
+        - "成果归属"
+        - "交付物知识产权"
+        - "背景知识产权"
+        - "前景知识产权"
+        - "知识产权条款"
+        - "知识产权声明"
+    feature_patterns:
+      - "本合同项下的知识产权归.*所有"
+      - "甲方享有.*的使用权"
+      - "乙方授予甲方.*许可"
+      - "乙方保证不侵犯第三方知识产权"
+      - "开发成果的知识产权归属.*"
+      - "未经许可，不得复制、传播"
+      - "甲方对交付物享有永久使用权"
+      - "乙方保留.*的知识产权"
+      - "知识产权担保条款"
+      - "如发生侵权纠纷，由乙方负责处理"
+      - "源代码的知识产权归乙方所有"
+      - "甲方仅享有目标代码的使用权"
+    regex_patterns:
+      - name: "权利归属"
+        pattern: "知识产权归(.*?)所有"
+        field: "ip_owner"
+      - name: "许可类型"
+        pattern: "授予(甲方)?(.*?)许可"
+        field: "license_type"
+      - name: "许可范围"
+        pattern: "许可范围包括(.*?)(?:[。；]|$)"
+        field: "license_scope"
+    required_fields:
+      - "ip_owner"
+      - "license_type"
+      - "license_scope"
+    optional_fields:
+      - "ip_warranty"
+      - "infringement_liability"
+      - "source_code_terms"
+      - "confidentiality_obligations"
+    ambiguity_rules:
+      - "保密条款如果与知识产权直接相关，并入知识产权义务"
+      - "开源软件许可条款作为特殊知识产权义务处理"
+
+  OBJ-08:
+    name: "违约责任"
+    keywords:
+      high_weight:
+        - "违约"
+        - "违约金"
+        - "赔偿"
+        - "赔偿损失"
+        - "滞纳金"
+        - "罚息"
+        - "违约责任"
+        - "违约方"
+        - "守约方"
+        - "解除合同"
+      medium_weight:
+        - "逾期违约金"
+        - "迟延履行"
+        - "根本违约"
+        - "预期违约"
+        - "违约救济"
+        - "损害赔偿"
+        - "实际损失"
+        - "可得利益"
+        - "违约金上限"
+        - "违约金比例"
+        - "每日万分之"
+        - "每日千分之"
+        - "合同总金额的.*%"
+        - "单方解除"
+        - "法定解除"
+        - "解除权"
+        - "终止合同"
+        - "继续履行"
+        - "采取补救措施"
+        - "免责条款"
+    feature_patterns:
+      - "如乙方逾期交付，按每日.*%支付违约金"
+      - "违约金累计不超过合同总金额的.*%"
+      - "违约方应赔偿守约方的全部损失"
+      - "逾期超过.*日的，甲方有权解除合同"
+      - "一方根本违约的，另一方有权终止合同"
+      - "违约金不足以弥补损失的，还应赔偿差额"
+      - "发生以下情形的，视为违约"
+      - "因不可抗力导致的违约，不承担责任"
+      - "任何一方违反本合同约定的，应.*"
+      - "甲方逾期付款的，按.*支付违约金"
+      - "违约金从应付款之日起计算"
+      - "乙方应承担违约责任，赔偿甲方损失"
+    regex_patterns:
+      - name: "违约金比例"
+        pattern: "按每日(.*?)支付违约金"
+        field: "penalty_rate"
+      - name: "违约金上限"
+        pattern: "违约金累计不超过(.*?)[，。]"
+        field: "penalty_cap"
+      - name: "解约条件"
+        pattern: "逾期超过(\\d+)日"
+        field: "termination_threshold"
+    required_fields:
+      - "breach_type"
+      - "penalty_amount"
+      - "responsible_party"
+    optional_fields:
+      - "penalty_rate"
+      - "penalty_cap"
+      - "termination_rights"
+      - "remedy_measures"
+      - "force_majeure_exception"
+    ambiguity_rules:
+      - "各类义务中的违约条款同时提取到对应义务分类和违约责任分类"
+      - "定金罚则作为违约责任处理"
+
+# =============================================================================
+# 3. 字段提取正则库
+# =============================================================================
+field_extraction_regex:
+  datetime_extraction:
+    - name: "绝对日期-ISO格式"
+      pattern: "(\\d{4}-\\d{2}-\\d{2})"
+      description: "匹配YYYY-MM-DD格式日期"
+      examples: ["2026-04-24", "2026-12-31"]
+
+    - name: "绝对日期-中文格式"
+      pattern: "(\\d{4})年(\\d{1,2})月(\\d{1,2})日"
+      description: "匹配中文格式日期"
+      examples: ["2026年4月24日", "2026年12月31日"]
+
+    - name: "相对日期-工作日"
+      pattern: "(\\d+)个?工作日"
+      description: "匹配工作日期限"
+      examples: ["15个工作日", "30工作日"]
+
+    - name: "相对日期-自然日"
+      pattern: "(\\d+)个?自然?日"
+      description: "匹配自然日期限"
+      examples: ["30日", "60个自然日"]
+
+    - name: "相对日期-月"
+      pattern: "(\\d+)个?月"
+      description: "按月计算的期限"
+      examples: ["3个月", "12月"]
+
+    - name: "相对日期-年"
+      pattern: "(\\d+)个?年"
+      description: "按年计算的期限"
+      examples: ["1年", "3个年"]
+
+    - name: "时间点-小时"
+      pattern: "(\\d{1,2}):(\\d{2})"
+      description: "匹配时间"
+      examples: ["09:00", "18:30"]
+
+    - name: "相对时间-小时"
+      pattern: "(\\d+)个?小时"
+      description: "小时级期限"
+      examples: ["2小时", "24个小时"]
+
+  amount_ratio_extraction:
+    - name: "百分比"
+      pattern: "(\\d+(?:\\.\\d+)?)%"
+      description: "匹配百分比"
+      examples: ["10%", "15.5%", "0.05%"]
+
+    - name: "人民币金额-数字"
+      pattern: "人民币(\\d+(?:,\\d{3})*(?:\\.\\d{1,2})?)元?"
+      description: "人民币金额数字"
+      examples: ["人民币10000元", "人民币1,000,000.00"]
+
+    - name: "人民币金额-符号"
+      pattern: "￥(\\d+(?:,\\d{3})*(?:\\.\\d{1,2})?)"
+      description: "人民币符号金额"
+      examples: ["￥10000", "￥1,000,000.00"]
+
+    - name: "人民币金额-大写"
+      pattern: "人民币([零壹贰叁肆伍陆柒捌玖拾佰仟万亿元角分]+)"
+      description: "大写人民币金额"
+      examples: ["人民币壹万元整", "人民币壹佰万元"]
+
+    - name: "万级金额"
+      pattern: "(\\d+(?:\\.\\d+)?)万?元"
+      description: "万元单位金额"
+      examples: ["10万元", "100.5万"]
+
+    - name: "比例表述"
+      pattern: "合同总金额的(\\d+(?:\\.\\d+)?)%"
+      description: "按合同金额比例表述"
+      examples: ["合同总金额的10%", "合同总价的5%"]
+
+  period_extraction:
+    - name: "天数期限"
+      pattern: "(\\d+)天"
+      description: "通用天数"
+      examples: ["30天", "90天"]
+
+    - name: "月数期限"
+      pattern: "(\\d+)个月"
+      description: "按月计算"
+      examples: ["3个月", "12个月"]
+
+    - name: "年数期限"
+      pattern: "(\\d+)年"
+      description: "按年计算"
+      examples: ["1年", "3年"]
+
+    - name: "周数期限"
+      pattern: "(\\d+)周"
+      description: "按周计算"
+      examples: ["2周", "4周"]
+
+    - name: "季度期限"
+      pattern: "(\\d+)个?季度"
+      description: "按季度计算"
+      examples: ["1季度", "4个季度"]
+
+    - name: "自某日起算"
+      pattern: "自(.*?)起计算"
+      description: "期限起算点"
+      examples: ["自验收合格之日起计算", "自交付之日起算"]
+
+    - name: "至某日截止"
+      pattern: "至(.*?)截止"
+      description: "期限截止点"
+      examples: ["至2026年12月31日截止", "至质保期满截止"]
+
+  location_extraction:
+    - name: "交付地点"
+      pattern: "交付地点[为是](.*?)(?:[，。；]|$)"
+      description: "明确的交付地点"
+      examples: ["交付地点为甲方指定地点", "交付地点是北京市朝阳区"]
+
+    - name: "服务地点"
+      pattern: "服务地点[为是](.*?)(?:[，。；]|$)"
+      description: "服务提供地点"
+      examples: ["服务地点为甲方办公场所", "服务地点是项目现场"]
+
+    - name: "项目地点"
+      pattern: "项目地点[为是](.*?)(?:[，。；]|$)"
+      description: "项目实施地点"
+      examples: ["项目地点为上海市浦东新区"]
+
+    - name: "地点省市区"
+      pattern: "([\\u4e00-\\u9fa5]+省)?([\\u4e00-\\u9fa5]+市)?([\\u4e00-\\u9fa5]+区)?"
+      description: "省市区层级地点"
+      examples: ["浙江省杭州市西湖区", "北京市朝阳区"]
+
+  party_extraction:
+    - name: "甲方"
+      pattern: "甲方"
+      description: "甲方（通常是付款方/委托方）"
+      examples: ["甲方", "甲方应"]
+
+    - name: "乙方"
+      pattern: "乙方"
+      description: "乙方（通常是履约方/服务提供方）"
+      examples: ["乙方", "乙方应"]
+
+    - name: "双方"
+      pattern: "双方|甲乙双方"
+      description: "双方共同义务"
+      examples: ["双方应", "甲乙双方共同"]
+
+    - name: "第三方"
+      pattern: "第三方|第三人"
+      description: "合同外第三方"
+      examples: ["第三方", "任何第三方"]
+
+    - name: "责任方"
+      pattern: "(违约|责任)方"
+      description: "承担责任的一方"
+      examples: ["违约方", "责任方应"]
+
+    - name: "守约方"
+      pattern: "守约方|非违约方"
+      description: "遵守合同的一方"
+      examples: ["守约方", "非违约方有权"]
+
+# =============================================================================
+# 4. 与标准产品库的映射规则
+# =============================================================================
+product_mapping_rules:
+  software_products:
+    standard_obligations:
+      - type: "OBJ-01"
+        description: "软件介质及文档交付"
+        standard_clause: "乙方应在合同生效后5个工作日内交付软件安装介质及全套技术文档"
+
+      - type: "OBJ-02"
+        description: "软件验收"
+        standard_clause: "软件安装调试完成后进行初验，试运行30天后进行终验"
+
+      - type: "OBJ-03"
+        description: "付款条款"
+        standard_clause: "预付款30%，终验合格后付60%，质保金10%"
+
+      - type: "OBJ-04"
+        description: "维保服务"
+        standard_clause: "提供1年免费维保服务，7×24小时支持"
+
+      - type: "OBJ-05"
+        description: "技术支持"
+        standard_clause: "提供电话、邮件、远程等技术支持服务"
+
+      - type: "OBJ-06"
+        description: "操作培训"
+        standard_clause: "为甲方提供不少于3天的系统操作培训"
+
+      - type: "OBJ-07"
+        description: "知识产权"
+        standard_clause: "乙方保留软件知识产权，甲方享有永久使用权"
+
+    comparison_rules:
+      - "对比交付时间：默认5工作日，偏离超过5天标注差异"
+      - "对比付款比例：预付款30%，验收款60%，质保金10%"
+      - "对比维保期限：默认1年，不足标注风险"
+      - "对比技术支持等级：默认7×24，降级标注差异"
+
+    difference_annotation:
+      - "DELAY_DELIVERY: 交付时间晚于标准"
+      - "HIGH_PREPAYMENT: 预付款比例高于30%"
+      - "LOW_WARRANTY: 保修期短于1年"
+      - "REDUCED_SUPPORT: 支持等级低于7×24"
+      - "IP_RESTRICTION: 使用权有额外限制"
+
+  hardware_products:
+    standard_obligations:
+      - type: "OBJ-01"
+        description: "设备交付"
+        standard_clause: "乙方应在合同生效后30日内完成设备交付"
+
+      - type: "OBJ-02"
+        description: "设备验收"
+        standard_clause: "设备到货后7日内进行开箱验收，安装调试后进行竣工验收"
+
+      - type: "OBJ-03"
+        description: "付款条款"
+        standard_clause: "预付款20%，到货验收后付50%，终验合格后付20%，质保金10%"
+
+      - type: "OBJ-04"
+        description: "保修服务"
+        standard_clause: "提供3年原厂保修服务，上门维修"
+
+      - type: "OBJ-05"
+        description: "技术支持"
+        standard_clause: "提供5×8小时技术支持服务"
+
+    comparison_rules:
+      - "对比交付周期：标准30日，延迟标注风险"
+      - "对比付款节奏：预付款不超过30%，质保金不低于5%"
+      - "对比保修期限：标准3年，不足标注"
+
+    difference_annotation:
+      - "LONG_DELIVERY: 交付期超过45天"
+      - "NO_ONSITE: 无上门维修服务"
+      - "SHORT_WARRANTY: 保修期短于3年"
+
+  service_products:
+    standard_obligations:
+      - type: "OBJ-01"
+        description: "服务交付"
+        standard_clause: "乙方应按照服务计划提供专业服务"
+
+      - type: "OBJ-02"
+        description: "服务验收"
+        standard_clause: "按月进行服务满意度评估，年度进行服务整体验收"
+
+      - type: "OBJ-03"
+        description: "付款条款"
+        standard_clause: "按季度支付服务费，每季度首月支付当季度费用"
+
+      - type: "OBJ-06"
+        description: "知识转移"
+        standard_clause: "服务过程中向甲方团队进行知识转移"
+
+    comparison_rules:
+      - "对比付款频率：标准按季，要求预付超过1季度标注"
+      - "对比验收方式：满意度作为验收标准的合理性"
+
+    difference_annotation:
+      - "ADVANCE_PAYMENT: 要求提前支付超过3个月费用"
+      - "NO_KNOWLEDGE_TRANSFER: 无明确知识转移条款"
+
+  general_mapping:
+    product_type_detection:
+      - keywords: ["软件", "系统", "平台", "SaaS", "应用"]
+        type: "software"
+      - keywords: ["设备", "硬件", "服务器", "终端", "仪器"]
+        type: "hardware"
+      - keywords: ["服务", "咨询", "运维", "运营", "外包"]
+        type: "service"
+      - keywords: ["集成", "解决方案", "项目"]
+        type: "integrated"
+
+    default_standards:
+      - "any_product":
+          - "质保金比例不低于5%"
+          - "违约金上限不超过合同总金额的20%"
+          - "逾期违约金不低于每日万分之三"
+          - "知识产权归属约定明确"
+
+# =============================================================================
+# 5. 输出结构规范
+# =============================================================================
+output_structure:
+  json_schema:
+    type: "object"
+    description: "履约义务提取结果根对象"
+    properties:
+      obligation_id:
+        type: "string"
+        description: "义务唯一标识，格式：OBJ-XX-序号"
+        example: "OBJ-01-001"
+
+      obligation_type:
+        type: "string"
+        description: "义务类型代码"
+        enum: ["OBJ-01", "OBJ-02", "OBJ-03", "OBJ-04", "OBJ-05", "OBJ-06", "OBJ-07", "OBJ-08"]
+        example: "OBJ-01"
+
+      category_name:
+        type: "string"
+        description: "义务分类名称"
+        example: "交付义务"
+
+      subcategory:
+        type: "string"
+        description: "义务子类"
+        example: "产品交付"
+
+      content_description:
+        type: "string"
+        description: "义务内容描述"
+        example: "乙方应在2026年5月30日前交付全部设备"
+
+      source_text:
+        type: "string"
+        description: "原始条款文本"
+        example: "乙方应在2026年5月30日前将全部设备送达甲方指定地点"
+
+      trigger_conditions:
+        type: "array"
+        items:
+          type: "string"
+        description: "义务触发条件"
+        example: ["合同生效"]
+
+      deadline:
+        type: "string"
+        description: "履行时限（日期或期限描述）"
+        example: "2026-05-30"
+
+      location:
+        type: "string"
+        description: "履行地点"
+        example: "甲方指定地点"
+
+      responsible_party:
+        type: "string"
+        description: "责任方"
+        enum: ["甲方", "乙方", "双方", "第三方"]
+        example: "乙方"
+
+      beneficiary_party:
+        type: "string"
+        description: "受益方"
+        enum: ["甲方", "乙方", "双方", "第三方"]
+        example: "甲方"
+
+      extracted_fields:
+        type: "object"
+        description: "提取的关键字段"
+        additionalProperties: true
+        example:
+          amount: "1000000"
+          ratio: "30%"
+          period: "30天"
+
+      payment_related:
+        type: "object"
+        description: "付款相关信息（仅付款义务）"
+        properties:
+          payment_stage:
+            type: "string"
+            description: "付款阶段"
+            example: "预付款"
+          amount:
+            type: "string"
+            description: "付款金额"
+            example: "300000"
+          ratio:
+            type: "string"
+            description: "付款比例"
+            example: "30%"
+          conditions:
+            type: "array"
+            items:
+              type: "string"
+            description: "付款条件"
+            example: ["合同生效", "提供等额发票"]
+
+      risk_level:
+        type: "string"
+        description: "风险等级"
+        enum: ["critical", "high", "medium", "low"]
+        example: "medium"
+
+      risk_factors:
+        type: "array"
+        items:
+          type: "string"
+        description: "风险因素标注"
+        example: ["交付周期较长", "验收标准不明确"]
+
+      standard_comparison:
+        type: "object"
+        description: "与标准义务比对结果"
+        properties:
+          product_type:
+            type: "string"
+            example: "software"
+          differences:
+            type: "array"
+            items:
+              type: "object"
+              properties:
+                field:
+                  type: "string"
+                standard_value:
+                  type: "string"
+                contract_value:
+                  type: "string"
+                impact:
+                  type: "string"
+                  enum: ["positive", "neutral", "negative"]
+
+      confidence:
+        type: "number"
+        description: "提取置信度（0-100）"
+        example: 95
+
+      notes:
+        type: "string"
+        description: "备注说明"
+        example: "交付地点未明确具体地址"
+
+    required:
+      - "obligation_id"
+      - "obligation_type"
+      - "category_name"
+      - "content_description"
+      - "source_text"
+      - "responsible_party"
+      - "risk_level"
+      - "confidence"
+
+  excel_mapping:
+    columns:
+      - column: "A"
+        field: "obligation_id"
+        header: "义务编号"
+
+      - column: "B"
+        field: "category_name"
+        header: "义务类型"
+
+      - column: "C"
+        field: "subcategory"
+        header: "义务子类"
+
+      - column: "D"
+        field: "content_description"
+        header: "义务内容"
+
+      - column: "E"
+        field: "source_text"
+        header: "原始条款"
+
+      - column: "F"
+        field: "deadline"
+        header: "履行时限"
+
+      - column: "G"
+        field: "location"
+        header: "履行地点"
+
+      - column: "H"
+        field: "responsible_party"
+        header: "责任方"
+
+      - column: "I"
+        field: "beneficiary_party"
+        header: "受益方"
+
+      - column: "J"
+        field: "risk_level"
+        header: "风险等级"
+
+      - column: "K"
+        field: "confidence"
+        header: "置信度"
+
+      - column: "L"
+        field: "notes"
+        header: "备注"
+
+    sheet_name: "履约义务清单"
+    freeze_panes: "A2"
+    auto_filter: true
+    risk_highlighting:
+      critical: "FF0000"
+      high: "FFA500"
+      medium: "FFFF00"
+      low: "90EE90"

@@ -1,0 +1,70 @@
+{
+  "skill_path": "skills/knowledge-base",
+  "documents": {
+    "README.md": {
+      "exists": false,
+      "issues": [
+        "文件不存在"
+      ]
+    },
+    "SKILL.md": {
+      "exists": true,
+      "length": 6077,
+      "length_ok": true,
+      "sections_found": [
+        "技能名称",
+        "触发条件",
+        "功能清单"
+      ],
+      "sections_missing": [
+        "负责Agent"
+      ],
+      "keywords_found": [
+        "功能",
+        "使用"
+      ],
+      "keywords_missing": [
+        "技能"
+      ],
+      "issues": [
+        "缺少建议章节: 负责Agent"
+      ]
+    },
+    "DEPENDENCIES.md": {
+      "exists": true,
+      "length": 809,
+      "length_ok": true,
+      "sections_found": [
+        "依赖列表"
+      ],
+      "sections_missing": [],
+      "keywords_found": [],
+      "keywords_missing": [],
+      "issues": []
+    }
+  },
+  "config": {
+    "config_dir_exists": true,
+    "config_files": [
+      "query-config.yaml"
+    ],
+    "issues": []
+  },
+  "scripts": {
+    "scripts_dir_exists": true,
+    "script_count": 4,
+    "entry_point_found": false,
+    "issues": []
+  },
+  "total_issues": 2,
+  "issues": [
+    [
+      "README.md",
+      "文件不存在"
+    ],
+    [
+      "SKILL.md",
+      "缺少建议章节: 负责Agent"
+    ]
+  ]
+}

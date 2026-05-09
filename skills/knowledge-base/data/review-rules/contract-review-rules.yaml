@@ -1,0 +1,966 @@
+# -*- coding: utf-8 -*-
+# 合同审核专项规则库
+# ================
+# 重点覆盖标的、交付、验收、售后四大核心条款审核
+# 实现风险自动识别与法条自动关联
+#
+# 作者: Jerry 🦞
+# 版本: v1.0
+# 日期: 2026-04-24
+
+metadata:
+  name: 合同审核专项规则库
+  version: "1.0"
+  last_updated: "2026-04-24"
+  author: "Jerry"
+
+# =============================================================================
+# 风险分级与评分标准
+# =============================================================================
+risk_scoring:
+  levels:
+    high:
+      score: 10
+      label: "高风险"
+      description: "核心条款缺失、严重不公平条款、违法违规"
+      color: "RED"
+    medium:
+      score: 5
+      label: "中风险"
+      description: "条款不明确、存在歧义、对我方不利但可接受"
+      color: "YELLOW"
+    low:
+      score: 2
+      label: "低风险"
+      description: "表述不规范、用词不严谨"
+      color: "BLUE"
+  
+  thresholds:
+    reject_threshold: 20  # 总分≥20分建议退回
+    attention_threshold: 10  # 总分≥10分建议重点关注
+
+# =============================================================================
+# 四大专项审核规则
+# =============================================================================
+special_rules:
+
+  # ---------------------------------------------------------------------------
+  # RVW-01: 标的条款专项审核规则
+  # ---------------------------------------------------------------------------
+  RVW-01:
+    name: "标的条款专项审核"
+    description: "审核合同标的（产品/服务）相关条款的完整性、明确性、合规性"
+    law_category: "标的条款"
+    checks:
+
+      # 产品/服务名称完整性检查
+      - id: RVW-01-001
+        name: "产品名称缺失"
+        description: "合同中未明确约定产品或服务名称"
+        severity: "high"
+        pattern: "(产品|标的|货物|服务)\\s*(名称|品名)\\s*[：:]\\s*(?:未约定|另行协商|待定|空白|$)"
+        negative_pattern: null
+        law_articles: ["CC-470"]
+        suggestion: "建议补充明确产品或服务的完整名称，避免使用简称或模糊表述"
+
+      - id: RVW-01-002
+        name: "产品名称不完整"
+        description: "产品名称仅使用简称，未注明完整名称"
+        severity: "medium"
+        pattern: "^(?!.*(产品|服务).*(全称|完整名称)).{0,50}简称"
+        negative_pattern: null
+        law_articles: ["CC-470", "CC-510"]
+        suggestion: "建议在合同中同时注明产品全称和简称，并明确两者具有同等法律效力"
+
+      - id: RVW-01-003
+        name: "产品名称使用通用术语"
+        description: "产品名称过于笼统，未具体到特定型号或规格"
+        severity: "medium"
+        pattern: "(产品|设备|系统|服务)\\s*[：:]\\s*(?:各类|各种|若干|一批|相关)"
+        negative_pattern: null
+        law_articles: ["CC-470"]
+        suggestion: "建议细化产品名称，明确具体品种和类别"
+
+      # 规格型号明确性检查
+      - id: RVW-01-004
+        name: "规格型号缺失"
+        description: "合同中未约定产品规格型号"
+        severity: "high"
+        pattern: "(规格|型号|规格型号)\\s*[：:]\\s*(?:未约定|另行协商|待定|空白|$)"
+        negative_pattern: null
+        law_articles: ["CC-470", "CC-511"]
+        suggestion: "必须补充明确产品规格型号，这是确定合同标的的核心要素"
+
+      - id: RVW-01-005
+        name: "规格型号表述模糊"
+        description: "规格型号表述不具体，使用模糊用语"
+        severity: "medium"
+        pattern: "(规格|型号).{0,30}(等|类似|相当|左右|约)"
+        negative_pattern: null
+        law_articles: ["CC-510"]
+        suggestion: "建议使用生产商官方发布的准确规格型号编码"
+
+      - id: RVW-01-006
+        name: "多产品未列明明细"
+        description: "多种产品仅汇总描述，未逐一列明"
+        severity: "medium"
+        pattern: "共计.*(种|类|项|批).{0,50}(产品|货物|设备)"
+        negative_pattern: "明细|清单|附表|附件"
+        law_articles: ["CC-470"]
+        suggestion: "建议制作产品明细清单作为合同附件"
+
+      # 数量/计量单位检查
+      - id: RVW-01-007
+        name: "数量条款缺失"
+        description: "合同中未明确约定产品数量"
+        severity: "high"
+        pattern: "(数量|数量单位|计量单位)\\s*[：:]\\s*(?:未约定|另行协商|待定|空白|$)"
+        negative_pattern: null
+        law_articles: ["CC-470"]
+        suggestion: "必须补充明确产品数量，这是合同必备条款"
+
+      - id: RVW-01-008
+        name: "计量单位不明确"
+        description: "使用非标准或容易产生歧义的计量单位"
+        severity: "medium"
+        pattern: "(数量|共计).{0,20}(批|组|套|项|宗)\\s*(?!计量|单位)"
+        negative_pattern: null
+        law_articles: ["CC-510"]
+        suggestion: "建议使用国家标准计量单位，明确每套/每组包含的具体内容"
+
+      - id: RVW-01-009
+        name: "数量允许偏差未约定"
+        description: "未约定数量溢短装条款或允许偏差范围"
+        severity: "low"
+        pattern: "^(?!.*(溢短装|偏差|±|误差|允许)).{0,200}数量\\s*[：:]"
+        negative_pattern: null
+        law_articles: ["CC-510"]
+        suggestion: "建议约定合理的数量偏差范围（如±5%）及结算方式"
+
+      # 技术参数完整性检查
+      - id: RVW-01-010
+        name: "技术参数缺失"
+        description: "未约定产品关键技术参数或性能指标"
+        severity: "high"
+        pattern: "^(?!.*(技术参数|性能指标|技术标准|技术要求)).{0,500}(产品|设备|系统)"
+        negative_pattern: "技术协议|技术附件"
+        law_articles: ["CC-511", "CC-621"]
+        suggestion: "必须补充关键技术参数，或另行签订技术协议作为合同附件"
+
+      - id: RVW-01-011
+        name: "技术标准不明确"
+        description: "技术标准引用不规范或已过期"
+        severity: "medium"
+        pattern: "(标准|规范).{0,30}(国家标准|行业标准|GB|ISO).*(?:参照|参考|不低于)"
+        negative_pattern: "GB/T|GB/|ISO\\d|IEC\\d"
+        law_articles: ["CC-511"]
+        suggestion: "建议引用具体的国家标准编号及年份版本"
+
+      - id: RVW-01-012
+        name: "配置清单缺失"
+        description: "未提供详细的设备配置清单"
+        severity: "medium"
+        pattern: "^(?!.*(配置清单|装箱单|配件清单)).{0,300}(设备|系统)\\s*[：:]"
+        negative_pattern: null
+        law_articles: ["CC-511"]
+        suggestion: "建议提供详细的设备配置清单作为合同附件"
+
+      # 标准产品匹配与偏差检测
+      - id: RVW-01-013
+        name: "非标准产品未确认"
+        description: "合同标的非标准产品但未明确说明"
+        severity: "medium"
+        pattern: "^(?!.*(非标|定制|订制|特殊规格)).{0,200}(产品|设备)"
+        negative_pattern: null
+        law_articles: ["CC-510", "CC-770"]
+        suggestion: "如为定制产品，应明确标注并约定验收标准"
+
+      - id: RVW-01-014
+        name: "品牌约定不明确"
+        description: "未约定产品品牌或制造商"
+        severity: "medium"
+        pattern: "^(?!.*(品牌|厂家|制造商|生产商)).{0,200}(产品|设备)"
+        negative_pattern: null
+        law_articles: ["CC-510"]
+        suggestion: "建议明确产品品牌及制造商信息"
+
+      - id: RVW-01-015
+        name: "知识产权归属不明确"
+        description: "涉及定制开发的产品未约定知识产权归属"
+        severity: "high"
+        pattern: "(定制|开发|软件|系统).{0,100}(?!.*(知识产权|版权|著作权|所有权))"
+        negative_pattern: null
+        law_articles: ["CC-851", "CC-862"]
+        suggestion: "定制开发产品必须明确约定知识产权归属条款"
+
+      - id: RVW-01-016
+        name: "产品包装要求缺失"
+        description: "未约定产品包装标准和要求"
+        severity: "low"
+        pattern: "^(?!.*(包装|运输包装|外包装)).{0,300}(产品|货物)"
+        negative_pattern: null
+        law_articles: ["CC-619"]
+        suggestion: "建议明确包装标准及费用承担方"
+
+  # ---------------------------------------------------------------------------
+  # RVW-02: 交付条款专项审核规则
+  # ---------------------------------------------------------------------------
+  RVW-02:
+    name: "交付条款专项审核"
+    description: "审核合同交付相关条款的明确性、完整性及风险分配"
+    law_category: "履行条款"
+    checks:
+
+      # 交付时间明确性检查
+      - id: RVW-02-001
+        name: "交付时间缺失"
+        description: "合同中未明确约定交付时间或期限"
+        severity: "high"
+        pattern: "(交付时间|交货期|到货时间)\\s*[：:]\\s*(?:未约定|另行协商|待定|空白|$)"
+        negative_pattern: null
+        law_articles: ["CC-509", "CC-510"]
+        suggestion: "必须明确约定具体的交付日期或交付期限"
+
+      - id: RVW-02-002
+        name: "交付时间表述模糊"
+        description: "交付时间使用模糊表述，缺乏可执行性"
+        severity: "medium"
+        pattern: "(交付|交货).{0,30}(尽快|及时|适时|合理期限|尽快安排)"
+        negative_pattern: null
+        law_articles: ["CC-510"]
+        suggestion: "建议修改为具体日期，如'2024年12月31日前'"
+
+      - id: RVW-02-003
+        name: "分期付款对应交付节点不明确"
+        description: "分期付款与交付进度节点未明确对应"
+        severity: "medium"
+        pattern: "(分期|进度款).{0,100}(?!.*(交付|验收|到货|安装))"
+        negative_pattern: null
+        law_articles: ["CC-626", "CC-634"]
+        suggestion: "建议明确各付款节点对应的交付成果或进度里程碑"
+
+      - id: RVW-02-004
+        name: "交付迟延宽限期未约定"
+        description: "未约定交付迟延的合理宽限期"
+        severity: "low"
+        pattern: "^(?!.*(宽限期|延期|顺延)).{0,300}(交付时间|交货期)"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "建议约定合理的宽限期（如7天）及相应责任"
+
+      - id: RVW-02-005
+        name: "交付时间顺延情形不明确"
+        description: "未明确约定可以顺延交付时间的具体情形"
+        severity: "medium"
+        pattern: "^(?!.*(顺延|延期|不可抗力)).{0,200}(交付|交货)"
+        negative_pattern: null
+        law_articles: ["CC-590"]
+        suggestion: "建议明确约定可以顺延交付的具体情形及顺延期限"
+
+      # 交付地点完整性检查
+      - id: RVW-02-006
+        name: "交付地点缺失"
+        description: "合同中未明确约定交付地点"
+        severity: "high"
+        pattern: "(交付地点|交货地点|到货地点)\\s*[：:]\\s*(?:未约定|另行协商|待定|空白|$)"
+        negative_pattern: null
+        law_articles: ["CC-510", "CC-603"]
+        suggestion: "必须明确约定具体的交付地点，包括详细地址"
+
+      - id: RVW-02-007
+        name: "交付地点不具体"
+        description: "交付地点过于笼统，未到具体楼层或房间"
+        severity: "low"
+        pattern: "(交付地点|交货地点).{0,50}(市|区|路|街|号)(?!.*(楼|层|室|仓库|车间))"
+        negative_pattern: null
+        law_articles: ["CC-603"]
+        suggestion: "建议明确具体交付地点，如XX市XX区XX路XX号XX楼XX层"
+
+      - id: RVW-02-008
+        name: "收货人信息缺失"
+        description: "未约定收货人及联系方式"
+        severity: "medium"
+        pattern: "^(?!.*(收货人|联系人|签收人)).{0,300}(交付地点|交货地点)"
+        negative_pattern: null
+        law_articles: ["CC-598"]
+        suggestion: "建议明确约定收货人姓名及联系电话"
+
+      # 交付方式与交付物清单检查
+      - id: RVW-02-009
+        name: "交付方式未约定"
+        description: "未明确约定交付方式（送货、自提、代办托运等）"
+        severity: "medium"
+        pattern: "^(?!.*(送货|自提|代办托运|运输方式)).{0,300}(交付|交货)"
+        negative_pattern: null
+        law_articles: ["CC-603"]
+        suggestion: "建议明确约定交付方式及运输方式"
+
+      - id: RVW-02-010
+        name: "交付物清单缺失"
+        description: "未提供详细的交付物清单"
+        severity: "medium"
+        pattern: "^(?!.*(交付清单|交货清单|装箱单|附件)).{0,300}(交付|交货)"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "建议制作详细的交付物清单作为合同附件"
+
+      - id: RVW-02-011
+        name: "随货资料未约定"
+        description: "未约定随货交付的技术资料（说明书、合格证、检测报告等）"
+        severity: "medium"
+        pattern: "^(?!.*(说明书|合格证|检测报告|技术资料|图纸)).{0,300}(产品|交付)"
+        negative_pattern: null
+        law_articles: ["CC-599"]
+        suggestion: "建议明确约定需随货交付的技术资料清单"
+
+      - id: RVW-02-012
+        name: "安装调试责任未约定"
+        description: "未明确设备安装调试的责任方和标准"
+        severity: "medium"
+        pattern: "(设备|系统).{0,100}(?!.*(安装|调试|部署))"
+        negative_pattern: "安装调试"
+        law_articles: ["CC-509"]
+        suggestion: "建议明确安装调试责任方、完成期限和验收标准"
+
+      # 运输责任与风险转移条款检查
+      - id: RVW-02-013
+        name: "运输费用承担未约定"
+        description: "未明确约定运输费用的承担方"
+        severity: "medium"
+        pattern: "^(?!.*(运输费|运费|保险费)).{0,300}(交付|运输)"
+        negative_pattern: null
+        law_articles: ["CC-603"]
+        suggestion: "建议明确约定运输费用及保险费用的承担方"
+
+      - id: RVW-02-014
+        name: "风险转移节点不明确"
+        description: "未明确约定货物毁损灭失风险转移的具体节点"
+        severity: "high"
+        pattern: "^(?!.*(风险转移|风险承担|毁损灭失)).{0,400}(交付|交货)"
+        negative_pattern: null
+        law_articles: ["CC-604", "CC-605", "CC-606"]
+        suggestion: "必须明确约定风险转移节点，通常为'货物验收合格并签收后'"
+
+      - id: RVW-02-015
+        name: "运输保险未约定"
+        description: "未约定货物运输保险投保责任和保险金额"
+        severity: "low"
+        pattern: "^(?!.*(保险|投保|保单)).{0,300}(运输|交付)"
+        negative_pattern: null
+        law_articles: ["CC-604"]
+        suggestion: "建议约定货物运输保险的投保方、保险金额和险别"
+
+      # 逾期交付责任检查
+      - id: RVW-02-016
+        name: "逾期交付违约金缺失"
+        description: "未约定逾期交付的违约金计算标准"
+        severity: "high"
+        pattern: "^(?!.*(逾期|迟延|延期).{0,50}(违约金|罚金|赔偿)).{0,500}(交付|交货)"
+        negative_pattern: null
+        law_articles: ["CC-577", "CC-582"]
+        suggestion: "必须约定逾期交付违约金，建议按日计算，比例不低于0.05%/日"
+
+      - id: RVW-02-017
+        name: "违约金上限过高"
+        description: "逾期违约金总上限超过合同总价的合理比例"
+        severity: "low"
+        pattern: "违约金.*上限.*(20|25|30)%|上限.*违约金.*(20|25|30)%"
+        negative_pattern: null
+        law_articles: ["CC-585"]
+        suggestion: "违约金总上限建议不超过合同总价的15-20%"
+
+      - id: RVW-02-018
+        name: "逾期解约权未约定"
+        description: "未约定严重逾期时买方的单方解除合同权利"
+        severity: "medium"
+        pattern: "^(?!.*(逾期|迟延).{0,50}(解除|解除合同|解约)).{0,500}(交付|交货)"
+        negative_pattern: null
+        law_articles: ["CC-563"]
+        suggestion: "建议约定逾期超过一定期限（如30天），买方有权单方解除合同"
+
+  # ---------------------------------------------------------------------------
+  # RVW-03: 验收条款专项审核规则
+  # ---------------------------------------------------------------------------
+  RVW-03:
+    name: "验收条款专项审核"
+    description: "审核合同验收标准、流程、时限及异议处理等条款"
+    law_category: "履行条款"
+    checks:
+
+      # 验收标准明确性检查
+      - id: RVW-03-001
+        name: "验收标准缺失"
+        description: "合同中未明确约定验收标准"
+        severity: "high"
+        pattern: "(验收标准|质量标准)\\s*[：:]\\s*(?:未约定|另行协商|待定|空白|$)"
+        negative_pattern: null
+        law_articles: ["CC-511", "CC-615"]
+        suggestion: "必须明确约定验收标准，可引用国家标准、行业标准或技术协议"
+
+      - id: RVW-03-002
+        name: "验收标准模糊"
+        description: "验收标准使用模糊用语，缺乏可操作性"
+        severity: "medium"
+        pattern: "(验收|质量).{0,30}(合格|良好|满意|符合要求|正常使用)"
+        negative_pattern: "国家标准|行业标准|技术协议"
+        law_articles: ["CC-510"]
+        suggestion: "建议将验收标准量化、具体化，明确各项技术指标"
+
+      - id: RVW-03-003
+        name: "验收标准与技术要求不一致"
+        description: "验收标准与技术协议或产品参数不一致"
+        severity: "medium"
+        pattern: null
+        negative_pattern: null
+        law_articles: ["CC-510"]
+        suggestion: "建议核对验收标准与技术协议的一致性，避免前后矛盾"
+
+      - id: RVW-03-004
+        name: "外观验收与功能验收未区分"
+        description: "未区分外观验收和功能验收的不同标准"
+        severity: "low"
+        pattern: "^(?!.*(外观|数量|功能|性能)).{0,200}验收标准"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议分别约定外观验收标准和功能/性能验收标准"
+
+      # 验收流程与时限检查
+      - id: RVW-03-005
+        name: "验收流程缺失"
+        description: "未约定验收的具体流程和步骤"
+        severity: "medium"
+        pattern: "^(?!.*(验收流程|验收程序|验收步骤)).{0,300}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "建议明确约定验收流程：到货初验→安装调试→试运行→最终验收"
+
+      - id: RVW-03-006
+        name: "验收期限缺失"
+        description: "未约定各验收阶段的期限"
+        severity: "high"
+        pattern: "(验收期限|验收时间|验收期)\\s*[：:]\\s*(?:未约定|另行协商|待定|空白|$)"
+        negative_pattern: null
+        law_articles: ["CC-621", "CC-622"]
+        suggestion: "必须明确约定验收期限，如'买方应在到货后7个工作日内完成初验'"
+
+      - id: RVW-03-007
+        name: "验收期限过短"
+        description: "验收期限过短，不足以完成全面检验"
+        severity: "medium"
+        pattern: "(验收|检验).{0,30}(1|2|3)\\s*(天|日|工作日)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议根据产品复杂度约定合理验收期限，通常不少于7个工作日"
+
+      - id: RVW-03-008
+        name: "试运行期未约定"
+        description: "设备类产品未约定试运行期"
+        severity: "medium"
+        pattern: "(设备|系统|软件).{0,200}(?!.*(试运行|试运转|测试期))"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "建议约定试运行期（如30天），期间发现问题可要求整改或退换"
+
+      - id: RVW-03-009
+        name: "验收启动条件不明确"
+        description: "未明确约定验收程序启动的条件"
+        severity: "medium"
+        pattern: "^(?!.*(具备验收条件|验收申请|验收启动)).{0,300}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "建议约定卖方提交验收申请且具备验收条件时启动验收程序"
+
+      # 异议处理与复验规则检查
+      - id: RVW-03-010
+        name: "质量异议期限缺失"
+        description: "未约定提出质量异议的期限"
+        severity: "high"
+        pattern: "^(?!.*(异议|质量问题|不符合).{0,30}(期限|时间|日内)).{0,400}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "必须约定质量异议期限，如'验收中发现问题应在3个工作日内书面提出'"
+
+      - id: RVW-03-011
+        name: "异议方式未约定"
+        description: "未约定质量异议的提出方式（书面/口头）"
+        severity: "low"
+        pattern: "^(?!.*(书面|邮件|传真)).{0,200}(异议|质量问题)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议明确约定质量异议应以书面形式提出"
+
+      - id: RVW-03-012
+        name: "复验规则缺失"
+        description: "未约定对验收结果有异议时的复验程序"
+        severity: "medium"
+        pattern: "^(?!.*(复验|复检|重新验收|第三方检测)).{0,400}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议约定复验程序：双方有争议时共同委托第三方检测机构"
+
+      - id: RVW-03-013
+        name: "复验费用承担未约定"
+        description: "未约定复验费用的承担方式"
+        severity: "low"
+        pattern: "^(?!.*(费用|承担).{0,30}(复验|复检)).{0,500}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议约定：复验合格费用由买方承担，不合格由卖方承担"
+
+      # 验收通过标准与付款触发条件检查
+      - id: RVW-03-014
+        name: "验收通过标准不明确"
+        description: "未明确约定验收通过的判定标准"
+        severity: "medium"
+        pattern: "^(?!.*(验收通过|验收合格|签署验收报告)).{0,300}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议明确：双方签署验收报告视为验收通过"
+
+      - id: RVW-03-015
+        name: "验收与付款关联不明确"
+        description: "验收结果与付款节点的对应关系不明确"
+        severity: "high"
+        pattern: "^(?!.*(验收合格|验收通过).{0,50}(付款|支付)).{0,500}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-626", "CC-634"]
+        suggestion: "必须明确约定验收合格后支付相应款项（如验收款）"
+
+      - id: RVW-03-016
+        name: "默示验收未约定"
+        description: "未约定买方逾期不验收视为验收通过的条款"
+        severity: "medium"
+        pattern: "^(?!.*(逾期|超过).{0,30}(视为|视为验收合格)).{0,400}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议约定：买方逾期未提出异议视为验收合格"
+
+      # 验收不合格处理规则检查
+      - id: RVW-03-017
+        name: "验收不合格处理方式缺失"
+        description: "未约定验收不合格时的处理方式"
+        severity: "high"
+        pattern: "^(?!.*(不合格|不符).{0,50}(退换|退货|更换|修理|整改)).{0,500}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-577", "CC-582"]
+        suggestion: "必须约定验收不合格的处理方式：退换、修理、降价等"
+
+      - id: RVW-03-018
+        name: "整改期限未约定"
+        description: "未约定验收不合格后的整改期限"
+        severity: "medium"
+        pattern: "^(?!.*(整改|返修|更换).{0,30}(期限|时间|日内)).{0,500}(验收|检验)"
+        negative_pattern: null
+        law_articles: ["CC-582"]
+        suggestion: "建议约定验收不合格后卖方应在指定期限内完成整改"
+
+  # ---------------------------------------------------------------------------
+  # RVW-04: 售后/维保条款专项审核规则
+  # ---------------------------------------------------------------------------
+  RVW-04:
+    name: "售后/维保条款专项审核"
+    description: "审核合同售后服务、维保期限、责任范围等条款"
+    law_category: "违约责任"
+    checks:
+
+      # 维保期限与起算点检查
+      - id: RVW-04-001
+        name: "维保期限缺失"
+        description: "合同中未约定保修期或维保期限"
+        severity: "high"
+        pattern: "(保修|质保|维保|质量保证)\\s*(期|期限)\\s*[：:]\\s*(?:未约定|另行协商|待定|空白|$)"
+        negative_pattern: null
+        law_articles: ["CC-582", "CC-621"]
+        suggestion: "必须明确约定质保期/维保期限，通常不低于12个月"
+
+      - id: RVW-04-002
+        name: "维保期限过短"
+        description: "维保期限短于行业标准或法定标准"
+        severity: "medium"
+        pattern: "(保修|质保).{0,30}(3|6|9)\\s*(个月|月)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议维保期限不低于12个月，特殊产品按国家规定执行"
+
+      - id: RVW-04-003
+        name: "质保期起算点不明确"
+        description: "未明确约定质保期的起算时间"
+        severity: "high"
+        pattern: "^(?!.*(质保期|保修期).{0,30}(起算|起算|自.*之日起)).{0,400}(质保|保修)"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "必须明确质保期起算点，建议自最终验收合格之日起计算"
+
+      - id: RVW-04-004
+        name: "起算点约定不合理"
+        description: "质保期从到货日起算对买方不利"
+        severity: "medium"
+        pattern: "(质保期|保修期).{0,50}(到货|交货|发货)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议修改为自最终验收合格之日起算质保期"
+
+      - id: RVW-04-005
+        name: "延保服务未约定"
+        description: "未约定质保期届满后的延保服务"
+        severity: "low"
+        pattern: "^(?!.*(延保|续保|延长质保)).{0,500}(质保|保修)"
+        negative_pattern: null
+        law_articles: ["CC-470"]
+        suggestion: "可约定质保期届满后的有偿延保服务及费用标准"
+
+      # 维保范围明确性检查
+      - id: RVW-04-006
+        name: "维保范围不明确"
+        description: "未明确约定质保期内的维保范围"
+        severity: "medium"
+        pattern: "^(?!.*(质保范围|保修范围|免费维修)).{0,300}(质保|保修)"
+        negative_pattern: null
+        law_articles: ["CC-582"]
+        suggestion: "建议明确质保范围：产品本身质量问题引起的故障免费维修"
+
+      - id: RVW-04-007
+        name: "免费与收费项目未区分"
+        description: "未明确区分质保期内免费和收费项目"
+        severity: "medium"
+        pattern: "^(?!.*(免费|费用|收费).{0,50}(维修|更换)).{0,400}(质保|保修)"
+        negative_pattern: null
+        law_articles: ["CC-510"]
+        suggestion: "建议明确列出免费维修项目和需收费的项目及收费标准"
+
+      - id: RVW-04-008
+        name: "易损件质保未约定"
+        description: "未约定易损件、消耗品的质保期限"
+        severity: "low"
+        pattern: "^(?!.*(易损件|消耗品|耗材)).{0,400}(质保|保修)"
+        negative_pattern: null
+        law_articles: ["CC-621"]
+        suggestion: "建议明确易损件的质保期限，通常短于主机质保期"
+
+      # 维保服务内容与响应时间检查
+      - id: RVW-04-009
+        name: "响应时间未约定"
+        description: "未约定故障报修后的响应时间"
+        severity: "medium"
+        pattern: "^(?!.*(响应|答复|回复).{0,30}(时间|小时)).{0,400}(售后|维保|维修)"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "建议约定响应时间，如：7×24小时响应，4小时内到达现场"
+
+      - id: RVW-04-010
+        name: "服务热线缺失"
+        description: "未提供售后服务电话或联系人"
+        severity: "low"
+        pattern: "^(?!.*(服务热线|售后电话|技术支持)).{0,500}(质保|保修)"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "建议提供7×24小时售后服务热线及联系人"
+
+      - id: RVW-04-011
+        name: "故障修复时限未约定"
+        description: "未约定故障修复的最长时限"
+        severity: "medium"
+        pattern: "^(?!.*(修复|排除).{0,30}(时间|期限|小时|日内)).{0,400}(故障|维修)"
+        negative_pattern: null
+        law_articles: ["CC-582"]
+        suggestion: "建议约定故障修复时限，如：一般故障24小时内修复"
+
+      - id: RVW-04-012
+        name: "备机服务未约定"
+        description: "未约定故障无法及时修复时的备机服务"
+        severity: "low"
+        pattern: "^(?!.*(备机|备用设备|替代)).{0,500}(故障|维修)"
+        negative_pattern: null
+        law_articles: ["CC-582"]
+        suggestion: "建议约定关键设备故障超过一定时限无法修复时提供备机"
+
+      - id: RVW-04-013
+        name: "定期巡检未约定"
+        description: "未约定质保期内的定期巡检服务"
+        severity: "low"
+        pattern: "^(?!.*(巡检|定期检查|上门)).{0,500}(质保|保修)"
+        negative_pattern: null
+        law_articles: ["CC-509"]
+        suggestion: "可约定每年X次免费巡检服务及巡检内容"
+
+      # 维保除外责任检查
+      - id: RVW-04-014
+        name: "除外责任过于宽泛"
+        description: "质保除外责任条款过于宽泛，不合理免除卖方责任"
+        severity: "high"
+        pattern: "(任何原因|无论何种原因|概不负责|不承担.*责任).*质保|保修"
+        negative_pattern: null
+        law_articles: ["CC-497", "CC-506"]
+        suggestion: "除外责任应合理，仅限于：人为损坏、不可抗力、不当操作等"
+
+      - id: RVW-04-015
+        name: "人为损坏定义不明确"
+        description: "'人为损坏'等免责事由缺乏明确定义"
+        severity: "medium"
+        pattern: "(人为损坏|人为因素|不当操作|使用不当)(?!.*定义|是指)"
+        negative_pattern: null
+        law_articles: ["CC-510"]
+        suggestion: "建议明确列举免责情形的具体范围，避免扩大解释"
+
+      - id: RVW-04-016
+        name: "第三方维修免责未约定"
+        description: "未约定第三方维修导致的质保失效"
+        severity: "low"
+        pattern: "^(?!.*(第三方|自行|擅自).*维修).{0,500}(质保|保修)"
+        negative_pattern: null
+        law_articles: ["CC-582"]
+        suggestion: "可约定：未经卖方同意的第三方维修导致质保失效"
+
+      # 质保金条款检查
+      - id: RVW-04-017
+        name: "质保金条款缺失"
+        description: "合同中未约定质保金条款"
+        severity: "medium"
+        pattern: "^(?!.*(质保金|质量保证金|尾款).{0,30}(5%|10%)).{0,500}(付款|支付)"
+        negative_pattern: null
+        law_articles: ["CC-626"]
+        suggestion: "建议约定质保金，通常为合同总价的5%-10%"
+
+      - id: RVW-04-018
+        name: "质保金比例过低"
+        description: "质保金比例低于5%，对卖方约束不足"
+        severity: "low"
+        pattern: "质保金.*(1%|2%|3%|4%)|(1%|2%|3%|4%).*质保金"
+        negative_pattern: null
+        law_articles: ["CC-626"]
+        suggestion: "建议质保金比例不低于合同总价的5%"
+
+      - id: RVW-04-019
+        name: "质保金支付条件不明确"
+        description: "未明确约定质保金的支付条件和期限"
+        severity: "high"
+        pattern: "^(?!.*(质保期满|质保期届满).{0,50}(支付|返还)).{0,500}(质保金|质量保证金)"
+        negative_pattern: null
+        law_articles: ["CC-626"]
+        suggestion: "必须明确：质保期满无质量问题后X日内无息返还质保金"
+
+      - id: RVW-04-020
+        name: "质保金利息未约定"
+        description: "未明确质保金是否计算利息"
+        severity: "low"
+        pattern: "^(?!.*(无息|利息)).{0,300}(质保金|质量保证金)"
+        negative_pattern: null
+        law_articles: ["CC-626"]
+        suggestion: "建议明确质保金为无息"
+
+# =============================================================================
+# 通用审核规则
+# =============================================================================
+general_rules:
+
+  RVW-99:
+    name: "条款完整性检查"
+    description: "检查合同必备条款是否完整，缺失时发出告警"
+    law_category: "合同订立"
+    essential_clauses:
+      - name: "当事人信息"
+        description: "当事人名称/姓名、地址、联系方式"
+        pattern: "甲方|乙方|买方|卖方|供方|需方"
+        severity: "high"
+        law_articles: ["CC-464"]
+
+      - name: "标的条款"
+        description: "合同标的名称、规格、数量"
+        pattern: "产品|服务|标的|货物|设备"
+        severity: "high"
+        law_articles: ["CC-470"]
+
+      - name: "价款条款"
+        description: "合同总金额、单价、计价方式"
+        pattern: "金额|价款|价格|费用|￥|人民币"
+        severity: "high"
+        law_articles: ["CC-470"]
+
+      - name: "履行条款"
+        description: "履行期限、地点、方式"
+        pattern: "交付|履行|时间|地点"
+        severity: "high"
+        law_articles: ["CC-509", "CC-510"]
+
+      - name: "违约责任"
+        description: "违约金、损失赔偿等"
+        pattern: "违约|赔偿|违约金|责任"
+        severity: "high"
+        law_articles: ["CC-577"]
+
+      - name: "争议解决"
+        description: "仲裁或诉讼管辖"
+        pattern: "争议|纠纷|仲裁|诉讼|管辖"
+        severity: "high"
+        law_articles: ["CC-507"]
+
+  RVW-98:
+    name: "歧义表述检查"
+    description: "检查合同中模糊用语、前后矛盾表述"
+    law_category: "意思表示"
+    ambiguity_patterns:
+      - id: RVW-98-001
+        pattern: "等.*费用|等等.*费用"
+        description: "使用'等'字列举费用可能产生歧义"
+        severity: "low"
+        suggestion: "建议穷尽列举或明确'等'的范围"
+
+      - id: RVW-98-002
+        pattern: "约.*左右|左右.*约"
+        description: "同时使用'约'和'左右'双重模糊表述"
+        severity: "low"
+        suggestion: "建议使用确定数字或单一模糊词"
+
+      - id: RVW-98-003
+        pattern: "基本上|大体上|原则上|一般情况下"
+        description: "使用模糊限定词"
+        severity: "medium"
+        suggestion: "建议删除或明确具体标准"
+
+      - id: RVW-98-004
+        pattern: "另行协商|另行约定|双方协商确定"
+        description: "关键条款未约定仅约定另行协商"
+        severity: "medium"
+        suggestion: "建议在合同签订时即明确约定"
+
+      - id: RVW-98-005
+        pattern: "视情况|根据实际情况"
+        description: "使用不确定的条件表述"
+        severity: "low"
+        suggestion: "建议列明具体情况及相应处理方式"
+
+      - id: RVW-98-006
+        pattern: "及时|尽快|适时"
+        description: "期限表述不明确"
+        severity: "medium"
+        suggestion: "建议明确具体期限，如'3个工作日内'"
+
+      - id: RVW-98-007
+        pattern: "严重|重大|显著"
+        description: "程度副词缺乏量化标准"
+        severity: "low"
+        suggestion: "建议明确具体标准或量化数值"
+
+  RVW-97:
+    name: "免责条款审查"
+    description: "审查不公平免责条款、格式条款风险"
+    law_category: "免责条款"
+    disclaimer_checks:
+      - id: RVW-97-001
+        name: "概括性免责"
+        pattern: "概不负责|不承担任何责任|不承担一切责任"
+        description: "免除全部责任的概括性条款"
+        severity: "high"
+        law_articles: ["CC-497", "CC-506"]
+        suggestion: "概括性免责条款可能被认定为无效，建议具体约定免责范围"
+
+      - id: RVW-97-002
+        name: "人身伤害免责"
+        pattern: "人身伤害概不负责|伤亡不承担责任|人员受伤免责"
+        description: "免除人身伤害责任的条款"
+        severity: "high"
+        law_articles: ["CC-506"]
+        suggestion: "造成对方人身伤害的免责条款无效，建议删除"
+
+      - id: RVW-97-003
+        name: "故意/重大过失免责"
+        pattern: "无论是否有过错|无论过失如何"
+        description: "免除故意或重大过失责任"
+        severity: "high"
+        law_articles: ["CC-506"]
+        suggestion: "因故意或重大过失造成对方财产损失的免责条款无效"
+
+      - id: RVW-97-004
+        name: "单方解除权过于宽泛"
+        pattern: "随时解除|无需理由|任意解除"
+        description: "一方享有过于宽泛的单方解除权"
+        severity: "medium"
+        law_articles: ["CC-562", "CC-563"]
+        suggestion: "建议约定解除合同的具体条件和程序"
+
+      - id: RVW-97-005
+        name: "违约金调整权排除"
+        pattern: "不得调整违约金|放弃调整违约金|违约金不可调整"
+        description: "排除违约金调整请求权"
+        severity: "medium"
+        law_articles: ["CC-585"]
+        suggestion: "请求调整违约金是法定权利，排除该权利的约定可能无效"
+
+      - id: RVW-97-006
+        name: "格式条款提示义务免除"
+        pattern: "已充分阅读|完全理解|放弃解释权"
+        description: "格式条款提供者免除提示说明义务"
+        severity: "low"
+        law_articles: ["CC-496", "CC-497"]
+        suggestion: "格式条款提供方应尽到提示说明义务"
+
+# =============================================================================
+# 法条关联映射
+# =============================================================================
+law_mapping:
+  contract_formation:
+    category: "合同订立"
+    articles: ["CC-464", "CC-469", "CC-470", "CC-471", "CC-472", "CC-483"]
+
+  performance:
+    category: "履行条款"
+    articles: ["CC-509", "CC-510", "CC-511", "CC-598", "CC-599", "CC-603", "CC-604", "CC-605", "CC-606"]
+
+  sale_contract:
+    category: "买卖合同"
+    articles: ["CC-595", "CC-596", "CC-597", "CC-598", "CC-599", "CC-615", "CC-619", "CC-621", "CC-622", "CC-626"]
+
+  liability:
+    category: "违约责任"
+    articles: ["CC-577", "CC-578", "CC-582", "CC-583", "CC-584", "CC-585", "CC-590", "CC-591"]
+
+  disclaimer:
+    category: "免责条款"
+    articles: ["CC-496", "CC-497", "CC-506"]
+
+  ip:
+    category: "知识产权"
+    articles: ["CC-851", "CC-862"]
+
+# =============================================================================
+# 审核输出报告规范
+# =============================================================================
+report_spec:
+  output_format: "structured"
+  
+  risk_item_structure:
+    - field: "rule_id"
+      description: "触发的规则ID"
+    - field: "rule_name"
+      description: "规则名称"
+    - field: "severity"
+      description: "风险等级"
+    - field: "description"
+      description: "风险描述"
+    - field: "location"
+      description: "风险位置（条款号/上下文）"
+    - field: "law_basis"
+      description: "法条依据列表"
+    - field: "suggestion"
+      description: "优化建议"
+
+  law_citation_format: "《民法典》第{article_no}条：{article_content}"
+
+  suggestion_template:
+    high: "【必须修改】{suggestion}，否则将产生重大法律风险"
+    medium: "【建议修改】{suggestion}，以避免潜在争议"
+    low: "【优化建议】{suggestion}，使合同表述更加严谨"
+
+  conclusion_levels:
+    PASS:
+      label: "审核通过"
+      description: "合同整体合规，无重大风险"
+      max_score: 5
+    ATTENTION:
+      label: "需重点关注"
+      description: "存在中等风险，建议重点关注相关条款"
+      max_score: 19
+    REJECT:
+      label: "建议退回"
+      description: "存在重大风险或累计评分过高，建议退回修改"
+      max_score: 999
