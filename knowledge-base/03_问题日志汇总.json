@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-04-27T22:03:50.963558",
+    "level": "warning",
+    "category": "wiki_not_found",
+    "message": "未找到知识库: 研发中心-威胁感知",
+    "url": "",
+    "details": "",
+    "scenario": "scenario7"
+  },
+  {
+    "timestamp": "2026-04-27T22:03:51.257438",
+    "level": "warning",
+    "category": "wiki_not_found",
+    "message": "未找到知识库: 交付中心培训组",
+    "url": "",
+    "details": "",
+    "scenario": "scenario7"
+  },
+  {
+    "timestamp": "2026-04-27T22:03:51.536906",
+    "level": "warning",
+    "category": "wiki_not_found",
+    "message": "未找到知识库: 交付技术-工程化交付评审",
+    "url": "",
+    "details": "",
+    "scenario": "scenario7"
+  },
+  {
+    "timestamp": "2026-04-27T22:03:51.826685",
+    "level": "warning",
+    "category": "wiki_not_found",
+    "message": "未找到知识库: 交付技术部",
+    "url": "",
+    "details": "",
+    "scenario": "scenario7"
+  }
+]

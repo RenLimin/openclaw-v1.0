@@ -1,0 +1,33 @@
+{
+  "test_time": "2026-04-28T09:51:20.804281",
+  "scenario7": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "status": "PASS"
+  },
+  "scenario8": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "status": "PASS"
+  },
+  "scenario9": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "status": "PASS"
+  },
+  "summary": {
+    "passed": 29,
+    "failed": 0,
+    "total": 29
+  },
+  "issues": [],
+  "integration": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "status": "PASS"
+  }
+}
