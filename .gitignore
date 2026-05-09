@@ -1,8 +1,23 @@
 # 大型数据库文件（超过10MB忽略）
+*.db
 *.db-wal
 *.db-shm
 *.faiss
 *.index
+
+# 知识库数据库（二进制文件，不提交到Git）
+knowledge-base/*.db
+knowledge-base/cissp_kb_v4.db
+knowledge-base/knowledge.db
+
+# 运行时记忆目录（Agent会话记录）
+memory/
+
+# 临时脚本目录
+scripts/scenario1-db/
+
+# 大的学习目录
+knowledge-base/cissp-learning/
 
 # 临时输出文件
 test_report_output.docx
