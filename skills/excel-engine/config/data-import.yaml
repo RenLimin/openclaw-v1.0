@@ -1,0 +1,177 @@
+# 数据导入规则配置
+# =================
+
+# CSV导入配置
+csv:
+  # 默认编码优先级（按顺序尝试）
+  encoding_priority:
+    - "utf-8-sig"
+    - "utf-8"
+    - "gbk"
+    - "gb2312"
+    - "gb18030"
+    - "latin1"
+  
+  # 默认分隔符（自动检测时的候选）
+  delimiters:
+    - ","
+    - "\t"
+    - ";"
+    - "|"
+  
+  # 自动检测分隔符
+  auto_detect_delimiter: true
+  
+  # 是否有表头
+  has_header: true
+  
+  # 低内存模式（大文件时推荐）
+  low_memory: false
+  
+  # 空值识别字符串
+  na_values:
+    - ""
+    - "NA"
+    - "N/A"
+    - "null"
+    - "NULL"
+    - "NaN"
+
+# Excel导入配置
+excel:
+  # 默认读取数据还是公式
+  # true: 读取计算后的值
+  # false: 读取公式本身
+  data_only: false
+  
+  # 保留VBA宏
+  keep_vba: false
+  
+  # 只读模式（大文件）
+  read_only: false
+
+# 数据类型转换规则
+type_conversion:
+  # 启用自动类型转换
+  enabled: true
+  
+  # 日期列关键字
+  date_columns:
+    - "日期"
+    - "时间"
+    - "年月日"
+    - "创建"
+    - "更新"
+    - "归档"
+    - "开始"
+    - "结束"
+    - "完成"
+    - "交接"
+  
+  # 日期格式尝试顺序
+  date_formats:
+    - "%Y-%m-%d"
+    - "%Y/%m/%d"
+    - "%Y%m%d"
+    - "%Y-%m-%d %H:%M:%S"
+    - "%m/%d/%Y"
+  
+  # 数值列关键字
+  numeric_columns:
+    - "金额"
+    - "数量"
+    - "价格"
+    - "费用"
+    - "成本"
+    - "收入"
+    - "预算"
+    - "预估"
+    - "总计"
+    - "合计"
+  
+  # 强制为字符串的列
+  force_string_columns:
+    - "ID"
+    - "编号"
+    - "代码"
+    - "电话"
+    - "手机"
+    - "邮编"
+    - "身份证"
+    - "卡号"
+    - "序号"
+
+# 数据清洗规则
+cleaning:
+  # 移除全为空的行
+  remove_empty_rows: true
+  
+  # 移除全为空的列
+  remove_empty_columns: false
+  
+  # 去除字符串首尾空格
+  strip_strings: true
+  
+  # 标准化列名
+  normalize_column_names: true
+  
+  # 列名标准化规则
+  column_name_normalization:
+    # 替换的字符
+    replace:
+      " ": "_"
+      "（": "("
+      "）": ")"
+    # 转换为小写
+    lowercase: false
+
+# 校验规则
+validation:
+  # 启用数据校验
+  enabled: true
+  
+  # 必填列检查（按文件名配置）
+  required_columns:
+    # 示例:
+    # "项目统计":
+    #   - "ID"
+    #   - "名称"
+    #   - "日期"
+  
+  # 唯一值列检查
+  unique_columns: []
+  
+  # 范围校验
+  range_checks: {}
+  
+  # 行数校验（最小/最大）
+  min_rows: 1
+  max_rows: null
+
+# 性能配置
+performance:
+  # 大文件阈值（行数）
+  large_file_threshold: 10000
+  
+  # 分块大小（大文件时分块处理）
+  chunk_size: 10000
+  
+  # 启用分类数据类型优化
+  use_categorical: true
+  
+  # 下浮数值类型（float64 -> float32）
+  downcast_numeric: true
+
+# 错误处理
+error_handling:
+  # 遇到错误时的行为
+  # stop: 立即停止
+  # skip: 跳过错误行
+  # warn: 记录警告继续
+  on_error: "warn"
+  
+  # 最大警告数
+  max_warnings: 100
+  
+  # 记录错误行号
+  log_error_rows: true

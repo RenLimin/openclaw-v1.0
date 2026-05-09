@@ -1,0 +1,45 @@
+{
+  "count": 2,
+  "documents": [
+    {
+      "file_name": "CISSP中文第九版官方学习手册更新解读.docx",
+      "relative_path": "OSG/CISSP中文第九版官方学习手册更新解读.docx",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/CISSP中文第九版官方学习手册更新解读.docx",
+      "file_hash": "7a000d0615dc62de6a356e41b681f896",
+      "file_size": 17701,
+      "modified_time": "2023-04-03T08:58:28.185723",
+      "domains": [
+        "安全架构与工程",
+        "通信与网络安全",
+        "软件开发安全"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "CISSP中文第九版官方学习手册更新解读\n（摘录至官方总结）\n知识域一：安全与风险管理\n基本上与上一个版本保持一致，但增加了一些对于具体策略要求的新知识。比如说：与合规相关的要求、隐私策略要求等，同时加大了对云计算的侧重，新增了对于供应商顾问、承包协议和控制等方面的知识域目标，但是自从2018年开始对第一个知识域的考试要点基本上没有发生变化，所以大家也不用过分担心。\n知识域二：资产安全\n这一领域新增了两个知识域目标，第一个是要求我们能够安全的分配资源，了解信息和资产的所有权，维护有形资产和无形资产并管理这些资产，还有一个目标是管理数据的生命周期，了解数据从收集到销毁是如何被管理的。同样，资产安全这一知识域，虽然新增了知识内容，但是考试要点也并没有发生变化，所以大家也不用担心。\n知识域三：安全架构与工程\n该知识域对于很多考生来说都很头疼，因为涉及了大量的技术知识，新版的知识点在18年的基础上进行了扩充，涉及了威胁建模（threat modeling）、最小特权（least privilege）、纵深防御（defense in depth）、安全默认设置（secure defaults）、",
+      "page_count": "unknown",
+      "indexed_at": "2026-04-27T22:09:27.281397"
+    },
+    {
+      "file_name": "网络安全攻防技术体系解读V2.pdf",
+      "relative_path": "Industrial Reference/网络安全攻防技术体系解读V2.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Industrial Reference/网络安全攻防技术体系解读V2.pdf",
+      "file_hash": "9d7a61febd317772fa22af8db89eb5fa",
+      "file_size": 3304645,
+      "modified_time": "2023-10-24T16:18:53.419320",
+      "domains": [
+        "安全评估与测试",
+        "软件开发安全"
+      ],
+      "chapter_count": 1,
+      "chapters": [
+        {
+          "number": "3.1",
+          "title": "•其他各种思维导图"
+        }
+      ],
+      "content_preview": "解读网络安全攻防技术\nEASTHOME\n01课程介绍\nCOURSE INTRODUCTION\n•网络安全技术栈体系\n•安全竞赛、挖洞、代审\n•攻防技术能力提升途径\n•网络安全主流认证证书\n02网络安全技术栈体系\nNetwork Security Technology System\n•先给安全⼯程师下⼀个定义，⼴义的安全⼯程师，涵盖了现在绝⼤\n多数安全圈⼦⾥师傅所做的⼯作，包括：安全服务⼯程师、安全研\n究员、代码审计⼯程师、红队、渗透测试岗等等。\n•⽽⼀个安全⼯程师的核⼼是什么？\n•安全⼯程师的核⼼竞争⼒，不在于他拥有多少个 0day，掌握多少种\n安全技术，熟练于多少种漏洞利⽤的⽅式和⼯具。⽽是在于他对于\n安全理解的深度，以及由此引申的看待安全问题的⻆度和⾼度。\n•这⾥可以参考体 -⽤-术的逻辑体系来思考这个问题。\n•体：安全核⼼，安全思维，漏洞产⽣的根本原因，漏洞的抽象共性。\n（整个安全的底层基础）\n•⽤：漏洞的挖掘思维，代码的审计思维，安全开发的思维。（某⼀\n个⻔类的共性）\n•术：漏洞利⽤的⼯具使⽤，什么代码、什么框架⽤什么⼯具。遇到\n什么站，拿什么打。（骚操作、技巧）\n•这种安全研",
+      "page_count": 25,
+      "indexed_at": "2026-04-27T22:11:28.049918"
+    }
+  ]
+}

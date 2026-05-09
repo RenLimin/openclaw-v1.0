@@ -1,0 +1,181 @@
+{
+  "iam_url": "https://iam.bangcle.com",
+  "oa_url": "https://oa.bangcle.com/",
+  "todo_url": "",
+  "detail_url_pattern": "",
+  "contract_list_url": "",
+  "auth": {
+    "username": "limin.ren",
+    "keychain_service": "openclaw-browser-ella-oa-password"
+  },
+  "login": {
+    "max_retries": 3,
+    "retry_delay": 5
+  },
+  "selectors": {
+    "login_form": {
+      "username_input": "#username",
+      "password_input": "#password",
+      "submit_button": "#loginBtn",
+      "captcha_image": "#captchaImg",
+      "captcha_input": "#captcha"
+    },
+    "todo_list": {
+      "container": ".todo-list",
+      "items": ".todo-item",
+      "item_title": ".item-title",
+      "item_id": ".item-id",
+      "item_url": ".item-link",
+      "item_initiator": ".initiator",
+      "item_time": ".submit-time",
+      "item_status": ".status"
+    },
+    "approval_page": {
+      "detail_container": ".approval-detail",
+      "comment_textarea": "#comment",
+      "approve_button": "#btnApprove",
+      "reject_button": "#btnReject",
+      "confirm_dialog": ".modal-confirm",
+      "history_container": ".approval-history",
+      "history_item": ".history-item",
+      "node_name": ".node-name",
+      "approver_name": ".approver-name",
+      "approve_time": ".approve-time",
+      "approve_opinion": ".approve-opinion",
+      "node_status": ".node-status",
+      "current_node": ".current-node",
+      "submit_confirm": ".btn-confirm-submit",
+      "success_indicator": ".success-message",
+      "error_indicator": ".error-message"
+    },
+    "search_form": {
+      "search_input": "#searchInput",
+      "search_button": "#searchBtn",
+      "contract_code_field": "#contractCode"
+    },
+    "search_results": {
+      "container": ".result-list",
+      "items": ".result-item",
+      "item_title": ".item-title",
+      "item_contract_code": ".contract-code",
+      "item_link": ".item-link",
+      "item_status": ".item-status"
+    },
+    "attachments": {
+      "container": ".attachment-list, .file-list, #attachmentArea, .form-attachment",
+      "items": ".attachment-item, .file-item, .attachment-file-item",
+      "item_name": ".file-name, .attachment-name, .attachment-title",
+      "item_size": ".file-size, .attachment-size",
+      "download_link": ".download-link, a[href*=download], a[href*=file]",
+      "preview_link": ".preview-link, a[href*=preview]"
+    }
+  },
+  "detail_fields": {
+    "contract_title": ".contract-title",
+    "contract_amount": ".contract-amount",
+    "party_a": ".party-a",
+    "party_b": ".party-b",
+    "contract_type": ".contract-type",
+    "effective_date": ".effective-date",
+    "expiry_date": ".expiry-date",
+    "initiator": ".initiator-name",
+    "department": ".initiator-dept",
+    "submit_time": ".submit-datetime"
+  },
+  "timeout": {
+    "page_load": 30,
+    "element_wait": 10
+  },
+  "human_simulation": {
+    "operation_delay_min": 2,
+    "operation_delay_max": 5,
+    "typing_delay_min": 0.1,
+    "typing_delay_max": 0.3
+  },
+  "output": {
+    "screenshot_dir": "~/output/oa-screenshots/",
+    "log_dir": "~/output/oa-logs/"
+  },
+  "download": {
+    "save_dir": "~/Downloads/OA_Contracts/",
+    "auto_rename": true,
+    "naming_pattern": "{contract_code}_{filename}_{timestamp}",
+    "max_retries": 3,
+    "retry_delay": 5,
+    "timeout": 60,
+    "min_file_size_kb": 10,
+    "max_file_size": 100
+  },
+  "risk_thresholds": {
+    "high_risk_diff_rate": 10,
+    "medium_risk_diff_rate": 5,
+    "confidentiality": {
+      "missing_clause": "high",
+      "missing_scope": "medium",
+      "missing_term": "medium",
+      "missing_liability": "medium"
+    },
+    "dispute": {
+      "missing_clause": "high",
+      "missing_jurisdiction": "medium",
+      "missing_location": "medium"
+    },
+    "delivery": {
+      "missing_clause": "high",
+      "missing_transport": "medium",
+      "missing_cost": "medium",
+      "missing_packaging": "medium"
+    }
+  },
+  "suggestion_templates": {
+    "high_risk_amount": [
+      "建议重新评估该分项报价，确认是否存在虚高情况",
+      "建议与供应商进行价格谈判，争取更优惠条款",
+      "建议检查概算编制依据是否充分，必要时调整概算金额"
+    ],
+    "medium_risk_amount": [
+      "建议核实差异原因，确认是否为合理范围波动",
+      "建议要求供应商提供报价明细说明",
+      "建议在合同中约定价格调整机制"
+    ],
+    "confidentiality_missing": [
+      "建议增加独立的保密条款，明确保密义务范围",
+      "建议约定保密期限为合同终止后至少2年",
+      "建议增加保密违约责任，明确违约金标准"
+    ],
+    "dispute_missing": [
+      "建议选择我方所在地人民法院作为管辖法院",
+      "建议明确约定争议解决方式为诉讼或仲裁",
+      "如选择仲裁，建议明确具体仲裁机构名称"
+    ],
+    "delivery_missing": [
+      "建议明确运输方式及承运人选择标准",
+      "建议明确运输费用及保险费用承担方",
+      "建议明确包装标准及包装物回收约定"
+    ],
+    "unmatched_items": [
+      "建议核对合同清单，确认未匹配项目的合理性",
+      "建议检查是否存在清单错漏或命名不一致",
+      "建议与业务部门确认未匹配项目的必要性"
+    ],
+    "general_approval": [
+      "建议要求供应商提供详细的报价构成说明",
+      "建议在合同中明确质量验收标准和验收流程",
+      "建议约定明确的付款节点和付款条件"
+    ],
+    "contract_cancel": [
+      "建议明确约定合同解除的条件和程序",
+      "建议约定解除后的清算和结算方式",
+      "建议考虑违约解除的损害赔偿范围"
+    ],
+    "liability_clause": [
+      "建议明确违约责任的具体情形和承担方式",
+      "建议约定合理的违约金计算标准",
+      "建议考虑违约金上限调整，避免过高风险"
+    ],
+    "force_majeure": [
+      "建议明确不可抗力的具体范围和通知义务",
+      "建议约定不可抗力发生后的通知和举证时限"
+    ]
+  }
+}

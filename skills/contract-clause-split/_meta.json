@@ -1,0 +1,22 @@
+{
+  "name": "contract-clause-split",
+  "version": "1.0.0",
+  "author": "Ella 🦊",
+  "created": "2026-04-23",
+  "updated": "2026-04-23",
+  "category": "document",
+  "tags": [
+    "合同",
+    "条款拆分",
+    "法律文档",
+    "PDF处理",
+    "Word处理",
+    "风险识别"
+  ],
+  "responsible_agent": "ella",
+  "security_level": "low",
+  "recommended_provider": "DeepSeek",
+  "requires_user_confirmation": true,
+  "supports_batch": false,
+  "local_processing_only": true
+}

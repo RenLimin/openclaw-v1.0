@@ -1,0 +1,156 @@
+# 格式比对规则配置
+# ==================
+
+# 全局检查开关
+global:
+  # 启用的检查类型
+  enabled_checks:
+    - fill           # 填充色（底色）
+    - font           # 字体
+    - border         # 边框
+    - alignment      # 对齐方式
+    - number_format  # 数字格式
+
+# 检查范围配置
+scope:
+  # 每个Sheet最大检查行数（0表示全部）
+  max_rows_per_sheet: 1000
+  
+  # 只检查表头区域（前N行）
+  header_rows_only: 0
+  
+  # 检查列范围（留空表示全部）
+  columns: []
+  
+  # 跳过空单元格
+  skip_empty_cells: true
+
+# 填充色检查规则
+fill:
+  # 是否启用
+  enabled: true
+  
+  # 忽略白色填充
+  ignore_white: true
+  
+  # 白色的RGB值
+  white_colors:
+    - "00FFFFFF"
+    - "FFFFFFFF"
+    - null
+  
+  # 只检查有特殊颜色的单元格
+  only_colored: true
+  
+  # 忽略的颜色列表
+  ignore_colors: []
+
+# 字体检查规则
+font:
+  # 是否启用
+  enabled: true
+  
+  # 检查字体名称
+  check_name: true
+  
+  # 检查字体大小
+  check_size: true
+  
+  # 检查加粗
+  check_bold: true
+  
+  # 检查斜体
+  check_italic: false
+  
+  # 检查颜色
+  check_color: false
+  
+  # 只检查表头行的字体
+  header_only: true
+
+# 边框检查规则
+border:
+  # 是否启用
+  enabled: true
+  
+  # 检查模式
+  # simple: 只检查是否有边框
+  # full: 检查每一边的样式
+  check_mode: "simple"
+  
+  # 只检查非空单元格
+  only_non_empty: true
+
+# 对齐方式检查规则
+alignment:
+  # 是否启用
+  enabled: true
+  
+  # 检查水平对齐
+  check_horizontal: true
+  
+  # 检查垂直对齐
+  check_vertical: false
+  
+  # 检查自动换行
+  check_wrap_text: false
+  
+  # 只检查非空单元格
+  only_non_empty: true
+
+# 数字格式检查规则
+number_format:
+  # 是否启用
+  enabled: true
+  
+  # 忽略的格式
+  ignore_formats:
+    - "General"
+    - ""
+
+# 报告配置
+report:
+  # 最大差异显示数量
+  max_differences_shown: 50
+  
+  # 按类型分组显示
+  group_by_type: true
+  
+  # 包含单元格位置
+  include_cell_reference: true
+  
+  # 包含期望值和实际值
+  include_expected_actual: true
+
+# 阈值配置
+thresholds:
+  # 完全通过（0差异）
+  pass_threshold: 0
+  
+  # 警告阈值（超过则标记为警告）
+  warning_threshold: 50
+  
+  # 失败阈值（超过则标记为失败）
+  fail_threshold: 100
+
+# Sheet特定配置（按Sheet名覆盖全局配置）
+sheet_specific:
+  # 示例:
+  # "汇总表":
+  #   max_rows_per_sheet: 100
+  #   fill:
+  #     enabled: true
+
+# 忽略规则
+ignore:
+  # 忽略新增的数据行（行数超过模板的部分）
+  ignore_extra_rows: true
+  
+  # 忽略列数差异
+  ignore_column_count: true
+  
+  # 忽略的Sheet名称列表
+  ignore_sheets: []
+  
+  # 忽略特定单元格（格式: Sheet!A1）
+  ignore_cells: []

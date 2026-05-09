@@ -1,0 +1,31 @@
+{
+  "name": "梆梆安全产品知识库",
+  "version": "v2.0",
+  "merged_at": "2026-04-28T10:20:35.121067",
+  "sources": [
+    "ONES知识库",
+    "本地产品文档"
+  ],
+  "statistics": {
+    "total_documents": 44,
+    "total_words": 9326736,
+    "by_source": {
+      "ONES知识库": 3,
+      "本地产品文档": 41
+    },
+    "by_category": {
+      "产品技术": 2,
+      "应用安全": 1,
+      "威胁感知": 1,
+      "服务交付": 1,
+      "咨询服务": 1,
+      "产品文档": 41,
+      "Excel": 17,
+      "PDF": 10,
+      "Word": 6,
+      "PowerPoint": 8
+    },
+    "number_of_categories": 10
+  },
+  "issues": []
+}

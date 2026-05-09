@@ -1,0 +1,5 @@
+# Orion LLM调度框架 依赖
+# 项目管理与AI辅助工具集
+
+jsonschema>=4.0.0
+pydantic>=2.0.0

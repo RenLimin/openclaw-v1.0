@@ -1,0 +1,4 @@
+# delivery_core/database 依赖
+# 交付管理系统 - SQLAlchemy ORM 数据库模块
+
+sqlalchemy>=2.0.0

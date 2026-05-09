@@ -1,0 +1,27 @@
+# ==========================================
+# 合同条款拆分技能 - OCR 微服务
+# 一键启动：docker-compose up -d
+# ==========================================
+version: '3.8'
+
+services:
+  ocr-service:
+    build:
+      context: ./deploy
+      dockerfile: ocr-service.Dockerfile
+    container_name: contract-ocr-service
+    restart: unless-stopped
+    ports:
+      - "9998:8000"
+    environment:
+      - TZ=Asia/Shanghai
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+# 使用方法：
+# 1. 启动服务：docker-compose up -d
+# 2. 测试接口：curl http://localhost:9998/health
+# 3. OCR 识别：curl -F "file=@合同.pdf" http://localhost:9998/ocr/pdf

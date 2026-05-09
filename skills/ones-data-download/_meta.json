@@ -1,0 +1,25 @@
+{
+  "name": "ones-data-download",
+  "display_name": "ONES 数据下载",
+  "version": "2.0.0",
+  "description": "通过浏览器自动化 + GraphQL API 下载 ONES 筛选器中的工作项数据",
+  "author": "Oliver 🐘",
+  "created": "2026-04-16",
+  "updated": "2026-04-16",
+  "category": "data-export",
+  "tags": ["ones", "data-export", "graphql", "csv", "automation"],
+  "trigger_phrases": [
+    "下载 ONES 数据",
+    "导出筛选器",
+    "ONES 数据",
+    "拉取工作项",
+    "ONES 报表"
+  ],
+  "dependencies": {
+    "python_packages": ["playwright", "pandas"],
+    "system": ["chromium"]
+  },
+  "entry_point": "scripts/download-ones-data.py",
+  "config_file": "config/ones-config.json",
+  "skill_file": "SKILL.md"
+}

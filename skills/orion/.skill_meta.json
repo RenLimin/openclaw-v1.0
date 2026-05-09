@@ -1,0 +1,30 @@
+{
+  "name": "orion",
+  "version": "1.0.0",
+  "created_at": "2026-05-06T11:25:12.009502",
+  "updated_at": "2026-05-06T11:34:04.066263",
+  "versions": [],
+  "checkpoints": [],
+  "scores": {
+    "dependencies": {
+      "score": 80,
+      "timestamp": "2026-05-06T11:34:03.962380",
+      "details": {}
+    },
+    "documentation": {
+      "score": 80,
+      "timestamp": "2026-05-06T11:34:03.997392",
+      "details": {}
+    },
+    "granularity": {
+      "score": 95,
+      "timestamp": "2026-05-06T11:34:04.034878",
+      "details": {}
+    },
+    "testing": {
+      "score": 75,
+      "timestamp": "2026-05-06T11:34:04.066253",
+      "details": {}
+    }
+  }
+}

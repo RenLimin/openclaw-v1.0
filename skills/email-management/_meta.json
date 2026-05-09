@@ -1,0 +1,23 @@
+{
+  "name": "email-management",
+  "version": "1.0.0",
+  "author": "Iris 🐦‍⬛",
+  "created": "2026-04-23",
+  "updated": "2026-04-23",
+  "category": "communication",
+  "tags": [
+    "email",
+    "邮件管理",
+    "IMAP",
+    "SMTP",
+    "企业邮箱",
+    "邮件分类"
+  ],
+  "responsible_agent": "iris",
+  "security_level": "medium",
+  "recommended_provider": "DeepSeek",
+  "requires_user_confirmation": true,
+  "supports_batch": false,
+  "local_processing_only": true,
+  "sensitive_data": true
+}

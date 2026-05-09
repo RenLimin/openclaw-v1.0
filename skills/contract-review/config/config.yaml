@@ -1,0 +1,241 @@
+# 合同审核配置文件
+# 合同审核业务技能 - 审核配置
+
+# ──────────────────────────────────────────
+# 风险阈值配置
+# ──────────────────────────────────────────
+risk_threshold:
+  # 高风险阈值（单条风险分数 ≥ 此值为高风险）
+  high: 80
+  # 中风险阈值（单条风险分数在此区间为中风险）
+  medium_min: 40
+  medium_max: 79
+  # 低风险阈值（单条风险分数 < 此值为低风险）
+  low: 39
+  # 总体风险评分阈值（总分）
+  overall_high: 70
+  overall_medium: 40
+
+# ──────────────────────────────────────────
+# 审核开关配置
+# ──────────────────────────────────────────
+review:
+  # 启用通用规则检查（完整性、歧义、免责条款）
+  enable_general_check: true
+  # 启用法条自动关联
+  enable_law_reference: true
+  # 启用改进建议生成
+  enable_suggestions: true
+  # 启用条款完整性检查
+  enable_completeness_check: true
+  # 启用歧义表述识别
+  enable_ambiguity_check: true
+  # 启用免责条款审查
+  enable_disclaimer_check: true
+  # 最小条款数量（少于此数发出警告）
+  min_clause_count: 5
+
+# ──────────────────────────────────────────
+# 专项审核配置
+# ──────────────────────────────────────────
+special_review:
+  # RVW-01：标的条款审核
+  subject:
+    enabled: true
+    keywords:
+      - 标的
+      - 产品
+      - 货物
+      - 服务
+      - 项目
+      - 工程
+    check_items:
+      - description_clear: 80        # 标的描述不清晰 - 高风险
+      - quantity_spec: 75            # 数量/规格缺失 - 高风险
+      - quality_standard: 50         # 质量标准不明确 - 中风险
+      - ip_ownership: 50             # 知识产权归属不明 - 中风险
+
+  # RVW-02：交付条款审核
+  delivery:
+    enabled: true
+    keywords:
+      - 交付
+      - 发货
+      - 送货
+      - 运输
+      - 到货
+    check_items:
+      - delivery_time: 80            # 交付时间不明确 - 高风险
+      - delivery_location: 50        # 交付地点缺失 - 中风险
+      - transport_responsibility: 50 # 运输责任不清 - 中风险
+      - late_delivery_penalty: 75    # 逾期交付无违约责任 - 高风险
+
+  # RVW-03：验收条款审核
+  acceptance:
+    enabled: true
+    keywords:
+      - 验收
+      - 检验
+      - 检测
+      - 接收
+      - 合格
+    check_items:
+      - acceptance_standard: 80      # 验收标准不明确 - 高风险
+      - acceptance_period: 50        # 验收期限缺失 - 中风险
+      - acceptance_process: 50       # 验收流程不清晰 - 中风险
+      - rejection_handling: 75       # 不合格处理无约定 - 高风险
+
+  # RVW-04：售后/维保审核
+  after_sales:
+    enabled: true
+    keywords:
+      - 质保
+      - 保修
+      - 售后
+      - 维修
+      - 维保
+    check_items:
+      - warranty_period: 80          # 质保期限不明确 - 高风险
+      - warranty_scope: 50           # 质保范围缺失 - 中风险
+      - response_time: 40            # 维保响应时间无约定 - 中风险
+      - maintenance_cost: 40         # 维保费用不清晰 - 中风险
+
+# ──────────────────────────────────────────
+# OCR 配置
+# ──────────────────────────────────────────
+ocr:
+  # 默认 OCR 引擎 (tesseract / paddleocr / easyocr)
+  engine: tesseract
+  # 启用噪音清理
+  clean_noise: true
+  # 启用自动纠错
+  auto_correct: true
+  # 启用质量评估
+  assess_quality: true
+  # 最小可接受质量评分 (0-100)
+  min_quality_score: 60
+
+# ──────────────────────────────────────────
+# 输出配置
+# ──────────────────────────────────────────
+output:
+  # 默认输出格式
+  default_formats:
+    - markdown
+    - excel
+  # 高亮高风险条款
+  highlight_high_risk: true
+  # 是否包含法条原文
+  include_law_text: true
+  # 是否包含完整条款原文
+  include_full_clause: false
+  # 默认输出目录
+  default_dir: ./output
+  # Excel 表名配置
+  excel:
+    risk_sheet_name: 风险明细
+    summary_sheet_name: 统计汇总
+    detail_sheet_name: 审核详情
+
+# ──────────────────────────────────────────
+# 法条关联配置
+# ──────────────────────────────────────────
+law_reference:
+  # 民法典合同编相关法条映射
+  civil_code:
+    subject_clarity:
+      article: 第四百七十条
+      name: 合同主要条款
+      content: 合同的内容由当事人约定，一般包括下列条款：（一）当事人的姓名或者名称和住所；（二）标的；（三）数量；（四）质量；（五）价款或者报酬；（六）履行期限、地点和方式；（七）违约责任；（八）解决争议的方法。
+    delivery_time:
+      article: 第五百一十条
+      name: 合同约定不明的补救
+      content: 合同生效后，当事人就质量、价款或者报酬、履行地点等内容没有约定或者约定不明确的，可以协议补充；不能达成补充协议的，按照合同相关条款或者交易习惯确定。
+    acceptance:
+      article: 第六百二十条
+      name: 买受人检验义务
+      content: 买受人收到标的物时应当在约定的检验期限内检验。没有约定检验期限的，应当及时检验。
+    warranty:
+      article: 第六百二十一条
+      name: 检验期限
+      content: 当事人约定检验期限的，买受人应当在检验期限内将标的物的数量或者质量不符合约定的情形通知出卖人。买受人怠于通知的，视为标的物的数量或者质量符合约定。
+    liability:
+      article: 第五百七十七条
+      name: 违约责任
+      content: 当事人一方不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。
+
+# ──────────────────────────────────────────
+# 改进建议模板
+# ──────────────────────────────────────────
+suggestion_templates:
+  subject_description: |
+    建议明确合同标的的具体名称、规格、型号、数量等信息。
+    参考条款："本合同标的为【具体产品/服务名称】，规格型号为【XXX】，数量为【XXX】。"
+  delivery_time: |
+    建议明确具体的交付时间和交付进度节点。
+    参考条款："卖方应于【XXXX年XX月XX日】前将货物交付至约定地点，逾期每日按合同总金额的【X%】支付违约金。"
+  acceptance_standard: |
+    建议明确验收标准、验收流程和验收期限。
+    参考条款："买方应在收到货物后【X】日内进行验收，验收标准为【具体标准】，验收不合格的，买方有权拒收或要求卖方在【X】日内更换。"
+  warranty_period: |
+    建议明确质保期限和质保范围。
+    参考条款："产品质保期为【X】个月/年，自验收合格之日起计算，质保范围包括【具体保修范围】。"
+  ambiguity: |
+    建议明确表述该条款的具体含义，避免产生歧义。
+    可考虑将模糊表述替换为具体、明确的约定。
+  disclaimer: |
+    建议审查该免责条款的公平性和合法性。
+    根据《民法典》第四百九十七条，提供格式条款一方不合理地免除或者减轻其责任、加重对方责任、限制对方主要权利的，该格式条款无效。
+
+# ──────────────────────────────────────────
+# 通用检查配置
+# ──────────────────────────────────────────
+general_check:
+  # 必备条款清单（完整性检查）
+  required_clauses:
+    - 当事人信息
+    - 标的
+    - 数量
+    - 质量
+    - 价款或报酬
+    - 履行期限、地点和方式
+    - 违约责任
+    - 解决争议的方法
+  # 歧义表述关键词
+  ambiguity_keywords:
+    - 等
+    - 等等
+    - 相关
+    - 有关
+    - 适当
+    - 合理
+    - 及时
+    - 尽快
+    - 大概
+    - 左右
+    - 原则上
+    - 一般
+  # 免责条款关键词
+  disclaimer_keywords:
+    - 概不负责
+    - 不承担责任
+    - 免责
+    - 免除责任
+    - 不承担任何责任
+    - 风险自负
+    - 后果自负
+
+# ──────────────────────────────────────────
+# 异常处理配置
+# ──────────────────────────────────────────
+error_handling:
+  # 文件不存在时的处理方式 (stop / warn / skip)
+  file_not_found: stop
+  # OCR 失败时的处理方式 (stop / warn / fallback)
+  ocr_failed: fallback
+  # 条款过少时的处理方式 (stop / warn / continue)
+  too_few_clauses: warn
+  # 最大重试次数
+  max_retries: 3
+  # 重试间隔（秒）
+  retry_interval: 2

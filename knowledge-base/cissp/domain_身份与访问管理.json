@@ -1,0 +1,1354 @@
+{
+  "count": 19,
+  "documents": [
+    {
+      "file_name": "ISO27002-2022 信息安全控制.pdf",
+      "relative_path": "ISO/ISO27002-2022 信息安全控制.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/ISO/ISO27002-2022 信息安全控制.pdf",
+      "file_hash": "0f646185b2ddcbb9385b2281e5cafc1d",
+      "file_size": 3447405,
+      "modified_time": "2022-06-01T14:20:13.064177",
+      "domains": [
+        "通信与网络安全",
+        "身份与访问管理"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "0.1",
+          "title": "Background and context 背景和环境  ...................."
+        },
+        {
+          "number": "0.2",
+          "title": "Information security  requirements 信息安全需求  ......."
+        },
+        {
+          "number": "0.3",
+          "title": "Controls 控制 ................................ ....."
+        },
+        {
+          "number": "0.4",
+          "title": "Determining controls 确定控制  ......................."
+        },
+        {
+          "number": "0.5",
+          "title": "Developing your own guidelines 开发自己的指南  .........."
+        },
+        {
+          "number": "0.6",
+          "title": "Lifecycle considerations 生命周期注意事项  ..............."
+        },
+        {
+          "number": "0.7",
+          "title": "Related standards 相关标准  .........................."
+        },
+        {
+          "number": "3.1",
+          "title": "术语和定义  ................................ .........."
+        },
+        {
+          "number": "3.1",
+          "title": ".1 Access control 访问控制  .........................."
+        },
+        {
+          "number": "3.1",
+          "title": ".2 Asset 资产 ................................ ....."
+        },
+        {
+          "number": "3.1",
+          "title": ".3 Attack 攻击 ................................ ...."
+        },
+        {
+          "number": "3.1",
+          "title": ".4 Authentication 认证 ............................."
+        },
+        {
+          "number": "3.1",
+          "title": ".5 Authenticity 真实性  ............................."
+        },
+        {
+          "number": "3.1",
+          "title": ".6 Chain of custody 监管链  ........................."
+        },
+        {
+          "number": "3.1",
+          "title": ".7 Confidential information 机密信息  ................"
+        },
+        {
+          "number": "3.1",
+          "title": ".8 Control 控制 ................................ ..."
+        },
+        {
+          "number": "3.1",
+          "title": ".9 Disruption 破坏 ................................"
+        },
+        {
+          "number": "3.1",
+          "title": ".10 Endpoint device 终端设备  ........................"
+        },
+        {
+          "number": "3.1",
+          "title": ".11 Entity 实体 ................................ ..."
+        },
+        {
+          "number": "3.1",
+          "title": ".12 Information processing facility 信息处理设施  ......"
+        }
+      ],
+      "content_preview": "版本说明：本中英文对照版仅用于学习，任何组织、个人不得以任何形式和理由收取费用，\n如发现收费行为发布请在原链接下载：知识星球 -老烦的草根安全观  \n  \nISO/IEC JTC1 SC27  \n信息技术  网络安全与隐私 保护 信息安全控制  \nISO/IEC 27002 20 22 \n翻译 樊山 \n2022 -3-3\n目录 \n前言 ................................ ................................ ................................ ................................ ..............................  14 \n0 介绍 ................................ ................................ ................................ ................................ ..........................",
+      "page_count": 326,
+      "indexed_at": "2026-04-27T22:06:14.490731"
+    },
+    {
+      "file_name": "ISO27002-2022 信息技术 网络安全与隐私保护 信息安全控制.pdf",
+      "relative_path": "ISO/ISO27002-2022 信息技术 网络安全与隐私保护 信息安全控制.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/ISO/ISO27002-2022 信息技术 网络安全与隐私保护 信息安全控制.pdf",
+      "file_hash": "8566d49c06a6e5f8d0b3596f2a72dd74",
+      "file_size": 9817089,
+      "modified_time": "2022-05-07T13:48:54.826366",
+      "domains": [
+        "通信与网络安全",
+        "身份与访问管理"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "0.1",
+          "title": "Background and context 背景和环境  ...................."
+        },
+        {
+          "number": "0.2",
+          "title": "Information security  requirements 信息安全需求  ......."
+        },
+        {
+          "number": "0.3",
+          "title": "Controls 控制 ................................ ....."
+        },
+        {
+          "number": "0.4",
+          "title": "Determining controls 确定控制  ......................."
+        },
+        {
+          "number": "0.5",
+          "title": "Developing your own guidelines 开发自己的指南  .........."
+        },
+        {
+          "number": "0.6",
+          "title": "Lifecycle considerations 生命周期注意事项  ..............."
+        },
+        {
+          "number": "0.7",
+          "title": "Related standards 相关标准  .........................."
+        },
+        {
+          "number": "3.1",
+          "title": "术语和定义  ................................ .........."
+        },
+        {
+          "number": "3.1",
+          "title": ".1 Access control 访问控制  .........................."
+        },
+        {
+          "number": "3.1",
+          "title": ".2 Asset 资产 ................................ ....."
+        },
+        {
+          "number": "3.1",
+          "title": ".3 Attack 攻击 ................................ ...."
+        },
+        {
+          "number": "3.1",
+          "title": ".4 Authentication 认证 ............................."
+        },
+        {
+          "number": "3.1",
+          "title": ".5 Authenticity 真实性  ............................."
+        },
+        {
+          "number": "3.1",
+          "title": ".6 Chain of custody 监管链  ........................."
+        },
+        {
+          "number": "3.1",
+          "title": ".7 Confidential information 机密信息  ................"
+        },
+        {
+          "number": "3.1",
+          "title": ".8 Control 控制 ................................ ..."
+        },
+        {
+          "number": "3.1",
+          "title": ".9 Disruption 破坏 ................................"
+        },
+        {
+          "number": "3.1",
+          "title": ".10 Endpoint device 终端设备  ........................"
+        },
+        {
+          "number": "3.1",
+          "title": ".11 Entity 实体 ................................ ..."
+        },
+        {
+          "number": "3.1",
+          "title": ".12 Information processing facility 信息处理设施  ......"
+        }
+      ],
+      "content_preview": "版本说明：本中英文对照版仅用于学习，任何组织、个人不得以任何形式和理由收取费用，\n如发现收费行为发布请在原链接下载：知识星球 -老烦的草根安全观  \n  \nISO/IEC JTC1 SC27  \n信息技术  网络安全与隐私 保护 信息安全控制  \nISO/IEC 27002 20 22 \n翻译 樊山 \n2022 -3-3\n目录 \n前言 ................................ ................................ ................................ ................................ ..............................  14 \n0 介绍 ................................ ................................ ................................ ................................ ..........................",
+      "page_count": 326,
+      "indexed_at": "2026-04-27T22:06:22.264969"
+    },
+    {
+      "file_name": "CBK6(1).pdf",
+      "relative_path": "CBK/CBK6(1).pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/CBK/CBK6(1).pdf",
+      "file_hash": "0335f647cb7d3509ced39892dcecc5ea",
+      "file_size": 11047919,
+      "modified_time": "2021-12-28T09:07:09.098865",
+      "domains": [
+        "通信与网络安全",
+        "身份与访问管理"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "Chapter 2",
+          "title": "TABLE 2.1 Examples of Asset Classifications"
+        },
+        {
+          "number": "Chapter 3",
+          "title": "TABLE 3.1 An Example Access Matrix"
+        },
+        {
+          "number": "Chapter 4",
+          "title": "TABLE 4.1 IPv4 Network Classes"
+        },
+        {
+          "number": "Chapter 1",
+          "title": "FIGURE 1.1 CIA Triad"
+        },
+        {
+          "number": "Chapter 2",
+          "title": "FIGURE 2.1 General benefits of asset classification"
+        },
+        {
+          "number": "Chapter 3",
+          "title": "FIGURE 3.1 N-tier architecture"
+        },
+        {
+          "number": "Chapter 4",
+          "title": "FIGURE 4.1 The OSI reference model"
+        },
+        {
+          "number": "Chapter 5",
+          "title": "FIGURE 5.1 The access management lifecycle"
+        },
+        {
+          "number": "Chapter 6",
+          "title": "FIGURE 6.1 Pen test phases"
+        },
+        {
+          "number": "Chapter 7",
+          "title": "FIGURE 7.1 Security perimeters"
+        },
+        {
+          "number": "Chapter 8",
+          "title": "FIGURE 8.1 The Waterfall model"
+        },
+        {
+          "number": "Chapter 1",
+          "title": ", “Security and Risk"
+        },
+        {
+          "number": "Chapter 2",
+          "title": ",“Asset Security.” Applying"
+        },
+        {
+          "number": "Chapter 3",
+          "title": ", “Security"
+        },
+        {
+          "number": "Chapter 4",
+          "title": ", “Communication and Network Security,”"
+        },
+        {
+          "number": "Chapter 5",
+          "title": ", “Identity and Access Management,”"
+        },
+        {
+          "number": "Chapter 6",
+          "title": ", “Security Assessment and Testing,”"
+        },
+        {
+          "number": "Chapter 7",
+          "title": ", “Security Operations.” Finally, the vital role played"
+        },
+        {
+          "number": "Chapter 8",
+          "title": ", “Software Development Security,” which"
+        },
+        {
+          "number": "Chapter 4",
+          "title": ". Physical architecture security — including fire suppression and"
+        },
+        {
+          "number": "2.1",
+          "title": "Examples of Asset Classifications"
+        },
+        {
+          "number": "3.1",
+          "title": "An Example Access Matrix"
+        },
+        {
+          "number": "3.2",
+          "title": "Cloud Service Models"
+        },
+        {
+          "number": "3.3",
+          "title": "Cryptographic Approaches"
+        },
+        {
+          "number": "3.4",
+          "title": "Overview of Block Ciphers"
+        },
+        {
+          "number": "3.5",
+          "title": "General Data Center Redundancy Tier Levels"
+        },
+        {
+          "number": "4.1",
+          "title": "IPv4 Network Classes"
+        },
+        {
+          "number": "4.2",
+          "title": "802.11 Standard Amendments"
+        },
+        {
+          "number": "4.3",
+          "title": "Basic Overview of Cellular Wireless Technologies"
+        },
+        {
+          "number": "4.4",
+          "title": "Important Characteristics for Common Network Cabli"
+        },
+        {
+          "number": "1.1",
+          "title": "CIA Triad"
+        },
+        {
+          "number": "1.2",
+          "title": "NIST Cybersecurity Framework"
+        },
+        {
+          "number": "1.3",
+          "title": "Relationship between policies, procedures, standar"
+        },
+        {
+          "number": "1.4",
+          "title": "Relationship between MTD, RTO, and RPO"
+        },
+        {
+          "number": "1.5",
+          "title": "Relationship between threats, vulnerabilities, ass"
+        },
+        {
+          "number": "1.6",
+          "title": "Steps for assessing risk"
+        },
+        {
+          "number": "1.7",
+          "title": "ISO 31000:2018"
+        },
+        {
+          "number": "1.8",
+          "title": "NIST Risk Management Framework"
+        },
+        {
+          "number": "2.1",
+          "title": "General benefits of asset classification"
+        },
+        {
+          "number": "2.2",
+          "title": "Data de-identification via anonymization"
+        }
+      ],
+      "content_preview": "1T able of Contents\nCover\nTitle Page\nCopyright\nLead Authors\nTechnical Reviewer\nForeword\nIntroduction\nDOMAIN 1: Security and Risk Management\nUNDERSTAND, ADHERE TO, AND PROMOTE PROFESSIONAL\nETHICS\nUNDERSTAND AND APPLY SECURITY CONCEPTS\nEVALUATE AND APPLY SECURITY GOVERNANCE PRINCIPLES\nDETERMINE COMPLIANCE AND OTHER REQUIREMENTS\nUNDERSTAND LEGAL AND REGULATORY ISSUES THAT PERTAIN TO\nINFORMATION SECURITY IN A HOLISTIC CONTEXT\nUNDERSTAND REQUIREMENTS FOR INVESTIGATION TYPES\nDEVELOP, DOCUMENT, AND IMP",
+      "page_count": 624,
+      "indexed_at": "2026-04-27T22:08:10.632233"
+    },
+    {
+      "file_name": "CBK6.pdf",
+      "relative_path": "CBK/CBK6.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/CBK/CBK6.pdf",
+      "file_hash": "0335f647cb7d3509ced39892dcecc5ea",
+      "file_size": 11047919,
+      "modified_time": "2021-12-01T09:56:11.943090",
+      "domains": [
+        "通信与网络安全",
+        "身份与访问管理"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "Chapter 2",
+          "title": "TABLE 2.1 Examples of Asset Classifications"
+        },
+        {
+          "number": "Chapter 3",
+          "title": "TABLE 3.1 An Example Access Matrix"
+        },
+        {
+          "number": "Chapter 4",
+          "title": "TABLE 4.1 IPv4 Network Classes"
+        },
+        {
+          "number": "Chapter 1",
+          "title": "FIGURE 1.1 CIA Triad"
+        },
+        {
+          "number": "Chapter 2",
+          "title": "FIGURE 2.1 General benefits of asset classification"
+        },
+        {
+          "number": "Chapter 3",
+          "title": "FIGURE 3.1 N-tier architecture"
+        },
+        {
+          "number": "Chapter 4",
+          "title": "FIGURE 4.1 The OSI reference model"
+        },
+        {
+          "number": "Chapter 5",
+          "title": "FIGURE 5.1 The access management lifecycle"
+        },
+        {
+          "number": "Chapter 6",
+          "title": "FIGURE 6.1 Pen test phases"
+        },
+        {
+          "number": "Chapter 7",
+          "title": "FIGURE 7.1 Security perimeters"
+        },
+        {
+          "number": "Chapter 8",
+          "title": "FIGURE 8.1 The Waterfall model"
+        },
+        {
+          "number": "Chapter 1",
+          "title": ", “Security and Risk"
+        },
+        {
+          "number": "Chapter 2",
+          "title": ",“Asset Security.” Applying"
+        },
+        {
+          "number": "Chapter 3",
+          "title": ", “Security"
+        },
+        {
+          "number": "Chapter 4",
+          "title": ", “Communication and Network Security,”"
+        },
+        {
+          "number": "Chapter 5",
+          "title": ", “Identity and Access Management,”"
+        },
+        {
+          "number": "Chapter 6",
+          "title": ", “Security Assessment and Testing,”"
+        },
+        {
+          "number": "Chapter 7",
+          "title": ", “Security Operations.” Finally, the vital role played"
+        },
+        {
+          "number": "Chapter 8",
+          "title": ", “Software Development Security,” which"
+        },
+        {
+          "number": "Chapter 4",
+          "title": ". Physical architecture security — including fire suppression and"
+        },
+        {
+          "number": "2.1",
+          "title": "Examples of Asset Classifications"
+        },
+        {
+          "number": "3.1",
+          "title": "An Example Access Matrix"
+        },
+        {
+          "number": "3.2",
+          "title": "Cloud Service Models"
+        },
+        {
+          "number": "3.3",
+          "title": "Cryptographic Approaches"
+        },
+        {
+          "number": "3.4",
+          "title": "Overview of Block Ciphers"
+        },
+        {
+          "number": "3.5",
+          "title": "General Data Center Redundancy Tier Levels"
+        },
+        {
+          "number": "4.1",
+          "title": "IPv4 Network Classes"
+        },
+        {
+          "number": "4.2",
+          "title": "802.11 Standard Amendments"
+        },
+        {
+          "number": "4.3",
+          "title": "Basic Overview of Cellular Wireless Technologies"
+        },
+        {
+          "number": "4.4",
+          "title": "Important Characteristics for Common Network Cabli"
+        },
+        {
+          "number": "1.1",
+          "title": "CIA Triad"
+        },
+        {
+          "number": "1.2",
+          "title": "NIST Cybersecurity Framework"
+        },
+        {
+          "number": "1.3",
+          "title": "Relationship between policies, procedures, standar"
+        },
+        {
+          "number": "1.4",
+          "title": "Relationship between MTD, RTO, and RPO"
+        },
+        {
+          "number": "1.5",
+          "title": "Relationship between threats, vulnerabilities, ass"
+        },
+        {
+          "number": "1.6",
+          "title": "Steps for assessing risk"
+        },
+        {
+          "number": "1.7",
+          "title": "ISO 31000:2018"
+        },
+        {
+          "number": "1.8",
+          "title": "NIST Risk Management Framework"
+        },
+        {
+          "number": "2.1",
+          "title": "General benefits of asset classification"
+        },
+        {
+          "number": "2.2",
+          "title": "Data de-identification via anonymization"
+        }
+      ],
+      "content_preview": "1T able of Contents\nCover\nTitle Page\nCopyright\nLead Authors\nTechnical Reviewer\nForeword\nIntroduction\nDOMAIN 1: Security and Risk Management\nUNDERSTAND, ADHERE TO, AND PROMOTE PROFESSIONAL\nETHICS\nUNDERSTAND AND APPLY SECURITY CONCEPTS\nEVALUATE AND APPLY SECURITY GOVERNANCE PRINCIPLES\nDETERMINE COMPLIANCE AND OTHER REQUIREMENTS\nUNDERSTAND LEGAL AND REGULATORY ISSUES THAT PERTAIN TO\nINFORMATION SECURITY IN A HOLISTIC CONTEXT\nUNDERSTAND REQUIREMENTS FOR INVESTIGATION TYPES\nDEVELOP, DOCUMENT, AND IMP",
+      "page_count": 624,
+      "indexed_at": "2026-04-27T22:08:14.431000"
+    },
+    {
+      "file_name": "CBK6英文版.pdf",
+      "relative_path": "CBK/CBK6英文版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/CBK/CBK6英文版.pdf",
+      "file_hash": "0335f647cb7d3509ced39892dcecc5ea",
+      "file_size": 11047919,
+      "modified_time": "2021-10-23T10:57:08.942582",
+      "domains": [
+        "通信与网络安全",
+        "身份与访问管理"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "Chapter 2",
+          "title": "TABLE 2.1 Examples of Asset Classifications"
+        },
+        {
+          "number": "Chapter 3",
+          "title": "TABLE 3.1 An Example Access Matrix"
+        },
+        {
+          "number": "Chapter 4",
+          "title": "TABLE 4.1 IPv4 Network Classes"
+        },
+        {
+          "number": "Chapter 1",
+          "title": "FIGURE 1.1 CIA Triad"
+        },
+        {
+          "number": "Chapter 2",
+          "title": "FIGURE 2.1 General benefits of asset classification"
+        },
+        {
+          "number": "Chapter 3",
+          "title": "FIGURE 3.1 N-tier architecture"
+        },
+        {
+          "number": "Chapter 4",
+          "title": "FIGURE 4.1 The OSI reference model"
+        },
+        {
+          "number": "Chapter 5",
+          "title": "FIGURE 5.1 The access management lifecycle"
+        },
+        {
+          "number": "Chapter 6",
+          "title": "FIGURE 6.1 Pen test phases"
+        },
+        {
+          "number": "Chapter 7",
+          "title": "FIGURE 7.1 Security perimeters"
+        },
+        {
+          "number": "Chapter 8",
+          "title": "FIGURE 8.1 The Waterfall model"
+        },
+        {
+          "number": "Chapter 1",
+          "title": ", “Security and Risk"
+        },
+        {
+          "number": "Chapter 2",
+          "title": ",“Asset Security.” Applying"
+        },
+        {
+          "number": "Chapter 3",
+          "title": ", “Security"
+        },
+        {
+          "number": "Chapter 4",
+          "title": ", “Communication and Network Security,”"
+        },
+        {
+          "number": "Chapter 5",
+          "title": ", “Identity and Access Management,”"
+        },
+        {
+          "number": "Chapter 6",
+          "title": ", “Security Assessment and Testing,”"
+        },
+        {
+          "number": "Chapter 7",
+          "title": ", “Security Operations.” Finally, the vital role played"
+        },
+        {
+          "number": "Chapter 8",
+          "title": ", “Software Development Security,” which"
+        },
+        {
+          "number": "Chapter 4",
+          "title": ". Physical architecture security — including fire suppression and"
+        },
+        {
+          "number": "2.1",
+          "title": "Examples of Asset Classifications"
+        },
+        {
+          "number": "3.1",
+          "title": "An Example Access Matrix"
+        },
+        {
+          "number": "3.2",
+          "title": "Cloud Service Models"
+        },
+        {
+          "number": "3.3",
+          "title": "Cryptographic Approaches"
+        },
+        {
+          "number": "3.4",
+          "title": "Overview of Block Ciphers"
+        },
+        {
+          "number": "3.5",
+          "title": "General Data Center Redundancy Tier Levels"
+        },
+        {
+          "number": "4.1",
+          "title": "IPv4 Network Classes"
+        },
+        {
+          "number": "4.2",
+          "title": "802.11 Standard Amendments"
+        },
+        {
+          "number": "4.3",
+          "title": "Basic Overview of Cellular Wireless Technologies"
+        },
+        {
+          "number": "4.4",
+          "title": "Important Characteristics for Common Network Cabli"
+        },
+        {
+          "number": "1.1",
+          "title": "CIA Triad"
+        },
+        {
+          "number": "1.2",
+          "title": "NIST Cybersecurity Framework"
+        },
+        {
+          "number": "1.3",
+          "title": "Relationship between policies, procedures, standar"
+        },
+        {
+          "number": "1.4",
+          "title": "Relationship between MTD, RTO, and RPO"
+        },
+        {
+          "number": "1.5",
+          "title": "Relationship between threats, vulnerabilities, ass"
+        },
+        {
+          "number": "1.6",
+          "title": "Steps for assessing risk"
+        },
+        {
+          "number": "1.7",
+          "title": "ISO 31000:2018"
+        },
+        {
+          "number": "1.8",
+          "title": "NIST Risk Management Framework"
+        },
+        {
+          "number": "2.1",
+          "title": "General benefits of asset classification"
+        },
+        {
+          "number": "2.2",
+          "title": "Data de-identification via anonymization"
+        }
+      ],
+      "content_preview": "1T able of Contents\nCover\nTitle Page\nCopyright\nLead Authors\nTechnical Reviewer\nForeword\nIntroduction\nDOMAIN 1: Security and Risk Management\nUNDERSTAND, ADHERE TO, AND PROMOTE PROFESSIONAL\nETHICS\nUNDERSTAND AND APPLY SECURITY CONCEPTS\nEVALUATE AND APPLY SECURITY GOVERNANCE PRINCIPLES\nDETERMINE COMPLIANCE AND OTHER REQUIREMENTS\nUNDERSTAND LEGAL AND REGULATORY ISSUES THAT PERTAIN TO\nINFORMATION SECURITY IN A HOLISTIC CONTEXT\nUNDERSTAND REQUIREMENTS FOR INVESTIGATION TYPES\nDEVELOP, DOCUMENT, AND IMP",
+      "page_count": 624,
+      "indexed_at": "2026-04-27T22:08:18.242037"
+    },
+    {
+      "file_name": "D1-3-安全策略体系和安全人员管理.pdf",
+      "relative_path": "OSG/D1-3-安全策略体系和安全人员管理.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/D1-3-安全策略体系和安全人员管理.pdf",
+      "file_hash": "df5afc4b5c1d799b4860f3051e3904f0",
+      "file_size": 841696,
+      "modified_time": "2021-03-17T08:58:39.634140",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "1\n铭记初心，实现自我\n本节目标\n•理解安全策略的基本概念\n•掌握安全策略的分层模式和内容\n•了解重要的安全角色及其责任\n•理解应尽关注和应急职责的概念\n•掌握人员在入职、在职和离职的相关安全管理\n我们要理解以下基本概念\n2\n铭记初心，实现自我\n安全策略概述\n•什么是安全策略？\n•安全策略有些什么特性？\n•常见的安全策略有哪些？\n首先我们从以下三个问题来理解安全策略的相关概念。\n一、什么是安全策略？\n安全策略是高级管理层（或是选定的董事会和委员会）制定的一个全面声明，\n它规定安全在组织内所扮演的角色。安全策略可以是组织化策略，也可以是针\n对特定问题的策略，后者针对系统的策略。在组织化安全策略中，管理层规定\n了应该如何建立安全计划，制定安全计划的目标，分配责任，说明安全的战略\n和战术价值，并且概述了应该如何执行安全计划。这种策略必须涉及相关法律、\n法规、责任以及如何遵守这些规范。组织化安全策略为组织内部未来的所有安\n全活动提供了范围和方向，还说明了高级管理层愿意接受多大的风险。\n二、安全策略有些什么特性呢？\n安全策略具有一些必须理解和实现的重要特征：\n•业务目标应促进策略的制定、实现和执",
+      "page_count": 14,
+      "indexed_at": "2026-04-27T22:09:25.541739"
+    },
+    {
+      "file_name": "联合身份认证.txt",
+      "relative_path": "Industrial Reference/联合身份认证.txt",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Industrial Reference/联合身份认证.txt",
+      "file_hash": "4fe99088024265b8a816620374908b37",
+      "file_size": 1142,
+      "modified_time": "2022-11-23T20:25:30.169160",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 2,
+      "chapters": [
+        {
+          "number": "2.0",
+          "title": "：api接口授权访问机制   RFC标准维护，开放式身份验证，通过微信授权其他应用登录  偏向于授权"
+        },
+        {
+          "number": "2.0",
+          "title": "= openid connect"
+        }
+      ],
+      "content_preview": "saml: 安全断言标记语言，基于XML语言，用于web的SSO；\nSAML规范定义了三个角色：委托人（通常为一名用户）、身份提供者（IdP），服务提供者（SP）。在用SAML解决的使用案例中，委托人从服务提供者那里请求一项服务。服务提供者请求身份提供者并从那里并获得一个身份断言。服务提供者可以基于这一断言进行访问控制的判断——即决定委托人是否有权执行某些服务\n\n\nspml: 服务配置标记语言，基于XML语言，基于LDAP的目录服务；交换信息\n不同系统中配置身份信息、账户信息\n\nXACML：可包含访问控制策略；属性、角色。。。\n\n\nOAuth 2.0 ：api接口授权访问机制   RFC标准维护，开放式身份验证，通过微信授权其他应用登录  偏向于授权\n\nopenID： 类似于Oauth 由OpenID维护 偏向于身份认证\n\n\nOpenID 连接：api接口授权访问机制 OpenID Connect将用户身份认证信息以id token的方式给到三方应用。\n\n openid + oauth 2.0 = openid connect\n\n\n\n参考链接：https://zhuanlan.zhih",
+      "page_count": 0,
+      "indexed_at": "2026-04-27T22:11:29.916186"
+    },
+    {
+      "file_name": "CISSP认证考试报名流程-25年5月更新.pdf",
+      "relative_path": "00. Manual/CISSP认证考试报名流程-25年5月更新.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/00. Manual/CISSP认证考试报名流程-25年5月更新.pdf",
+      "file_hash": "3c3606c42d9fb1f5b2a49b1c4b022fdf",
+      "file_size": 1792447,
+      "modified_time": "2025-08-12T18:52:12.438489",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "1CISSP认证考试报名流程\n一、考点：\n中国大陆仅有17个城市18个考点，分布在北京、上海(2个)、广州、无锡、济\n南、天津、西安、沈阳、石家庄、青岛、杭州、合肥、洛阳、武汉、长沙、南宁、郑\n州。其中天津、郑州为瑞通考场\n1、北京考点：\n地址：海淀区首体南路6号新世纪饭店写字楼11层1153室，100044\n电话：86-10-68492972\n2、上海黄浦考点：\n地址：上海市黄浦区汉口路650号亚洲大厦17层1701室，200001\n电话：86-21-61371986\n3、上海徐汇考点：\n地址：上海市徐汇区天钥桥路333号腾飞大厦8层805室，200030\n电话：86-21-64263036\n4、广州考点：\n地址：广州省越秀区中山六路218-222号捷泰广场1904室，510180\n电话：86-20-81320878\n5、西安考点：\n地址：西安市雁塔区吉祥路179号世纪商务大厦8层A座陕西先通网络技术学校，\n710065\n电话：86-29-88217919\n26、济南考点：\n地址：济南市历城区舜泰北路933号博晶大厦1305室山东数飞信息科技有限公\n司，2501",
+      "page_count": 16,
+      "indexed_at": "2026-04-27T22:11:56.296604"
+    },
+    {
+      "file_name": "CISSP报考流程.pdf",
+      "relative_path": "00. Manual/CISSP报考流程.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/00. Manual/CISSP报考流程.pdf",
+      "file_hash": "8f95f2de9f8ef3dc2abb824587739e7d",
+      "file_size": 2364064,
+      "modified_time": "2022-06-01T12:26:57.140634",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "CISSP考试注册流程  \n一、CISSP考试预约链接  \nhttps://www.pearsonvue.com.cn/  \n \n二、预约 \n1、找到下面图片中“立即开始”处转跳到 2部分 \n \n2、点击红圈内预约考试  \n \n3、从2.页面转跳之后就是下图，此时需要在红圈内字母里选择“ I”后选择“ ISC2认\n证考试”\n4、点击“ ISC2认证考试”  后转跳到以下页面，点击红圈内创建账户。\n5、此时到达创建 WEB账户的第一步，查看隐私政策 ，无误后勾选方框内同意条\n款，点击我愿意  \n \n \n \n \n点击后进入第一步 ，红色方框内按照系统提示填写个人信息姓名 +邮箱（英文）\n填写完毕后点击下一步。\n填写好之后点击下一步 ，依旧是按照系统要求填写 ，“*”号内容必填。  \n \n第三步内红框信息无需填写，黄框内必须填写，之后点击下一步  \n \n \n5、上述流程操作完成之后， VUE账号注册成功，接下来开始预约考试  \n点击红框内 ，查看考试 。\n转跳到此页面后，在搜索框内输入 CISSP后，出现两个选项，请点击第一个（红\n色剪头标记处） 。  \n \n之后选择考试语言 ，大陆约考学员",
+      "page_count": 15,
+      "indexed_at": "2026-04-27T22:11:57.609169"
+    },
+    {
+      "file_name": "CPE（继续教育学分）提交流程.pdf",
+      "relative_path": "00. Manual/CPE（继续教育学分）提交流程.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/00. Manual/CPE（继续教育学分）提交流程.pdf",
+      "file_hash": "ea68927d1b6acff6ad4b2dcce4d0290e",
+      "file_size": 2004747,
+      "modified_time": "2023-02-03T10:18:29.109128",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 8,
+      "chapters": [
+        {
+          "number": "852.2850",
+          "title": ".6951"
+        },
+        {
+          "number": "852.2850",
+          "title": ".6959"
+        },
+        {
+          "number": "0.25",
+          "title": "， 0.5和0.75个CPE学分。  一些活动由于研究的深度和花费的时间， 可以获得更多的"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        }
+      ],
+      "content_preview": "(ISC)²  为您提供多种机会，让您轻松获取 CPE学分。包括但不限于参加网络安全行业的线上 /线下会议\n活动，阅读网络安全相关杂志 /书籍，考取行业认证，参加行业培训等，在您本职工作以外的网络安全行\n业相关的继续教育，都可以提交 CPE学分。  \n点此下载 CPE手册，了解 CPE要求、 CPE分类及规则。  \n持有CISSP认证的会员需要在 3年有效期内累积 120个CPE学分。 \n持有CCSP认证的会员需要在 3年有效期内累积 90个CPE学分。 \nCPE 系统在 2018 年4 月改版了， CPE 的分类和计算方法也有微调， 请您\n阅读附件最新的 CPE 手册，供您参考。 2020 年CPE 首页的控制面板又进  \n行了优化，这次我给您发一个详细的提交步骤，提交 CPE 的时候请您按照以下  \n步骤来提交即可。  \n \n提交步骤如下：  \n首先登录您的 ISC2账号，在会员控制面板首页点击 CPE, 进入 CPE首页。这个页面就是我们\n最新的 CPE首页。在 start date 和end date 输入您的 CPE开始时间和结束时间，点击\ncontinue 继续提交  \n ",
+      "page_count": 24,
+      "indexed_at": "2026-04-27T22:11:57.894712"
+    },
+    {
+      "file_name": "ISC2-CPE（继续教育学分）手册中文版.pdf",
+      "relative_path": "00. Manual/ISC2-CPE（继续教育学分）手册中文版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/00. Manual/ISC2-CPE（继续教育学分）手册中文版.pdf",
+      "file_hash": "3fbfddd8d4f79902e6b6903b3785d514",
+      "file_size": 1003101,
+      "modified_time": "2023-02-03T10:18:21.899096",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 7,
+      "chapters": [
+        {
+          "number": "852.5803",
+          "title": ".5662"
+        },
+        {
+          "number": "0.25",
+          "title": "， 0.5和0.75个CPE学分。  一些活动由于研究的深度和花费的时间， 可以获得更多的"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        },
+        {
+          "number": "0.25",
+          "title": "、 0.50和0.75递增。"
+        }
+      ],
+      "content_preview": "(ISC)² CPE手册Inspiring a Safe and Secur e \nCyber W orld\n2目录\n如何使用(ISC)² CPE手册 .................................................................................. 3\n         考生和会员服务.........................................................................................3 \n概述...................................................................................................................4\nCPE要求 ..........................................................................................................",
+      "page_count": 20,
+      "indexed_at": "2026-04-27T22:11:58.112116"
+    },
+    {
+      "file_name": "CISSP考试注册流程2021.2.pdf",
+      "relative_path": "00. Manual/CISSP考试注册流程2021.2.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/00. Manual/CISSP考试注册流程2021.2.pdf",
+      "file_hash": "7ff52e33982970002bb2b21205b23596",
+      "file_size": 2282452,
+      "modified_time": "2023-02-03T10:13:34.685592",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "CISSP考试注册流程 \n请输入如下网址，进行注册，建议在学习完 CISSP 课程后进行。  \nhttps://www.pearsonvue.com.cn/program -ISC2.aspx  \n \n1. 如果你没有 VUE 账号， 可以单击页面的 “创建账户 ”， 来创建一个新的账号， 如下操作是\n过程：  \n \n2. 单击上页中的我同意，进入如下页面，在如下页面中必须输入真实姓名，要和身份证\n的姓名完全一致。  \n重要事项 : 您必须输入真实姓名，且与您将在考试中心出示的身份证件上显示的姓\n名完全一致。 如果输入的姓名与身份证件上的不一致，您将无法参加考试，并且不\n会退还您\n已付的任何考试费用。\n3. 创建完相应的账号后，看到如下页面，单击 “查看考试 ”，可以进行考试预约，如下图示\n操作所示：\n4. 选择如上页面中的 “下一步”，在如下过程中将进行考试的预约 ；\n5. 在如上的页面中 ，新增沈阳考试中心，目前共有北京、上海（ 2个） 、广州、沈阳共 5个\n考试中心 。学员可以根据具体情况进行选择，如下图页面中可以进行更改考试中心 ，也可\n以选择考试时间。一般每个月均会有相应的考",
+      "page_count": 19,
+      "indexed_at": "2026-04-27T22:11:59.170307"
+    },
+    {
+      "file_name": "guide-to-the-general-data-protection-regulation-gdpr-1-1.pdf",
+      "relative_path": "Reference/guide-to-the-general-data-protection-regulation-gdpr-1-1.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Reference/guide-to-the-general-data-protection-regulation-gdpr-1-1.pdf",
+      "file_hash": "cccb7974abca86cd75196f8413dd28f8",
+      "file_size": 6431894,
+      "modified_time": "2022-06-28T10:10:01.510655",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "1.1",
+          "title": ".252 23"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 3"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 4"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 5"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 6"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 7"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 8"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 9"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 10"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 11"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 12"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 13"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 14"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 15"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 16"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 17"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 18"
+        },
+        {
+          "number": "17.5",
+          "title": "million, or 4% of your total worldwide annual"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 19"
+        },
+        {
+          "number": "1.1",
+          "title": ".252 20"
+        }
+      ],
+      "content_preview": "Guide to the\nGeneral Data Protection\nRegulation (GDPR)Data protection\nAbout the Guide to the GDPR\nWhat's new\nKey definitions\nWhat is personal data?\nControllers and processors\nPrinciples\nLawfulness, fairness and transparency\nPurpose limitation\nData minimisation\nAccuracy\nStorage limitation\nIntegrity and confidentiality (security)\nAccountability principle\nLawful basis for processing\nConsent\nContract\nLegal obligation\nVital interests\nPublic task\nLegitimate interests\nSpecial category data\nCriminal off",
+      "page_count": 339,
+      "indexed_at": "2026-04-27T22:12:03.405588"
+    },
+    {
+      "file_name": "CISSP For Dummies(6th)-最新英文版.pdf",
+      "relative_path": "Reference/CISSP For Dummies(6th)-最新英文版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Reference/CISSP For Dummies(6th)-最新英文版.pdf",
+      "file_hash": "9dd9d9bda86b6f93125ec27394f04e84",
+      "file_size": 11562849,
+      "modified_time": "2022-04-04T20:12:07.182456",
+      "domains": [
+        "通信与网络安全",
+        "身份与访问管理"
+      ],
+      "chapter_count": 11,
+      "chapters": [
+        {
+          "number": "Chapter 1",
+          "title": "), and"
+        },
+        {
+          "number": "Chapter 1",
+          "title": "may be a good place to start! However, if you see a particular topic that"
+        },
+        {
+          "number": "Chapter 1",
+          "title": "(ISC)2 and the CISSP"
+        },
+        {
+          "number": "Chapter 2",
+          "title": "to learn more about relevant certifications on the (ISC)2-approved"
+        },
+        {
+          "number": "Chapter 2",
+          "title": "Putting Your Certification"
+        },
+        {
+          "number": "Chapter  7",
+          "title": ") or"
+        },
+        {
+          "number": "Chapter 3",
+          "title": ", and see how"
+        },
+        {
+          "number": "Chapter 3",
+          "title": "Security and Risk"
+        },
+        {
+          "number": "Chapter 8",
+          "title": ","
+        },
+        {
+          "number": "1.25",
+          "title": "years of security experience."
+        },
+        {
+          "number": "3.2",
+          "title": "consists of six core principles, supported by 12 a"
+        }
+      ],
+      "content_preview": "CISSP\n6th Edition\nby Lawrence C. Miller and Peter H. Gregory\nCISSP For Dummies®, 6th Edition\nPublished by: John Wiley & Sons, Inc.,  111 River Street, Hoboken, NJ 07030-5774, www.wile y.com\nCopyright © 2018 by John Wiley & Sons, Inc., Hoboken, New Jersey\nPublished simultaneously in Canada\nNo part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by any \nmeans, electronic, mechanical, photocopying, recording, scanning or otherwise, except as permitt",
+      "page_count": 563,
+      "indexed_at": "2026-04-27T22:12:05.302114"
+    },
+    {
+      "file_name": "03 GDPR中文版.pdf",
+      "relative_path": "Reference/03 GDPR中文版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Reference/03 GDPR中文版.pdf",
+      "file_hash": "f2d05c77a78dad75d8d4b8e4c53cc5c8",
+      "file_size": 1667440,
+      "modified_time": "2025-11-18T10:56:35.758179",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 18,
+      "chapters": [
+        {
+          "number": "第一章",
+          "title": ".总则"
+        },
+        {
+          "number": "第2章",
+          "title": "范围内的活动时;"
+        },
+        {
+          "number": "第二章",
+          "title": ".原则"
+        },
+        {
+          "number": "第九章",
+          "title": "规定的其他具体处理情况。"
+        },
+        {
+          "number": "第三章",
+          "title": ".数据主体权利"
+        },
+        {
+          "number": "第四章",
+          "title": ".控制者和处理者"
+        },
+        {
+          "number": "第三章",
+          "title": "规定的"
+        },
+        {
+          "number": "第八章",
+          "title": "规定的情况下，本条第"
+        },
+        {
+          "number": "第八章",
+          "title": "的情况下，被认可的认证机构的条件不符合或不再符合"
+        },
+        {
+          "number": "第五章",
+          "title": ".个人数据向第三国或者国际组织的传输"
+        },
+        {
+          "number": "第六章",
+          "title": ".独立的监督机构"
+        },
+        {
+          "number": "第七章",
+          "title": ".合作与协调"
+        },
+        {
+          "number": "第八章",
+          "title": ".补救措施，责任以及处罚"
+        },
+        {
+          "number": "第九章",
+          "title": ".特定数据处理情形下的相关规定"
+        },
+        {
+          "number": "第十章",
+          "title": ".委托行为与实施行为"
+        },
+        {
+          "number": "第十一章",
+          "title": ".最终条款"
+        },
+        {
+          "number": "第五章",
+          "title": "，特别是根据本法"
+        },
+        {
+          "number": "第七章",
+          "title": "。"
+        }
+      ],
+      "content_preview": "一般数据保护法\n（GeneralDataProtectionRegulation）\n全文译文\n译制工作组：高志民、张大伟、高强裔、居崑、陈聪、\n卢倩倩、白阳、刘吉强、银鹰\n国家金融IC卡安全检测中心信息安全实验室\n北京交通大学金融信息安全研究所\n上海交通大学网络空间安全学院\n2018年3月30日\n《一般数据保护法》（“GeneralDataProtectionRegulation”REGULATION(EU)2016/679OFTHEEUROPEAN\nPARLIAMENTANDOFTHECOUNCILof27April2016）\n国家金融IC卡安全检测中心信息安全实验室、北京交通大学金融信息安全研究所、上海交通大学网络空间\n安全学院译制工作组：高志民、张大伟、高强裔、居崑、陈聪、卢倩倩、白阳、刘吉强、银鹰等\n第1页共67页《一般数据保护法案》\nGeneralDataProtectionRegulation\nREGULATION(EU)2016/679OFTHEEUROPEANPARLIAMENTANDOFTHE\nCOUNCILof27April2016\n第一章.总则\n第1条主题与目标\n",
+      "page_count": 68,
+      "indexed_at": "2026-04-27T22:12:10.116803"
+    },
+    {
+      "file_name": "《保护云中医疗健康数据隐私》.pdf",
+      "relative_path": "Reference/《保护云中医疗健康数据隐私》.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Reference/《保护云中医疗健康数据隐私》.pdf",
+      "file_hash": "d33c1a7459bb051e3ccb72830d5c9fff",
+      "file_size": 1041611,
+      "modified_time": "2022-05-20T10:12:19.734715",
+      "domains": [
+        "安全与风险管理",
+        "身份与访问管理"
+      ],
+      "chapter_count": 9,
+      "chapters": [
+        {
+          "number": "3.1",
+          "title": "创建................................................"
+        },
+        {
+          "number": "3.2",
+          "title": "存储................................................"
+        },
+        {
+          "number": "3.3",
+          "title": "使用................................................"
+        },
+        {
+          "number": "3.4",
+          "title": "共享................................................"
+        },
+        {
+          "number": "3.5",
+          "title": "存档................................................"
+        },
+        {
+          "number": "3.6",
+          "title": "销毁................................................"
+        },
+        {
+          "number": "10.1007",
+          "title": "/s10916-020-01631-5）。实体在数据处理生态系统中的角色是隐私风险管理的一个关键因素"
+        },
+        {
+          "number": "10.6028",
+          "title": "/NIST.IR.8062"
+        },
+        {
+          "number": "10.6028",
+          "title": "/NIST.SP.800-53r5"
+        }
+      ],
+      "content_preview": "©2022云安全联盟大中华区版权所有\n1保护云中医疗健康数据隐私\n©2022云安全联盟大中华区版权所有\n2云安全联盟健康信息管理工作组研究的官方网址：\nhttps://cloudsecurityalliance.org/research/working-groups/health-information-management/\n@2022云安全联盟大中华区-保留所有权利。本文档英文版本发布在云安全联盟官网\n（https://cloudsecurityalliance.org），中文版本发布在云安全联盟大中华区官网(http://www.c-csa.cn)。您可\n在满足如下要求的情况下在您本人计算机上下载、存储、展示、查看、打印此文档：（a）本文只可作个人\n信息获取，不可用作商业用途；(b)本文内容不得篡改;(c)不得对本文进行转发散布;(d)不得删除文中商标、\n版权声明或其他声明。在遵循美国版权法相关条款情况下合理使用本文内容，使用时请注明引用于云安全\n联盟。\n©2022云安全联盟大中华区版权所有\n3序言\n数字经济时代，医疗健康数据的开发利用有利于广大民众的健康生活，但同时作为一类特殊",
+      "page_count": 24,
+      "indexed_at": "2026-04-27T22:12:12.871810"
+    },
+    {
+      "file_name": "03 GDPR 英文版.pdf",
+      "relative_path": "Reference/03 GDPR 英文版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Reference/03 GDPR 英文版.pdf",
+      "file_hash": "d963a487e0955a66fd01724fee255c8d",
+      "file_size": 982304,
+      "modified_time": "2025-11-18T10:56:35.069582",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/1 Official Jour nal of the European Un"
+        },
+        {
+          "number": "31.7",
+          "title": ".2012, p. 90."
+        },
+        {
+          "number": "18.12",
+          "title": ".2012, p. 127."
+        },
+        {
+          "number": "23.11",
+          "title": ".1995, p. 31)."
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/2 Official Jour nal of the European Un"
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/3 Official Jour nal of the European Un"
+        },
+        {
+          "number": "20.5",
+          "title": ".2003, p. 36)."
+        },
+        {
+          "number": "12.1",
+          "title": ".2001, p. 1)."
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/4 Official Jour nal of the European Un"
+        },
+        {
+          "number": "17.7",
+          "title": ".2000, p. 1)."
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/5 Official Jour nal of the European Un"
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/6 Official Jour nal of the European Un"
+        },
+        {
+          "number": "4.4",
+          "title": ".2011, p. 45)."
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/7 Official Jour nal of the European Un"
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/8 Official Jour nal of the European Un"
+        },
+        {
+          "number": "21.4",
+          "title": ".1993, p. 29)."
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/9 Official Jour nal of the European Un"
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/10 Official Jour nal of the European U"
+        },
+        {
+          "number": "4.5",
+          "title": ".2016 L 119/11 Official Jour nal of the European U"
+        },
+        {
+          "number": "31.12",
+          "title": ".2008, p. 70)."
+        }
+      ],
+      "content_preview": "I \n(Legislativ e acts) \nREGUL ATIONS \nREGUL ATION (EU) 2016/679 OF THE EUR OPEAN PARLIAMENT AND OF THE COUNCIL \nof 27 Apr il 2016 \non the protection of natural persons with regard to the processing of personal data and on the free \nmovement of such data, and repealing Directiv e 95/46/EC (General Data Protection Regulation) \n(Text with EEA relevance) \nTHE EUR OPEAN PARLIAMENT AND THE COUNCIL OF THE EUR OPEAN UNION, \nHaving regar d to the Treaty on the Functioning of the European Union, and in pa",
+      "page_count": 88,
+      "indexed_at": "2026-04-27T22:12:20.561455"
+    },
+    {
+      "file_name": "EU_GDPR_Full_Text_EN.pdf",
+      "relative_path": "Reference/EU_GDPR_Full_Text_EN.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Reference/EU_GDPR_Full_Text_EN.pdf",
+      "file_hash": "bf3f9a276459676195e75dfe69bd9c76",
+      "file_size": 814932,
+      "modified_time": "2022-06-28T10:11:46.128698",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 1,
+      "chapters": [
+        {
+          "number": "Chapter 2",
+          "title": "of"
+        }
+      ],
+      "content_preview": "Official Journal of th e European Union 4 May, 2016 Page 1of 77REGULATION (EU) 2016/679 OFTHE EUROPEAN PARLIAMENT AND\nOFTHE COUNCIL\nof27April 2016\nontheprotection ofnatural persons with regard totheprocessing ofpersonal data and on\nthefree movement ofsuch data, and repealing Directive 95/46/EC (General Data\nProtection Regulation)\nCHAPTER I\nGeneral provisions\nArticle 1\nSubject -matter and objectives\n1.   This Regulation lays down rules relating to the protection of natural persons with regard to ",
+      "page_count": 77,
+      "indexed_at": "2026-04-27T22:12:26.140864"
+    },
+    {
+      "file_name": "【杨育斌】零信任技术应用实践.pdf",
+      "relative_path": "Reference/【杨育斌】零信任技术应用实践.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Reference/【杨育斌】零信任技术应用实践.pdf",
+      "file_hash": "3743ae0a4195ed8802efd2e1b25150bb",
+      "file_size": 2769761,
+      "modified_time": "2022-05-18T11:21:20.406155",
+      "domains": [
+        "身份与访问管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "关注腾讯安全公众号\n了解更多精彩内容\n零信任技术 应用实践\n杨育斌\n零信任 -Why\n零信任 -How\n实践案例 -More\n零信任 --Why\n为什么需要零信任？\n为什么需要零信任？零信任 v.s. 传统防护\n引自信通院何宝宏 《零信任发展观察 》\n引自信通院何宝宏 《零信任发展观察 》为什么需要零信任？远程办公新场景\n引自信通院何宝宏 《零信任发展观察 》\n引自信通院何宝宏 《零信任发展观察 》为什么需要零信任？业务应用新场景\n零信任对于组织的意义和落地挑战？\n组织对零信任需要关注哪些维度？\n零信任 --How\n我们用零信任去保护什么 —企业侧\n企业面临的风险\n服务器上的\n数据资产远程访问者\n基于数据资产风险分析内部访问者数据资产访问的对象\n访问的路径访问的路径\n访问的对象服务访问访问的对象\n访问的路径\n我们用零信任的理念去保护什么 –风险点\n基于这个模型的常见场景\n首选，假设风险点都是不安全的 →NEVER TRUST\n其次，风险点是持续 动态变化的 , 一旦变化访问授权也应该变化 →ALWAYS VERIFY\n最终\n目标：\n是为了\n降低在各种混合办公环境下企业整体安全风险可控。",
+      "page_count": 26,
+      "indexed_at": "2026-04-27T22:12:27.454326"
+    }
+  ]
+}

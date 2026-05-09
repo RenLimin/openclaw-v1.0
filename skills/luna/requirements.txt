@@ -1,0 +1,6 @@
+# Luna 监控运维框架依赖
+psutil>=5.9.0
+
+# 可选依赖
+# python-daemon>=2.3.0  # 如需后台运行
+# pyyaml>=6.0          # 如需 YAML 配置文件支持

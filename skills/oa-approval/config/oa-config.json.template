@@ -1,0 +1,44 @@
+{
+  "oa_url": "https://oa.example.com/",
+  "auth": {
+    "username": "your.email@company.com",
+    "keychain_service": "openclaw-browser-ella-oa-username"
+  },
+  "selectors": {
+    "login_form": {
+      "username_input": "#username",
+      "password_input": "#password",
+      "submit_button": "#loginBtn",
+      "captcha_image": "#captchaImg",
+      "captcha_input": "#captcha"
+    },
+    "todo_list": {
+      "container": ".todo-list",
+      "items": ".todo-item",
+      "item_title": ".item-title",
+      "item_id": ".item-id",
+      "item_url": ".item-link"
+    },
+    "approval_page": {
+      "detail_container": ".approval-detail",
+      "comment_textarea": "#comment",
+      "approve_button": "#btnApprove",
+      "reject_button": "#btnReject",
+      "confirm_dialog": ".modal-confirm"
+    }
+  },
+  "timeout": {
+    "page_load": 30,
+    "element_wait": 10
+  },
+  "human_simulation": {
+    "operation_delay_min": 2,
+    "operation_delay_max": 5,
+    "typing_delay_min": 0.1,
+    "typing_delay_max": 0.3
+  },
+  "output": {
+    "screenshot_dir": "~/output/oa-screenshots/",
+    "log_dir": "~/output/oa-logs/"
+  }
+}

@@ -1,0 +1,3751 @@
+{
+  "count": 36,
+  "documents": [
+    {
+      "file_name": "ISO_IEC 27001-2013.pdf",
+      "relative_path": "ISO/ISO_IEC 27001-2013.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/ISO/ISO_IEC 27001-2013.pdf",
+      "file_hash": "2b81838f3c0c87688d124a8da4dde2e8",
+      "file_size": 1048183,
+      "modified_time": "2022-06-01T14:20:13.380529",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "4.1",
+          "title": "Understanding the organization and its context  .."
+        },
+        {
+          "number": "4.2",
+          "title": "Understanding the needs and expectations of intere"
+        },
+        {
+          "number": "4.3",
+          "title": "Determining the scope of the information security"
+        },
+        {
+          "number": "4.4",
+          "title": "Information security management system  .........."
+        },
+        {
+          "number": "5.1",
+          "title": "Leadership and commitment  ......................."
+        },
+        {
+          "number": "5.2",
+          "title": "Policy  .........................................."
+        },
+        {
+          "number": "5.3",
+          "title": "Organizational roles, responsibilities and authori"
+        },
+        {
+          "number": "6.1",
+          "title": "Actions to address risks and opportunities  ......"
+        },
+        {
+          "number": "6.2",
+          "title": "Information security objectives and planning to ac"
+        },
+        {
+          "number": "7.1",
+          "title": "Resources  ......................................."
+        },
+        {
+          "number": "7.2",
+          "title": "Competence  ......................................"
+        },
+        {
+          "number": "7.3",
+          "title": "Awareness  ......................................."
+        },
+        {
+          "number": "7.4",
+          "title": "Communication  ..................................."
+        },
+        {
+          "number": "7.5",
+          "title": "Documented information  .........................."
+        },
+        {
+          "number": "8.1",
+          "title": "Operational planning and control  ................"
+        },
+        {
+          "number": "8.2",
+          "title": "Information security risk assessment ............."
+        },
+        {
+          "number": "8.3",
+          "title": "Information security risk treatment  ............."
+        },
+        {
+          "number": "9.1",
+          "title": "Monitoring, measurement, analysis and evaluation"
+        },
+        {
+          "number": "9.2",
+          "title": "Internal audit  .................................."
+        },
+        {
+          "number": "9.3",
+          "title": "Management review  ..............................."
+        }
+      ],
+      "content_preview": "Information technology  — Security \ntechniques — Information security \nmanagement systems — Requirements\nTechnologies de l’information  — Techniques de sécurité — Systèmes \nde management de la sécurité de l’information — Exigences\n© ISO/IEC 2013INTERNATIONAL \nSTANDARDISO/IEC\n27001\nSecond edition\n2013-10-01\nReference number\nISO/IEC 27001:2013(E)\nVýEOá`o[Qh[fN`Tvß\n\u0000w\u0000w\u0000w\u0000.\u0000c\u0000n\u0000c\u0000i\u0000s\u0000a\u0000.\u0000c\u0000o\u0000m\nISO/IEC 27001   \n \n  \n信息技术- 安全技术- 信息安全管理体系 -要求 \nInformation technology - Security techniques \n-Informat",
+      "page_count": 54,
+      "indexed_at": "2026-04-27T22:06:16.569685"
+    },
+    {
+      "file_name": "AIO9-机翻版.pdf",
+      "relative_path": "AIO/AIO9-机翻版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/AIO/AIO9-机翻版.pdf",
+      "file_hash": "cd624f75e93802f8d72fe1a9daabd508",
+      "file_size": 37195354,
+      "modified_time": "2022-05-16T17:09:59.165412",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第1章",
+          "title": "网络安全治理 3"
+        },
+        {
+          "number": "第二章",
+          "title": "风险管理 53"
+        },
+        {
+          "number": "第三章",
+          "title": "遵守125"
+        },
+        {
+          "number": "第4章",
+          "title": "框架171"
+        },
+        {
+          "number": "第五章",
+          "title": "资产213"
+        },
+        {
+          "number": "第6章",
+          "title": "数据安全 253"
+        },
+        {
+          "number": "第7章",
+          "title": "系统架构 283"
+        },
+        {
+          "number": "第八章",
+          "title": "密码学 317"
+        },
+        {
+          "number": "第9章",
+          "title": "安全架构 385"
+        },
+        {
+          "number": "第10章",
+          "title": "现场和设施安全 417"
+        },
+        {
+          "number": "第11章",
+          "title": "网络基础 469"
+        },
+        {
+          "number": "第12章",
+          "title": "无线网络 559"
+        },
+        {
+          "number": "第13章",
+          "title": "保护网络 597"
+        },
+        {
+          "number": "第14章",
+          "title": "网络组件 643"
+        },
+        {
+          "number": "第15章",
+          "title": "安全通信信道 681"
+        },
+        {
+          "number": "第16章",
+          "title": "身份和访问基础 715"
+        },
+        {
+          "number": "第17章",
+          "title": "管理身份和访问 765"
+        },
+        {
+          "number": "第18章",
+          "title": "安全评估 813"
+        },
+        {
+          "number": "第19章",
+          "title": "测量安全性 851"
+        },
+        {
+          "number": "第20章",
+          "title": "管理安全运营 885"
+        },
+        {
+          "number": "802.11",
+          "title": ". ......................................... 575"
+        },
+        {
+          "number": "802.11",
+          "title": "i。........................................ 576"
+        },
+        {
+          "number": "802.11",
+          "title": "w。....................................... 578"
+        },
+        {
+          "number": "802.1",
+          "title": "X。........................................ 579"
+        },
+        {
+          "number": "2.4",
+          "title": "管理数据生命周期"
+        },
+        {
+          "number": "2.4",
+          "title": ".1  数据角色（即所有者、控制者、保管者、处理者、用户 /主体）"
+        },
+        {
+          "number": "2.4",
+          "title": ".3  数据位置"
+        },
+        {
+          "number": "2.4",
+          "title": ".4  数据维护"
+        },
+        {
+          "number": "2.5",
+          "title": "确保适当的资产保留（例如，寿命终止（ EOL）、支持结束（ EOS））"
+        },
+        {
+          "number": "3.7",
+          "title": "节了解密码分析攻击的方法）"
+        },
+        {
+          "number": "3.7",
+          "title": ".1  蛮力"
+        },
+        {
+          "number": "3.7",
+          "title": ".4  频率分析"
+        },
+        {
+          "number": "3.7",
+          "title": ".6  实现攻击"
+        },
+        {
+          "number": "3.7",
+          "title": ".8  断层注入"
+        },
+        {
+          "number": "3.7",
+          "title": ".9  时机"
+        },
+        {
+          "number": "3.7",
+          "title": ".10  中间人（MITM ）"
+        },
+        {
+          "number": "3.7",
+          "title": ".11  传递散列"
+        },
+        {
+          "number": "3.7",
+          "title": ".12  Kerberos 攻击"
+        },
+        {
+          "number": "3.7",
+          "title": ".13  勒索软件"
+        },
+        {
+          "number": "3.9",
+          "title": "设计现场和设施安全控制）"
+        }
+      ],
+      "content_preview": "\u0000 t^\u001a[fTXN\u0013u(\u0000 ÷RÿY\u0016O \n格拉夫 “Atl•ìn•一个您所需要的\nSa。”\n\u0000 t^\u001a[fTXN\u0013u(\u0000 ÷RÿY\u0016O\n\u0000 t^\u001a[fTXN\u0013u(\u0000 ÷RÿY\u0016O 对CISSP®一体式考试指南的赞誉  \n \n费尔南多对 CISSP多功能考试指南的最新 更新延续了过去与肖恩·哈里斯\n（Shon Harris ）合作时开始的传统，即以一种让读者为考试做好准备的方式\n分解关键概念和关键技能。再次证明，材料不仅是考试准备的重要资产，而\n且是考试通过后使用的宝贵资源参考。  \n \n首席信息官Stefanie \nKeuser，CISSP， \n美国军官协会 \n \nCISSP综合考试指 南是通过CISSP 考试所需的唯一书籍。费尔南多·梅米不仅\n仅是一位作家，他还是网络安全行业的领导者。他的洞察力、知识和专长反映在本书提供的内容中。这本书不仅能为你提供通过考试所需的知识，还可以帮助你在网络安全领域进一步发展。  \n \nMarc Coady ，\nCISSP，好市多批\n发部合规分析师  \n \n作为任何网络安全从业人员的必备参考，本书提供了关于当今世界开展业务\n所需的日益复杂",
+      "page_count": 1368,
+      "indexed_at": "2026-04-27T22:06:29.358242"
+    },
+    {
+      "file_name": "AIO9机翻版.pdf",
+      "relative_path": "AIO/AIO9机翻版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/AIO/AIO9机翻版.pdf",
+      "file_hash": "2107e8bf3be9a668b95644ef4994bf3d",
+      "file_size": 37195226,
+      "modified_time": "2021-12-01T09:21:07.701589",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第1章",
+          "title": "网络安全治理 3"
+        },
+        {
+          "number": "第二章",
+          "title": "风险管理 53"
+        },
+        {
+          "number": "第三章",
+          "title": "遵守125"
+        },
+        {
+          "number": "第4章",
+          "title": "框架171"
+        },
+        {
+          "number": "第五章",
+          "title": "资产213"
+        },
+        {
+          "number": "第6章",
+          "title": "数据安全 253"
+        },
+        {
+          "number": "第7章",
+          "title": "系统架构 283"
+        },
+        {
+          "number": "第八章",
+          "title": "密码学 317"
+        },
+        {
+          "number": "第9章",
+          "title": "安全架构 385"
+        },
+        {
+          "number": "第10章",
+          "title": "现场和设施安全 417"
+        },
+        {
+          "number": "第11章",
+          "title": "网络基础 469"
+        },
+        {
+          "number": "第12章",
+          "title": "无线网络 559"
+        },
+        {
+          "number": "第13章",
+          "title": "保护网络 597"
+        },
+        {
+          "number": "第14章",
+          "title": "网络组件 643"
+        },
+        {
+          "number": "第15章",
+          "title": "安全通信信道 681"
+        },
+        {
+          "number": "第16章",
+          "title": "身份和访问基础 715"
+        },
+        {
+          "number": "第17章",
+          "title": "管理身份和访问 765"
+        },
+        {
+          "number": "第18章",
+          "title": "安全评估 813"
+        },
+        {
+          "number": "第19章",
+          "title": "测量安全性 851"
+        },
+        {
+          "number": "第20章",
+          "title": "管理安全运营 885"
+        },
+        {
+          "number": "802.11",
+          "title": ". ......................................... 575"
+        },
+        {
+          "number": "802.11",
+          "title": "i。........................................ 576"
+        },
+        {
+          "number": "802.11",
+          "title": "w。....................................... 578"
+        },
+        {
+          "number": "802.1",
+          "title": "X。........................................ 579"
+        },
+        {
+          "number": "2.4",
+          "title": "管理数据生命周期"
+        },
+        {
+          "number": "2.4",
+          "title": ".1  数据角色（即所有者、控制者、保管者、处理者、用户 /主体）"
+        },
+        {
+          "number": "2.4",
+          "title": ".3  数据位置"
+        },
+        {
+          "number": "2.4",
+          "title": ".4  数据维护"
+        },
+        {
+          "number": "2.5",
+          "title": "确保适当的资产保留（例如，寿命终止（ EOL）、支持结束（ EOS））"
+        },
+        {
+          "number": "3.7",
+          "title": "节了解密码分析攻击的方法）"
+        },
+        {
+          "number": "3.7",
+          "title": ".1  蛮力"
+        },
+        {
+          "number": "3.7",
+          "title": ".4  频率分析"
+        },
+        {
+          "number": "3.7",
+          "title": ".6  实现攻击"
+        },
+        {
+          "number": "3.7",
+          "title": ".8  断层注入"
+        },
+        {
+          "number": "3.7",
+          "title": ".9  时机"
+        },
+        {
+          "number": "3.7",
+          "title": ".10  中间人（MITM ）"
+        },
+        {
+          "number": "3.7",
+          "title": ".11  传递散列"
+        },
+        {
+          "number": "3.7",
+          "title": ".12  Kerberos 攻击"
+        },
+        {
+          "number": "3.7",
+          "title": ".13  勒索软件"
+        },
+        {
+          "number": "3.9",
+          "title": "设计现场和设施安全控制）"
+        }
+      ],
+      "content_preview": "t^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O \n格拉夫 “Atl•ìn•一个您所需要的\nSa。”\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O 对CISSP®一体式考试指南的赞誉  \n \n费尔南多对 CISSP多功能考试指南的最新 更新延续了过去与肖恩·哈里斯\n（Shon Harris ）合作时开始的传统，即以一种让读者为考试做好准备的方式\n分解关键概念和关键技能。再次证明，材料不仅是考试准备的重要资产，而\n且是考试通过后使用的宝贵资源参考。  \n \n首席信息官Stefanie \nKeuser，CISSP， \n美国军官协会 \n \nCISSP综合考试指 南是通过CISSP 考试所需的唯一书籍。费尔南多·梅米不仅\n仅是一位作家，他还是网络安全行业的领导者。他的洞察力、知识和专长反映在本书提供的内容中。这本书不仅能为你提供通过考试所需的知识，还可以帮助你在网络安全领域进一步发展。  \n \nMarc Coady ，\nCISSP，好市多批\n发部合规分析师  \n \n作为任何网络安全从业人员的必备参考，本书提供了关于当今世界开展业务\n所需的日益复杂的安全概念、",
+      "page_count": 1368,
+      "indexed_at": "2026-04-27T22:06:42.970203"
+    },
+    {
+      "file_name": "AIOv9机翻版-总结摘录.pdf",
+      "relative_path": "AIO/AIOv9机翻版-总结摘录.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/AIO/AIOv9机翻版-总结摘录.pdf",
+      "file_hash": "90c4ed03fd88a3cd74d24de956496c41",
+      "file_size": 4507589,
+      "modified_time": "2022-02-24T19:05:03.074890",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "1.1",
+          "title": "安全治理"
+        },
+        {
+          "number": "1.1",
+          "title": ".1 基本网络安全概念和术语"
+        },
+        {
+          "number": "1.1",
+          "title": ".2 安全治理原则"
+        },
+        {
+          "number": "1.1",
+          "title": ".3 安全策略、标准、程序和指南"
+        },
+        {
+          "number": "1.1",
+          "title": ".4 人员安全"
+        },
+        {
+          "number": "1.1",
+          "title": ".5 安全意识、教育和培训计划"
+        },
+        {
+          "number": "1.1",
+          "title": ".6 职业道德"
+        },
+        {
+          "number": "1.2",
+          "title": "风险管理"
+        },
+        {
+          "number": "1.2",
+          "title": ".1 风险管理概念"
+        },
+        {
+          "number": "1.2",
+          "title": ".2 脆弱性和威胁"
+        },
+        {
+          "number": "1.2",
+          "title": ".3 评估风险、资产评估"
+        },
+        {
+          "number": "1.2",
+          "title": ".4 监测风险"
+        },
+        {
+          "number": "1.2",
+          "title": ".5 供应链风险管理"
+        },
+        {
+          "number": "1.2",
+          "title": ".6 业务连续性"
+        },
+        {
+          "number": "1.3",
+          "title": "遵从"
+        },
+        {
+          "number": "1.3",
+          "title": ".1 法律法规"
+        },
+        {
+          "number": "1.3",
+          "title": ".2 网络犯罪和数据泄露"
+        },
+        {
+          "number": "1.3",
+          "title": ".3 许可证和知识产权要求"
+        },
+        {
+          "number": "1.3",
+          "title": ".4 合规要求"
+        },
+        {
+          "number": "1.3",
+          "title": ".5 调查要求"
+        }
+      ],
+      "content_preview": "一、安全与风险管理  \n# 1.1 安全治理  \n1.1.1 基本网络安全概念和术语  \n核心-CIA\n机密性\n机密性防止未经授权的实体（无论是人员还是流程）访问信息资产；\n通过在数据存储和传输时对数据进行加密、实施严格的访问控制和数据分\n类，以及对人员进行适当的数据保护程序培训，可以提供机密性；\n完整性\n意味着资产不存在未经授权的变更\n可确保攻击者或用户的错误不会损害系统或数据的完整性\n可用性\n保护确保授权人员能够可靠、及时地访问数据和资源\n建立必要的保护机制，以防止可能影响所有业务处理组件的\n可用性和生产率的内部和外部威胁\n真实性\n真实性保护确保我们可以相信某些东西来自其声称的来源。\n是身份验证的核心，它确定了试图登录到系统的实体实际上就是它声称的那\n个实体\n不可否认性\n仅限东方瑞通学员内部学习\n不可否认性与真实性密切相关，意味着某人不能否认自己是某一行为的根\n源。\n区 分 真 实 性 和 不 可 否 认 性 的 一 个 好 方 法 是 ， 真 实 性 向 你 证 明 你 在 给 定 的 时 间 点 与 给 定\n的 人 交 谈 。 不 否 认 向 任 何 人 证 明 某 个 人 在",
+      "page_count": 189,
+      "indexed_at": "2026-04-27T22:06:46.291430"
+    },
+    {
+      "file_name": "CISSP202205 模拟更新V5 from 崔佳.pdf",
+      "relative_path": "Practice & Test/CISSP202205 模拟更新V5 from 崔佳.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/CISSP202205 模拟更新V5 from 崔佳.pdf",
+      "file_hash": "588752e5c61f5ee9bd95a1b7abb0eb2d",
+      "file_size": 435059,
+      "modified_time": "2022-06-27T16:15:02.863868",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 1,
+      "chapters": [
+        {
+          "number": "2.0",
+          "title": "65在信息系统分类中，谁决定谁可以访问什么？"
+        }
+      ],
+      "content_preview": "11、一家总部在美国的医疗机构，在法国设有分支机构，组织需要在两个地方验证新药物的\n数据，哪种是最有效的处理数据方式?\nA：数据共享\nB、数据脱敏后在美国测试\nC、数据存储在法国\nD、无法有效的实现\n2、风险评估人员发现一个应用程序风险，未提供任何控制或补偿措施，该风险可能是：\nA、转移\nB、固有\nC、残余\nD、规避\n3、敏感开发项目经理的角色：\nA、选择好的开发语言\nB、尽可能多的交付软件\nC、保障项目管理\nD、遵循项目开发计划\n4、采用SAML可以提供以下：\nA、特权访问策略控制\nB、混合云数字身份共享\nC、标准协议\nD、安全的信息传输\n5、哪种标记语言允许共享应用安全策略,来保证所有的应用程序能遵循同一个安全原则?\nAXML\nBSPML\nCSAML\nDGML\n6、WhichofthefollowingistheBESTperimetersolutiontoprotect\nagainstanexternalDenialofService(DoS)attack?\n下面哪项是最好的边界解决方案用以防止外部的拒绝服务攻击?\nA．Packetfilterfirewal包过滤防火墙\nB.\nS",
+      "page_count": 40,
+      "indexed_at": "2026-04-27T22:06:59.711247"
+    },
+    {
+      "file_name": "CISSP202209 模拟更新V7 from 崔佳.pdf",
+      "relative_path": "Practice & Test/CISSP202209 模拟更新V7 from 崔佳.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/CISSP202209 模拟更新V7 from 崔佳.pdf",
+      "file_hash": "34599e40d28c552b1cb1eeda631ab756",
+      "file_size": 458724,
+      "modified_time": "2022-09-27T16:29:49.482462",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 1,
+      "chapters": [
+        {
+          "number": "2.0",
+          "title": "65在信息系统分类中，谁决定谁可以访问什么？"
+        }
+      ],
+      "content_preview": "11、一家总部在美国的医疗机构，在法国设有分支机构，组织需要在两个地方验证新药物的\n数据，哪种是最有效的处理数据方式?\nA：数据共享\nB、数据脱敏后在美国测试\nC、数据存储在法国\nD、无法有效的实现\n2、风险评估人员发现一个应用程序风险，未提供任何控制或补偿措施，该风险可能是：\nA、转移\nB、固有\nC、残余\nD、规避\n3、敏感开发项目经理的角色：\nA、选择好的开发语言\nB、尽可能多的交付软件\nC、保障项目管理\nD、遵循项目开发计划\n4、采用SAML可以提供以下：\nA、特权访问策略控制\nB、混合云数字身份共享\nC、标准协议\nD、安全的信息传输\n5、哪种标记语言允许共享应用安全策略,来保证所有的应用程序能遵循同一个安全原则?\nAXML\nBSPML\nCSAML\nDGML\n6、WhichofthefollowingistheBESTperimetersolutiontoprotect\nagainstanexternalDenialofService(DoS)attack?\n下面哪项是最好的边界解决方案用以防止外部的拒绝服务攻击?\nA．Packetfilterfirewal包过滤防火墙\nB.St",
+      "page_count": 42,
+      "indexed_at": "2026-04-27T22:07:17.172569"
+    },
+    {
+      "file_name": "topic9-带解析.docx",
+      "relative_path": "Practice & Test/topic9-带解析.docx",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/topic9-带解析.docx",
+      "file_hash": "92eddb5c4df83284873b2a4d680efebd",
+      "file_size": 249840,
+      "modified_time": "2022-08-09T10:25:52.789449",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 2,
+      "chapters": [
+        {
+          "number": "802.1",
+          "title": "x实现基于端口的安全性"
+        },
+        {
+          "number": "802.1",
+          "title": "x协议是基于Client/Server的访问控制和认证协议，它可以限制未经授权的用户/设备通过接入端"
+        }
+      ],
+      "content_preview": "1.下列哪一项是信息所有者的责任？\nA.确保用户和人员完成所需的安全培训，以访问信息系统（IS）\nB.定义对信息系统（IS）的适当访问，包括特权或访问权限\nC.管理通用安全控制的识别、实施和评估\nD.确保信息系统（IS）的运行符合商定的安全要求\n正确答案：B\n答案解析：考数据所有者的职责。A和D是资产所有者职责，C把管理改为协助是数据所有者和资产所有者的职责。\n2.在审核期间，发现组织缺乏为其Web托管解决方案正确建立性能指标的能力。最可能的原因是什么？\nA.缺少商业智能（BI）解决方案\nB.成本建模不足\nC.面向服务架构（SOA）部署不当\nD.服务水平协议（SLA）不足\n正确答案：D\n答案解析：SLA 规定了性能预期，如果供应商无法满足这些预期，SLA 通常包含处罚条款。\n3.以下哪种类型的业务连续性测试包括在不危及实际运营的情况下评估对内部和外部风险的恢复能力？\nA.演练\nB.模拟\nC.并行\nD.白盒\n正确答案：C\n答案解析：不危及生产环境的最全面的测试是并行测试，C较B更合适。\n4.安全专业人员确定，从先前的合并中继承下来的一些外包合同不符合当前的安全规定相关要求。以下哪项最好的",
+      "page_count": "unknown",
+      "indexed_at": "2026-04-27T22:07:17.774090"
+    },
+    {
+      "file_name": "考前冲刺-解析版.docx",
+      "relative_path": "Practice & Test/考前冲刺-解析版.docx",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/考前冲刺-解析版.docx",
+      "file_hash": "464b3f0fb5a0dee130a50db8b89904bc",
+      "file_size": 662636,
+      "modified_time": "2022-09-09T12:16:10.855008",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 14,
+      "chapters": [
+        {
+          "number": "0.5",
+          "title": "*0.5=25%。"
+        },
+        {
+          "number": "802.1",
+          "title": "x实施基于端口的安全"
+        },
+        {
+          "number": "802.1",
+          "title": "x实现端口限制。"
+        },
+        {
+          "number": "802.1",
+          "title": "X身份验证"
+        },
+        {
+          "number": "802.1",
+          "title": "X提供基于端口的网络准入控制能力。"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.2的系统的物理地址是08:00:12:13:14:2f。以下静态条目添加到其地址解析协议（A"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.6 : 08:00:12:13:14:2f。这可能代表什么类型的攻击？"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.2接收数据包"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.6地址"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.2的拒绝服务攻击（DoS），因为它不能正确的响应ARP请求"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.6的数据包给10.102.10.2"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.6的数据包给10.102.10.2，造成的影响是无法与10.102.10.6通信，因为是自己"
+        },
+        {
+          "number": "468.287",
+          "title": ".关于服务组织控制（SOC）报告，以下哪个是真的？"
+        },
+        {
+          "number": "530.348",
+          "title": ".风险管理框架（RMF）的哪一步确定了基线安全控制的初始集合？"
+        }
+      ],
+      "content_preview": "1.以下所有项目都应包括在业务影响分析（BIA）问卷调查中，但以下哪项问题除外？\nA.确定业务中断的风险\nB.确定业务流程的技术依赖\nC.识别业务中断的运营影响\nD.识别业务中断的财务影响\n正确答案：B\n答案解析：BIA过程包括确定优先级、风险识别、可能性评估、影响评估、资源优先级排序。\n2.在去高风险区域出差之前，以下哪项措施可以降低笔记本电脑的风险？\nA.检验设备是否存在物理篡改\nB.实施更严格的基线配置\nC.清除或重新镜像硬盘驱动器\nD.更改访问代码\n正确答案：B\n答案解析：A和D并不能提高安全性；笔记本从低风险区域（办公区）到高风险区域（出差地），调整安全基线配置可加强安全性；C可以保障笔记本不会携带公司的敏感数据，从而规避了数据泄露风险，但存在需携带敏感数据出差的需求。\n3.以下哪项代表了对数据机密性的最大风险？\nA.没有实施网络冗余\nB.没有完成安全意识培训\nC.生成的备份磁带没有经过加密\nD.用户有管理权限\n正确答案：C\n答案解析：经典案例--运输未加密的磁带到异地设施过程中丢失则会泄密。\n4.当一个组织计划搬迁时，从数据安全的角度来看，最重要的考虑是什么？\nA.确保防火",
+      "page_count": "unknown",
+      "indexed_at": "2026-04-27T22:07:18.394908"
+    },
+    {
+      "file_name": "topic9-去答案.docx",
+      "relative_path": "Practice & Test/topic9-去答案.docx",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/topic9-去答案.docx",
+      "file_hash": "743a7458fce8286dd277add936ac0ff0",
+      "file_size": 195378,
+      "modified_time": "2022-08-09T10:25:50.797487",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 1,
+      "chapters": [
+        {
+          "number": "802.1",
+          "title": "x实现基于端口的安全性"
+        }
+      ],
+      "content_preview": "1.下列哪一项是信息所有者的责任？\nA.确保用户和人员完成所需的安全培训，以访问信息系统（IS）\nB.定义对信息系统（IS）的适当访问，包括特权或访问权限\nC.管理通用安全控制的识别、实施和评估\nD.确保信息系统（IS）的运行符合商定的安全要求\n2.在审核期间，发现组织缺乏为其Web托管解决方案正确建立性能指标的能力。最可能的原因是什么？\nA.缺少商业智能（BI）解决方案\nB.成本建模不足\nC.面向服务架构（SOA）部署不当\nD.服务水平协议（SLA）不足\n3.以下哪种类型的业务连续性测试包括在不危及实际运营的情况下评估对内部和外部风险的恢复能力？\nA.演练\nB.模拟\nC.并行\nD.白盒\n4.安全专业人员确定，从先前的合并中继承下来的一些外包合同不符合当前的安全规定相关要求。以下哪项最好的方法将再次发生的风险降到最低？\nA.在合并后直接定义额外的安全控制措施\nB.在合并团队中包括一名采购官\nC.在合并发生前验证所有合同\nD.指派一名合规人员来审查合并条件\n5.以下哪一项是安全事件的直接成本？\nA.士气\nB.声誉\nC.设备\nD.信息\n6.在下列哪个程序中，包含安全过程数据的收集是最重要的",
+      "page_count": "unknown",
+      "indexed_at": "2026-04-27T22:07:21.073073"
+    },
+    {
+      "file_name": "CISSP-(ISC)²-Certification-Packet-Tests-中文.docx",
+      "relative_path": "Practice & Test/CISSP-(ISC)²-Certification-Packet-Tests-中文.docx",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/CISSP-(ISC)²-Certification-Packet-Tests-中文.docx",
+      "file_hash": "8cc796910ac45f5c0826b53cbbd9103e",
+      "file_size": 3242585,
+      "modified_time": "2022-05-26T15:15:36.333210",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第一章",
+          "title": "：安排CISSP考试"
+        },
+        {
+          "number": "第一章",
+          "title": "：安全和风险管理领域1实践问题"
+        },
+        {
+          "number": "第二章",
+          "title": "：资产安全领域2实践问题"
+        },
+        {
+          "number": "第三章",
+          "title": "：安全体系结构和工程领域3实践问题"
+        },
+        {
+          "number": "第四章",
+          "title": "：通信和网络安全领域4实践问题"
+        },
+        {
+          "number": "第五章",
+          "title": "：身份和访问管理领域5实践问题"
+        },
+        {
+          "number": "第六章",
+          "title": "：安全评估和测试领域6实践问题"
+        },
+        {
+          "number": "第7章",
+          "title": "：安全操作领域7实践问题"
+        },
+        {
+          "number": "第8章",
+          "title": "：软件开发安全领域8实践问题"
+        },
+        {
+          "number": "第9章",
+          "title": "：全面实践考试1"
+        },
+        {
+          "number": "第10章",
+          "title": "：全面实践考试2"
+        },
+        {
+          "number": "第一章",
+          "title": "，安排CISSP考试，你将学习在哪里安排和参加考试。"
+        },
+        {
+          "number": "第1章",
+          "title": "，安全和风险管理领域1实践问题，有100个实践问题，涵盖GRC管理和安全要求。"
+        },
+        {
+          "number": "第2章",
+          "title": "，资产安全领域2实践问题，有100个实践问题，涵盖资产处理和数据生命周期。"
+        },
+        {
+          "number": "第3章",
+          "title": "，安全架构和工程领域3实践问题，有100个实践问题，涵盖安全模型、系统安全、加密和物理安全。"
+        },
+        {
+          "number": "第4章",
+          "title": "，通信和网络安全领域4个实践问题，共有100个实践问题，涵盖网络架构安全和网络组件安全。"
+        },
+        {
+          "number": "第5章",
+          "title": "，身份和访问管理领域5实践问题，共有100个实践问题，涵盖多因素身份验证、单点登录和联盟。"
+        },
+        {
+          "number": "第6章",
+          "title": "，安全评估和测试领域6实践问题，有100个实践问题，涵盖漏洞评估、渗透测试、灾难恢复和业务连续性。"
+        },
+        {
+          "number": "第7章",
+          "title": "，安全操作领域7实践问题，有100个实践问题，涵盖调查技术、威胁情报、基本安全概念和事件管理。"
+        },
+        {
+          "number": "第8章",
+          "title": "，软件开发安全领域8实践问题，有100个实践问题，涵盖软件开发生命周期、软件配置管理、开源软件和安全编码实践。"
+        },
+        {
+          "number": "81.3",
+          "title": "DES（三重DES）有四种模式。哪种模式使用三个密钥：两个用于加密，一个用于解密？"
+        },
+        {
+          "number": "802.1",
+          "title": "x进行端口身份验证。√"
+        },
+        {
+          "number": "169.254",
+          "title": ".3.4，但仍然无法访问他的网上银行。最可能的问题是什么？"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.1发起攻击。迪法塔是什么样的人？"
+        },
+        {
+          "number": "192.168",
+          "title": ".4.7/24，系统B的IP地址为192.168.5.8/24。他使用ping测试连接，但收到错误消"
+        },
+        {
+          "number": "169.254",
+          "title": ".0.0/16"
+        },
+        {
+          "number": "192.168",
+          "title": ".0.0/8√ c类保留"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.0/8"
+        },
+        {
+          "number": "192.16",
+          "title": ".0.0/8"
+        },
+        {
+          "number": "802.11",
+          "title": "n Wi-Fi在信号严重丢失前可覆盖约30米。"
+        },
+        {
+          "number": "169.254",
+          "title": "形式的IP地址。xxx。xxx已启用自动配置，这将为系统提供IP地址，直到DHCP服务器恢复。使用非"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.1是其计算机（以及每台计算机）的本地主机地址。白帽黑客和道德黑客是一样的，他们被雇来审计企业的"
+        },
+        {
+          "number": "1.2",
+          "title": ".3.4）映射到内部地址（如10.0.0.4）。传输控制协议（TCP）提供面向连接的通信。征求意见（"
+        },
+        {
+          "number": "192.168",
+          "title": ".4.0子网上，系统B在192.168.5.0子网上。解决这个问题的一种方法是将系统B的地址切换到1"
+        },
+        {
+          "number": "92.168",
+          "title": ".4.8。更换电缆和检查连接也会导致同样的问题。集线器本身就不安全，因为所有流量都可以监控。"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.0/8网络范围是本地主机。每台计算机都有一个本地主机地址，它指向自己。169.254.0.0/"
+        },
+        {
+          "number": "192.16",
+          "title": ".0.0/8是公共IP地址的一个示例。"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.1）。A:B:C:D:D:C:B:A是000A:000B:000C:000D:000D:000"
+        },
+        {
+          "number": "3.5",
+          "title": "。设备B的CER为3.1。对于最佳安全性，以下哪项是正确的？"
+        },
+        {
+          "number": "1.0",
+          "title": ".1版，并已切换到新版本。顾客抱怨他们的购买失败了。弗朗西斯下一个最好的步骤是什么？"
+        }
+      ],
+      "content_preview": "CISSP ISC2认证\n2021年5月考试版的A118 CISSP域\n特德·乔丹，硕士，CISSP\n伯明翰-孟买\nCISSP ISC2\n认证实践考试和测试\n版权所有2021包装出版\n版权所有。未经出版商事先书面许可，不得复制、存储在检索系统中，或以任何形式或通过任何方式传播本书的任何部分，除非关键文章或评论中包含简短引用。\n在本书的编写过程中，已尽一切努力确保所提供信息的准确性。然而，本书中包含的信息不提供任何明示或暗示的担保。作者、Packt Publishing或其经销商和分销商均不对本书直接或间接造成或声称造成的任何损害承担责任。\nPackt Publishing努力通过适当使用大写字母提供本书中提到的所有公司和产品的商标信息。然而，Packt Publishing无法保证这些信息的准确性。\n集团产品经理：Wilson D'souza出版产品经理：Shrilekha Malpani高级编辑：阿伦·纳达尔\n内容开发编辑器：库尔卡尼先生\n技术编辑：尼希克·切鲁瓦科丹\n复制编辑器：Safis正在编辑\n项目协调员：沙根·塞尼\n校对员：Safis正在编辑\n索引器：Pratik Shiro",
+      "page_count": "unknown",
+      "indexed_at": "2026-04-27T22:07:43.156725"
+    },
+    {
+      "file_name": "CISSP Official (ISC)2 Practice Tests英文（第3版）-机翻版.pdf",
+      "relative_path": "Practice & Test/CISSP Official (ISC)2 Practice Tests英文（第3版）-机翻版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/CISSP Official (ISC)2 Practice Tests英文（第3版）-机翻版.pdf",
+      "file_hash": "60ba73c1ed8b752ce5e612d9b6bf6fa6",
+      "file_size": 11455789,
+      "modified_time": "2021-12-01T09:23:29.104957",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第1章",
+          "title": "安全和风险管理（域  1） 1"
+        },
+        {
+          "number": "第2章",
+          "title": "资产安全（域  2） 25"
+        },
+        {
+          "number": "第3章",
+          "title": "安全架构和工程（领域  3） 49"
+        },
+        {
+          "number": "第五章",
+          "title": "身份和访问管理（域  5） 97"
+        },
+        {
+          "number": "第六章",
+          "title": "安全评估和测试（领域  6） 121"
+        },
+        {
+          "number": "第七章",
+          "title": "安全操作（域  7） 145"
+        },
+        {
+          "number": "第八章",
+          "title": "软件开发安全（域  8） 169"
+        },
+        {
+          "number": "第九章",
+          "title": "练习测试  1 195"
+        },
+        {
+          "number": "第10章",
+          "title": "练习测试  2 225"
+        },
+        {
+          "number": "第11章",
+          "title": "练习测试  3 253"
+        },
+        {
+          "number": "第12章",
+          "title": "练习测试  4 283"
+        },
+        {
+          "number": "第1章",
+          "title": "：安全和风险管理（域  1） 312"
+        },
+        {
+          "number": "第2章",
+          "title": "：资产安全（域  2） 321"
+        },
+        {
+          "number": "第3章",
+          "title": "：安全架构和工程（领域  3） 333"
+        },
+        {
+          "number": "第七章",
+          "title": "：安全操作（域  7） 377"
+        },
+        {
+          "number": "第10章",
+          "title": "：练习测试 2 414"
+        },
+        {
+          "number": "第11章",
+          "title": "：练习测试 3 428"
+        },
+        {
+          "number": "第二章",
+          "title": "资产安全（域 2） ■"
+        },
+        {
+          "number": "第二章",
+          "title": "资产安全（域 2） 27 ■"
+        },
+        {
+          "number": "第二章",
+          "title": "资产安全（域 2） ■"
+        },
+        {
+          "number": "1.1",
+          "title": "了解、遵守和弘扬职业道德"
+        },
+        {
+          "number": "1.2",
+          "title": "理解和应用安全概念"
+        },
+        {
+          "number": "1.3",
+          "title": "评估和应用安全治理原则"
+        },
+        {
+          "number": "1.4",
+          "title": "确定合规性和其他要求"
+        },
+        {
+          "number": "1.5",
+          "title": "在整体背景下了解与信息安全相关的法律和监管问题"
+        },
+        {
+          "number": "1.6",
+          "title": "了解调查类型的要求（即行政、刑事、民事、监管、行业"
+        },
+        {
+          "number": "1.7",
+          "title": "制定、记录和实施安全政策、标准、程序和指南"
+        },
+        {
+          "number": "1.8",
+          "title": "识别、分析和优先考虑业务连续性 (BC) 要求"
+        },
+        {
+          "number": "1.9",
+          "title": "促进和执行人员安全政策和程序"
+        },
+        {
+          "number": "1.10",
+          "title": "理解和应用风险管理概念"
+        },
+        {
+          "number": "1.11",
+          "title": "理解并应用威胁建模概念和方法"
+        },
+        {
+          "number": "1.12",
+          "title": "应用供应链风险管理 (SCRM) 概念"
+        },
+        {
+          "number": "1.13",
+          "title": "建立并维护安全意识、教育和培训计划"
+        },
+        {
+          "number": "0.1",
+          "title": "D. 0.01"
+        },
+        {
+          "number": "0.0025",
+          "title": "B. 0.005"
+        },
+        {
+          "number": "0.01",
+          "title": "D. 0.015"
+        },
+        {
+          "number": "2.1",
+          "title": "识别和分类信息和资产"
+        },
+        {
+          "number": "2.2",
+          "title": "建立信息和资产处理要求"
+        },
+        {
+          "number": "2.3",
+          "title": "安全地配置资源"
+        },
+        {
+          "number": "2.4",
+          "title": "管理数据生命周期"
+        }
+      ],
+      "content_preview": "t^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O \nMike Chapple ，\nCISSP David Seidl，\nCISSP \n认证信息系统安全专家\n官方实践测试\n第三版\n提供四个完整、独特的练习测试和每个域的 100 个附加问题，涵盖所有\n当前的 CISSP 考试目标  \n补充 Sybex(ISC)*CISSPC 认证的信息系统安全专业官方学 习指南，第九版\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O (ISC)2®  \nCISSP® 认证信息系统安全专\n业官方实践测试  \n第三版\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O (ISC)2®  \nCISSP® 认证信息系统安全专\n业官方实践测试  \n第三版   \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nMike Chapple ，CISSP \nDavid Seidl，CISSP\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O  \n版权所有 © 2021 John Wiley & Sons, Inc. ",
+      "page_count": 505,
+      "indexed_at": "2026-04-27T22:07:57.312224"
+    },
+    {
+      "file_name": "考前冲刺-去答案版.docx",
+      "relative_path": "Practice & Test/考前冲刺-去答案版.docx",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/考前冲刺-去答案版.docx",
+      "file_hash": "1941a3c0bd7695ecd5ee5524dcd2c742",
+      "file_size": 605068,
+      "modified_time": "2022-09-09T12:15:46.663393",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 10,
+      "chapters": [
+        {
+          "number": "802.1",
+          "title": "x实施基于端口的安全"
+        },
+        {
+          "number": "802.1",
+          "title": "X身份验证"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.2的系统的物理地址是08:00:12:13:14:2f。以下静态条目添加到其地址解析协议（A"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.6 : 08:00:12:13:14:2f。这可能代表什么类型的攻击？"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.2接收数据包"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.6地址"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.2的拒绝服务攻击（DoS），因为它不能正确的响应ARP请求"
+        },
+        {
+          "number": "10.102",
+          "title": ".10.6的数据包给10.102.10.2"
+        },
+        {
+          "number": "468.287",
+          "title": ".关于服务组织控制（SOC）报告，以下哪个是真的？"
+        },
+        {
+          "number": "530.348",
+          "title": ".风险管理框架（RMF）的哪一步确定了基线安全控制的初始集合？"
+        }
+      ],
+      "content_preview": "1.以下所有项目都应包括在业务影响分析（BIA）问卷调查中，但以下哪项问题除外？\nA.确定业务中断的风险\nB.确定业务流程的技术依赖\nC.识别业务中断的运营影响\nD.识别业务中断的财务影响\n2.在去高风险区域出差之前，以下哪项措施可以降低笔记本电脑的风险？\nA.检验设备是否存在物理篡改\nB.实施更严格的基线配置\nC.清除或重新镜像硬盘驱动器\nD.更改访问代码\n3.以下哪项代表了对数据机密性的最大风险？\nA.没有实施网络冗余\nB.没有完成安全意识培训\nC.生成的备份磁带没有经过加密\nD.用户有管理权限\n4.当一个组织计划搬迁时，从数据安全的角度来看，最重要的考虑是什么？\nA.确保防火和探测系统足以保护人员。\nB.审查建筑规划以确定有多少个紧急出口\nC.根据现有的安全要求对新设施进行差距分析\nD.修订灾难恢复和业务连续性（DR/BC）计划\n5.一家信息技术（IT）服务由一个四级数据中心提供的公司正在准备一个全公司的业务连续性计划（BCP）。这位IT经理应该关注以下哪种类型的故障？\nA.应用程序\nB.存储\nC.电源\nD.网络\n6.在根据国际标准化组织（ISO）27001和27002制定的标准",
+      "page_count": "unknown",
+      "indexed_at": "2026-04-27T22:07:57.729239"
+    },
+    {
+      "file_name": "CISSP (ISC)² Certification Practice Exams and Tests -机翻版.docx",
+      "relative_path": "Practice & Test/CISSP (ISC)² Certification Practice Exams and Tests -机翻版.docx",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Practice & Test/CISSP (ISC)² Certification Practice Exams and Tests -机翻版.docx",
+      "file_hash": "334350d648ee436d0568a5b8d4411867",
+      "file_size": 2794579,
+      "modified_time": "2022-04-04T20:12:04.814592",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第一章",
+          "title": "：安排CISSP考试"
+        },
+        {
+          "number": "第一章",
+          "title": "：安全和风险管理领域1实践问题"
+        },
+        {
+          "number": "第二章",
+          "title": "：资产安全领域2实践问题"
+        },
+        {
+          "number": "第三章",
+          "title": "：安全体系结构和工程领域3实践问题"
+        },
+        {
+          "number": "第四章",
+          "title": "：通信和网络安全领域4实践问题"
+        },
+        {
+          "number": "第五章",
+          "title": "：身份和访问管理领域5实践问题"
+        },
+        {
+          "number": "第六章",
+          "title": "：安全评估和测试领域6实践问题"
+        },
+        {
+          "number": "第7章",
+          "title": "：安全操作领域7实践问题"
+        },
+        {
+          "number": "第8章",
+          "title": "：软件开发安全领域8实践问题"
+        },
+        {
+          "number": "第9章",
+          "title": "：全面实践考试1"
+        },
+        {
+          "number": "第10章",
+          "title": "：全面实践考试2"
+        },
+        {
+          "number": "第一章",
+          "title": "，安排CISSP考试，你将学习在哪里安排和参加考试。"
+        },
+        {
+          "number": "第1章",
+          "title": "，安全和风险管理领域1实践问题，有100个实践问题，涵盖GRC管理和安全要求。"
+        },
+        {
+          "number": "第2章",
+          "title": "，资产安全领域2实践问题，有100个实践问题，涵盖资产处理和数据生命周期。"
+        },
+        {
+          "number": "第3章",
+          "title": "，安全架构和工程领域3实践问题，有100个实践问题，涵盖安全模型、系统安全、加密和物理安全。"
+        },
+        {
+          "number": "第4章",
+          "title": "，通信和网络安全领域4个实践问题，共有100个实践问题，涵盖网络架构安全和网络组件安全。"
+        },
+        {
+          "number": "第5章",
+          "title": "，身份和访问管理领域5实践问题，共有100个实践问题，涵盖多因素身份验证、单点登录和联盟。"
+        },
+        {
+          "number": "第6章",
+          "title": "，安全评估和测试领域6实践问题，有100个实践问题，涵盖漏洞评估、渗透测试、灾难恢复和业务连续性。"
+        },
+        {
+          "number": "第7章",
+          "title": "，安全操作领域7实践问题，有100个实践问题，涵盖调查技术、威胁情报、基本安全概念和事件管理。"
+        },
+        {
+          "number": "第8章",
+          "title": "，软件开发安全领域8实践问题，有100个实践问题，涵盖软件开发生命周期、软件配置管理、开源软件和安全编码实践。"
+        },
+        {
+          "number": "802.1",
+          "title": "x进行端口身份验证。"
+        },
+        {
+          "number": "169.254",
+          "title": ".3.4，但仍然无法访问他的网上银行。最可能的问题是什么？"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.1发起攻击。迪法塔是什么样的人？"
+        },
+        {
+          "number": "192.168",
+          "title": ".4.7/24，系统B的IP地址为192.168.5.8/24。他使用ping测试连接，但收到错误消"
+        },
+        {
+          "number": "169.254",
+          "title": ".0.0/16"
+        },
+        {
+          "number": "192.168",
+          "title": ".0.0/8"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.0/8"
+        },
+        {
+          "number": "192.16",
+          "title": ".0.0/8"
+        },
+        {
+          "number": "802.11",
+          "title": "n Wi-Fi在信号严重丢失前可覆盖约30米。"
+        },
+        {
+          "number": "169.254",
+          "title": "形式的IP地址。xxx。xxx已启用自动配置，这将为系统提供IP地址，直到DHCP服务器恢复。使用非"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.1是其计算机（以及每台计算机）的本地主机地址。白帽黑客和道德黑客是一样的，他们被雇来审计企业的"
+        },
+        {
+          "number": "1.2",
+          "title": ".3.4）映射到内部地址（如10.0.0.4）。传输控制协议（TCP）提供面向连接的通信。征求意见（"
+        },
+        {
+          "number": "192.168",
+          "title": ".4.0子网上，系统B在192.168.5.0子网上。解决这个问题的一种方法是将系统B的地址切换到1"
+        },
+        {
+          "number": "92.168",
+          "title": ".4.8。更换电缆和检查连接也会导致同样的问题。集线器本身就不安全，因为所有流量都可以监控。"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.0/8网络范围是本地主机。每台计算机都有一个本地主机地址，它指向自己。169.254.0.0/"
+        },
+        {
+          "number": "192.16",
+          "title": ".0.0/8是公共IP地址的一个示例。"
+        },
+        {
+          "number": "127.0",
+          "title": ".0.1）。A:B:C:D:D:C:B:A是000A:000B:000C:000D:000D:000"
+        },
+        {
+          "number": "3.5",
+          "title": "。设备B的CER为3.1。对于最佳安全性，以下哪项是正确的？"
+        },
+        {
+          "number": "1.0",
+          "title": ".1版，并已切换到新版本。顾客抱怨他们的购买失败了。弗朗西斯下一个最好的步骤是什么？"
+        },
+        {
+          "number": "0.99",
+          "title": ".1版，即使其正常运行率为10%。"
+        }
+      ],
+      "content_preview": "Cl SC）2认证\n超过1000个prantire auestions和exeIdnations Coving\n2021年5月考试版的A118 CISSP域\n特德·乔丹，硕士，SSP\n伯明翰-孟买\nCISSP（ISC）2\n认证实践考试和测试\n版权所有2021包装出版\n版权所有。未经出版商事先书面许可，不得复制、存储在检索系统中，或以任何形式或通过任何方式传播本书的任何部分，除非关键文章或评论中包含简短引用。\n在本书的编写过程中，已尽一切努力确保所提供信息的准确性。然而，本书中包含的信息不提供任何明示或暗示的担保。作者、Packt Publishing或其经销商和分销商均不对本书直接或间接造成或声称造成的任何损害承担责任。\nPackt Publishing努力通过适当使用大写字母提供本书中提到的所有公司和产品的商标信息。然而，Packt Publishing无法保证这些信息的准确性。\n集团产品经理：Wilson D'souza出版产品经理：Shrilekha Malpani高级编辑：阿伦·纳达尔\n内容开发编辑器：库尔卡尼先生\n技术编辑：尼希克·切鲁瓦科丹\n复制编辑器：Safis正在编辑\n",
+      "page_count": "unknown",
+      "indexed_at": "2026-04-27T22:08:06.691463"
+    },
+    {
+      "file_name": "CBK6机翻版.pdf",
+      "relative_path": "CBK/CBK6机翻版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/CBK/CBK6机翻版.pdf",
+      "file_hash": "a1c56bae00ccd612e4b1fdd7df1b0700",
+      "file_size": 9878721,
+      "modified_time": "2021-12-01T09:22:29.196231",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 37,
+      "chapters": [
+        {
+          "number": "第3章",
+          "title": "表3.1访问矩阵示例表 3.z云服务模型表"
+        },
+        {
+          "number": "第五章",
+          "title": "表"
+        },
+        {
+          "number": "第一章",
+          "title": "图"
+        },
+        {
+          "number": "第3章",
+          "title": "图3.1 N层体系结 构图3.z有限状"
+        },
+        {
+          "number": "第5章",
+          "title": "图5.1访问管理生命周期第6 章"
+        },
+        {
+          "number": "第8章",
+          "title": "图8.1瀑布模型图 8.z Scrum流程"
+        },
+        {
+          "number": "第五章",
+          "title": "“通 信和网络安全”详细说明了"
+        },
+        {
+          "number": "第五章",
+          "title": "“身份和访问管理” 涵盖了识别 用户"
+        },
+        {
+          "number": "第8章",
+          "title": "“软件开发安全性”中 讨"
+        },
+        {
+          "number": "第五章",
+          "title": "中介绍。"
+        },
+        {
+          "number": "第8章",
+          "title": "“软件开发和安全”中介绍了"
+        },
+        {
+          "number": "第十章",
+          "title": "确定了应用于保护美国联邦政府信息安"
+        },
+        {
+          "number": "第35章",
+          "title": "外，商标还受《商标法条约实施法》（美"
+        },
+        {
+          "number": "第五章",
+          "title": "包含 若干条款，规定了与数据控制器和处理器相关的要求，并要求数"
+        },
+        {
+          "number": "第九章",
+          "title": "通过的成员国法律承担的任何义务，以及任何不遵守监管机构"
+        },
+        {
+          "number": "第6章",
+          "title": "广泛介绍了安全评估。"
+        },
+        {
+          "number": "第8章",
+          "title": "将进一步讨论成熟度模型。"
+        },
+        {
+          "number": "3.1",
+          "title": "访问矩阵示例表 3.z云服务模型表"
+        },
+        {
+          "number": "3.3",
+          "title": "加密方法表3. 分组密码概述"
+        },
+        {
+          "number": "3.5",
+          "title": "通用数据中心冗余层级别"
+        },
+        {
+          "number": "1.1",
+          "title": "中央情报局三合会"
+        },
+        {
+          "number": "1.3",
+          "title": "政策、程序、标准和指南之间的关系。。。"
+        },
+        {
+          "number": "1.5",
+          "title": "威胁、漏洞、资产和风险之间的关系。。。"
+        },
+        {
+          "number": "1.6",
+          "title": "评估风险的步骤图1.7 ISO"
+        },
+        {
+          "number": "1.8",
+          "title": "NIST 风险管理框架第z章"
+        },
+        {
+          "number": "3.1",
+          "title": "N层体系结 构图3.z有限状"
+        },
+        {
+          "number": "3.3",
+          "title": "简单安全属性和星形属性规则"
+        },
+        {
+          "number": "3.5",
+          "title": "B rewer–Nash安全"
+        },
+        {
+          "number": "3.6",
+          "title": "计划-执行-检查-行动周期"
+        },
+        {
+          "number": "3.7",
+          "title": "操作系统内存保护图3.8 Trusted Platform"
+        },
+        {
+          "number": "3.9",
+          "title": "IaaS、PaaS和SaaS的云共享责任模型"
+        },
+        {
+          "number": "3.10",
+          "title": "Mirai DDoS僵尸网络攻击的组件图3.11巨石和微服务"
+        },
+        {
+          "number": "3.1",
+          "title": "z操作系统有效地分配硬件资源。。。"
+        },
+        {
+          "number": "3.13",
+          "title": "1型和z型虚拟机监控程序"
+        },
+        {
+          "number": "3.1",
+          "title": "、ECB、CBC和CFB块加密实现图3.15 流密码加密算法"
+        },
+        {
+          "number": "3.16",
+          "title": "分组密码加密算法"
+        },
+        {
+          "number": "3.17",
+          "title": "分组密码中的多轮数学函数图3.18 替换 S盒的分组密码"
+        }
+      ],
+      "content_preview": "t^\u001a[fTXN\u0013u(\u0000 ÷RÿY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ÷RÿY\u0016O 1  目录 \n封面标题\n页版权所\n有 \n主要作者技术评 论\n员引言  \n域1：安全和风险管理  \n理解、遵守和促进职业道德  \n理解并应用安全概念  \n评估和应用安全治理原则确定法规遵从性和其他要求  \n全面了解与信息安全相关的法律和法规问题  \n了解调查类型的要求  \n制定、记录和实施安全政策、标准、程序和指导方针  \n确定、分析业务连续性需求并确定其优先级  \n协助并执行人员安全政策和程序  \n理解并应用风险管理概念  \n理解并应用威胁建模概念和方法  \n应用供应链风险管理概念  \n建立并维护安全意识、教育和培训计划  \n总结  \n域z：资产安全  \n识别和分类信息和资产  \n安全地建立信息和资产处理要求提供资源  \n管理数据生命周期  \n确保适当的资产保留  \n确定数据安全控制和法规遵从性要求  \n总结  \n域3：安全体系结构与工程\nt^\u001a[fTXN\u0013u(\u0000 ÷RÿY\u0016O 2  使用安全设计原则研究、实施和管理工程流程  \n了解安全模型的基本概念  \n根据系统安全要求选择控件  \n了解信息",
+      "page_count": 631,
+      "indexed_at": "2026-04-27T22:08:21.521820"
+    },
+    {
+      "file_name": "瑞通精讲视频笔记.docx",
+      "relative_path": "瑞通/瑞通精讲视频笔记.docx",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/瑞通/瑞通精讲视频笔记.docx",
+      "file_hash": "df8d3c329b192e1b7b0c696889abf65b",
+      "file_size": 329614291,
+      "modified_time": "2023-02-28T14:32:42.602954",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 1,
+      "chapters": [
+        {
+          "number": "2.5",
+          "title": "层，以打标的方式替代查看路由表"
+        }
+      ],
+      "content_preview": "CISSP\n课程整体介绍\nCISSP介绍\n教材\nOSG（学习指南）- CISSP官方学习指南\nCBK（大纲）- 考试大纲\n菜花大典（考点总结）\nAIO（词典）- CISSP权威指南\n注：可通过瑞通官方网站获取电子版\nCBK构成\nChap 1 – 战略层面，高层视角；\nChap 2 – 客体（保护对象）；\nChap 3 - 战术层面，项目解决方案；\nChap 4 - 技术层面，网络基础设施；\nChap 5 - 技术层面，AAA；\nChap 6 - 测试评估角度；\nChap 7 – 运营层面，具体措施及行为；\nChap 8 – 技术层面，开发/代码/数据库设计\n考务\n自适应答题\n8个域均须70%+正确率\nCPE学分 – ISC2官网（https://www.isc2.org）\n价值\n安全与风险管理\n信息资产安全特性CIA\n机密性（可见）\n完整性（可改）\n可用性（可靠）\n机密性 - 加密、访问控制（最小特权、因需而知）\n完整性 - 授权（校验/哈希函数、职责分离、日志/log）\n可用性 - 备份（针对数据/设备）、高可用性（针对业务）\n注：IT解决的不是业务本身，而是业务风险\n信息安全的实质",
+      "page_count": "unknown",
+      "indexed_at": "2026-04-27T22:08:23.323988"
+    },
+    {
+      "file_name": "CISSP串讲 (20230227).pdf",
+      "relative_path": "瑞通/CISSP串讲 (20230227).pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/瑞通/CISSP串讲 (20230227).pdf",
+      "file_hash": "50a22c70aff4e3ef5a4fd571bfbfba8c",
+      "file_size": 5250882,
+      "modified_time": "2023-02-26T20:30:54.063968",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "CISSP串讲资料\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00001\n安全管理 (1)\n(战略)\n安全工程（ 3）\n（战术）\n安全运行（ 7）\n（行动）资产安全（ 2）\n（CIA）网络安全 (4)\n(传输)\n访问安全（ 5）\n（调用）\n开发安全（ 8）\n（操作）\n管\n控\n技\n控\n安全测评（ 6）\n确保安全措施有效实施\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00002\n域1：安全与风险管理\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00003\n模块主题\nModule Topic \n介绍\nIntroduction\n机密性、完整性和可用性的概念\nConcepts of Confidentiality, Integrity, and Availability\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u0000",
+      "page_count": 459,
+      "indexed_at": "2026-04-27T22:08:26.893339"
+    },
+    {
+      "file_name": "CISSP串讲 (2022).pdf",
+      "relative_path": "瑞通/CISSP串讲 (2022).pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/瑞通/CISSP串讲 (2022).pdf",
+      "file_hash": "50a22c70aff4e3ef5a4fd571bfbfba8c",
+      "file_size": 5250882,
+      "modified_time": "2022-12-27T10:29:15.273949",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "CISSP串讲资料\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00001\n安全管理 (1)\n(战略)\n安全工程（ 3）\n（战术）\n安全运行（ 7）\n（行动）资产安全（ 2）\n（CIA）网络安全 (4)\n(传输)\n访问安全（ 5）\n（调用）\n开发安全（ 8）\n（操作）\n管\n控\n技\n控\n安全测评（ 6）\n确保安全措施有效实施\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00002\n域1：安全与风险管理\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00003\n模块主题\nModule Topic \n介绍\nIntroduction\n机密性、完整性和可用性的概念\nConcepts of Confidentiality, Integrity, and Availability\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u0000",
+      "page_count": 459,
+      "indexed_at": "2026-04-27T22:08:30.352266"
+    },
+    {
+      "file_name": "D1-2-安全治理、安全计划和框架.pdf",
+      "relative_path": "OSG/D1-2-安全治理、安全计划和框架.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/D1-2-安全治理、安全计划和框架.pdf",
+      "file_hash": "f4f8249cd4268395d08a7543713cc94e",
+      "file_size": 620753,
+      "modified_time": "2021-03-17T08:58:35.329718",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "1\n铭记初心，实现自我\n 北京铭学思诚科技有限公司\n本节目标\n•什么是安全治理？\n•企业管理层和安全专业人员在安全治理方面关注什么？\n•如何建立安全管理计划？\n•常用的安全框架有哪些？\n我们要理解以下基本概念\n2\n铭记初心，实现自我\n 北京铭学思诚科技有限公司\n安全治理概述\n•管理 VS.  治理\n•企业治理 VS. IT治理 VS. 安全治理\n•安全治理\n•首先我们开始学习安全治理的基本概念。在了解安全治理基本概念之前，我\n们需要知道什么是管理、什么是治理。\n•管理（Management）：管理者为了达到特定目的而对管理对象进行的计划、\n组织、指挥、协调和控制的一系列活动；治理（governance）：治理是或公\n或私的个人和机构进行经营、管理相同事务的诸多方式的总和。\n•我们可以看出管理强调的是一个过程活动，而治理强调的是为了达到同一目\n标，多方面的协调。\n•在我们的治理领域，经常会说道三个治理的概念：企业治理、IT治理和安全\n治理，这几个概念是什么，他们之间有什么联系呢？\n•企业治理：是一套程序、惯例、政策、法律及机构，影响着如何带领、管理\n及控制公司。\n•IT治理：IT治理是一",
+      "page_count": 9,
+      "indexed_at": "2026-04-27T22:08:30.828950"
+    },
+    {
+      "file_name": "OSG10中英对照版.pdf",
+      "relative_path": "OSG/OSG10中英对照版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/OSG10中英对照版.pdf",
+      "file_hash": "727af24397b65b5cc14e3b452452e581",
+      "file_size": 55372371,
+      "modified_time": "2025-11-14T13:59:27.123852",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 60,
+      "chapters": [
+        {
+          "number": "第1章",
+          "title": "-实现安全治理的原则和策略  Security Governance Through Principles and"
+        },
+        {
+          "number": "第2章",
+          "title": "-人员安全和风险管理的概念  Personnel Security and Risk Management"
+        },
+        {
+          "number": "第3章",
+          "title": "-业务连续性计划  Business Continuity Planning  ................................ ...........  220"
+        },
+        {
+          "number": "第4章",
+          "title": "-法律、法规和合规  Laws, Regulations, and Compliance  .............................  279"
+        },
+        {
+          "number": "第5章",
+          "title": "-保护资产安全  Protecting Security of Assets  ................................ .................  354"
+        },
+        {
+          "number": "第6章",
+          "title": "-密码学和对称密钥算法  Cryptography and Symmetric Key Algorithms  ... 424"
+        },
+        {
+          "number": "第7章",
+          "title": "-PKI和密码应用  PKI and Cryptographic Applications  ................................ . 502"
+        },
+        {
+          "number": "第8章",
+          "title": "-安全模型、设计和能力的原则  Principles of Security Models, Design, and"
+        },
+        {
+          "number": "第9章",
+          "title": "-安全漏洞、威胁和对策  Security Vulnerabilities, Threats, and"
+        },
+        {
+          "number": "第10章",
+          "title": "-物理安全要求  Physical Security Requirements  ................................ .........  839"
+        },
+        {
+          "number": "第11章",
+          "title": "-安全网络架构和组件  Secure Network Architecture and Components  ... 928"
+        },
+        {
+          "number": "第12章",
+          "title": "-安全通信与网络攻击  Secure Communications and Network Attacks  .. 1112"
+        },
+        {
+          "number": "第13章",
+          "title": "管理身份和认证  Managing Identity and Authentication  ........................  1233"
+        },
+        {
+          "number": "第14章",
+          "title": "控制和监控访问  Controlling and Monitoring Access  ..............................  1307"
+        },
+        {
+          "number": "第15章",
+          "title": "-安全评估与测试  Security Assessment and Testing  ................................ . 1403"
+        },
+        {
+          "number": "第16章",
+          "title": "-安全运营管理  Managing Security Operations  ................................ ..........  1479"
+        },
+        {
+          "number": "第17章",
+          "title": "-事件预防和响应  Preventing and Responding to Incidents  ....................  1555"
+        },
+        {
+          "number": "第18章",
+          "title": "-灾难恢复计划  Disaster Recovery Planning  ................................ ...............  1679"
+        },
+        {
+          "number": "第19章",
+          "title": "-调查和道德  Investigations and Ethics  ................................ .......................  1775"
+        },
+        {
+          "number": "第20章",
+          "title": "-软件开发安全  Software Development Security  ................................ ........  1837"
+        },
+        {
+          "number": "Chapter 2",
+          "title": ", “Personnel Security and Risk Management Concepts ”"
+        },
+        {
+          "number": "Chapter 3",
+          "title": ", “Business Continuity Planning ”"
+        },
+        {
+          "number": "Chapter 4",
+          "title": ", “Laws, Regulations, and Compliance ”"
+        },
+        {
+          "number": "Chapter 19",
+          "title": ", “Investigations and Ethics”"
+        },
+        {
+          "number": "Chapter 2",
+          "title": "and Chapter 15, “Security"
+        },
+        {
+          "number": "Chapter 6",
+          "title": ", “Cryptography and"
+        },
+        {
+          "number": "Chapter 7",
+          "title": ", “PKI and Cryptographic Applications”),"
+        },
+        {
+          "number": "Chapter 13",
+          "title": ","
+        },
+        {
+          "number": "Chapter 13",
+          "title": "."
+        },
+        {
+          "number": "Chapter 9",
+          "title": ", “Security Vulnerabilities, Threats, and Countermeasures,” for more on the"
+        },
+        {
+          "number": "Chapter 7",
+          "title": ")."
+        },
+        {
+          "number": "Chapter 12",
+          "title": ", “Secure Communications and Network Attacks,” for a discussion of"
+        },
+        {
+          "number": "Chapter 2",
+          "title": "."
+        },
+        {
+          "number": "Chapter 16",
+          "title": ","
+        },
+        {
+          "number": "Chapter 5",
+          "title": ", “Protecting"
+        },
+        {
+          "number": "Chapter 5",
+          "title": "for roles related specifically to data"
+        },
+        {
+          "number": "Chapter 2",
+          "title": ")."
+        },
+        {
+          "number": "Chapter \n15",
+          "title": "for more on fuzz testing."
+        },
+        {
+          "number": "Chapter 20",
+          "title": ", “Software Development Security,” regarding Agile)."
+        },
+        {
+          "number": "Chapter 2",
+          "title": ". The"
+        },
+        {
+          "number": "1.1",
+          "title": "安全101 Security 101 ..............................."
+        },
+        {
+          "number": "1.2",
+          "title": "理解和应用安全概念  Understand and Apply Security Concepts"
+        },
+        {
+          "number": "1.3",
+          "title": "安全边界  Security Boundaries  ......................."
+        },
+        {
+          "number": "1.4",
+          "title": "评估和应用安全治理原则  Evaluate and Apply Security Governanc"
+        },
+        {
+          "number": "1.5",
+          "title": "管理安全功能  Manage the Security Function  ............"
+        },
+        {
+          "number": "1.6",
+          "title": "安全策略、标准、程序和指南  Security Policy, Standards, Procedu"
+        },
+        {
+          "number": "1.7",
+          "title": "威胁建模  Threat Modeling  ..........................."
+        },
+        {
+          "number": "1.8",
+          "title": "供应链风险管理  Supply Chain Risk Management  ..........."
+        },
+        {
+          "number": "1.9",
+          "title": "本章小结  Summary  ................................ .."
+        },
+        {
+          "number": "1.10",
+          "title": "学习要点  Study Essentials  .........................."
+        },
+        {
+          "number": "1.11",
+          "title": "书面实验  Written Lab  ..............................."
+        },
+        {
+          "number": "2.1",
+          "title": "人员安全策略和程序 Personnel Security Policies and Procedur"
+        },
+        {
+          "number": "2.2",
+          "title": "理解并应用风险管理概念 Understand and Apply Risk Management"
+        },
+        {
+          "number": "2.3",
+          "title": "社会工程 Social Engineering  ........................."
+        },
+        {
+          "number": "2.4",
+          "title": "建立和维护安全意识、教育和培训计划 Establish and Maintain a Securit"
+        },
+        {
+          "number": "2.5",
+          "title": "本章小节 Summary  ................................ ..."
+        },
+        {
+          "number": "2.6",
+          "title": "考试要点 Study Essentials  ..........................."
+        },
+        {
+          "number": "2.7",
+          "title": "书面实验 Written Lab  ................................"
+        },
+        {
+          "number": "3.1",
+          "title": "业务连续性计划概述  Planning for Business Continuity  ....."
+        },
+        {
+          "number": "3.2",
+          "title": "项目范围和计划  Project Scope and Planning  ............."
+        }
+      ],
+      "content_preview": "仅供内部学习交流使用 ，更多备考资料联系班主任或课程顾问获取  \n1\n仅供内部学习交流使用 ，更多备考资料联系班主任或课程顾问获取  \n2\n仅供内部学习交流使用 ，更多备考资料联系班主任或课程顾问获取  \n3 \n 目录 \n第1章-实现安全治理的原则和策略  Security Governance Through Principles and \nPolicies  ................................ ................................ ................................ ................................ . 1 \n1.1 安全101 Security 101 ................................ ................................ ............................  1 \n1.2 理解和应用安全概念  Understand and Apply Security Concepts  ...",
+      "page_count": 1985,
+      "indexed_at": "2026-04-27T22:08:56.166034"
+    },
+    {
+      "file_name": "osg知识点框架脑图：下载亿图脑图app即可观看.pdf",
+      "relative_path": "OSG/osg知识点框架脑图：下载亿图脑图app即可观看.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/osg知识点框架脑图：下载亿图脑图app即可观看.pdf",
+      "file_hash": "bbeeb8a5fd9d8e8481ee3178eb843b9d",
+      "file_size": 738297,
+      "modified_time": "2022-12-02T11:31:35.808304",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "2.1",
+          "title": "人员安全策略和程序"
+        },
+        {
+          "number": "1.1",
+          "title": "候选人筛选及招聘"
+        },
+        {
+          "number": "1.2",
+          "title": "雇佣协议及策略"
+        },
+        {
+          "number": "1.3",
+          "title": "入职和离职程序"
+        },
+        {
+          "number": "1.5",
+          "title": "合规策略要求"
+        },
+        {
+          "number": "2.16",
+          "title": "隐私策略要求"
+        },
+        {
+          "number": "2.3",
+          "title": "理解并应用风险管理理念"
+        },
+        {
+          "number": "3.2",
+          "title": "识别威胁和脆弱性"
+        },
+        {
+          "number": "3.5",
+          "title": "选择与实施控制措施"
+        },
+        {
+          "number": "3.6",
+          "title": "适用的控制类型"
+        },
+        {
+          "number": "3.7",
+          "title": "安全控制评估"
+        },
+        {
+          "number": "3.8",
+          "title": "监视和测量"
+        },
+        {
+          "number": "3.9",
+          "title": "资产估值和报告"
+        },
+        {
+          "number": "2.4",
+          "title": "建立和维护安全意识，教育和培训计划"
+        },
+        {
+          "number": "2.5",
+          "title": "管理安全功能"
+        },
+        {
+          "number": "3.1",
+          "title": "业务持续性计划"
+        },
+        {
+          "number": "3.2",
+          "title": "项目范围和计划"
+        },
+        {
+          "number": "2.1",
+          "title": "业务组织分析"
+        },
+        {
+          "number": "2.4",
+          "title": "法律和法规要求"
+        },
+        {
+          "number": "3.3",
+          "title": "业务影响评估"
+        }
+      ],
+      "content_preview": "OSG\n1. \n实现安全治理的原则和策略\n实现安全治理的原则和策略\n2.\n人员安全和风险管理\n人员安全和风险管理\n3.\n业务持续性技术\n业务持续性技术\n2.1 \n人员安全策略和程序\n职责分离\n(separation of duties)\n串通\n(collusion)\n工作职责\n(job responsibilities)\n岗位轮换\n(job rotation)\n2.2 \n安全治理\n2.1.1 \n候选人筛选及招聘\n2.1.2 \n雇佣协议及策略\n保密协议\n(Nondisclosure Agreement,NDA)\n非竞争协议\n(Noncompete Agreement, NCA)\n2.1.3 \n入职和离职程序\nIAM(Identity and Acess Management)\n2.1.4 \n供应商\n,\n顾问和承包商的协议和控制\nSLA(service level agreement)\n2.1.5 \n合规策略要求\n支付卡行业标准\n(PCI DSS)\n2.16 \n隐私策略要求\n个人身份信息\n(Personally Indentifiable Information, PII)\n健康保险流通与",
+      "page_count": 1,
+      "indexed_at": "2026-04-27T22:09:34.385091"
+    },
+    {
+      "file_name": "CISSP认证重点知识点合集.txt",
+      "relative_path": "OSG/CISSP认证重点知识点合集.txt",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/CISSP认证重点知识点合集.txt",
+      "file_hash": "b7c908bb5ddefdce29b8a008289b9178",
+      "file_size": 68234,
+      "modified_time": "2022-07-21T14:43:22.429837",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 18,
+      "chapters": [
+        {
+          "number": "1.1",
+          "title": "通过原则和策略进行安全治理"
+        },
+        {
+          "number": "1.1",
+          "title": ".1 安全101（Security 101）"
+        },
+        {
+          "number": "1.1",
+          "title": ".2 理解和应用机密性、完整性和可用性的概念"
+        },
+        {
+          "number": "1.1",
+          "title": ".3 评估和应用安全治理"
+        },
+        {
+          "number": "1.1",
+          "title": ".4 法律、合规和道德"
+        },
+        {
+          "number": "1.2",
+          "title": "风险管理和人员安全"
+        },
+        {
+          "number": "1.2",
+          "title": ".1 风险和风险管理相关概念"
+        },
+        {
+          "number": "1.2",
+          "title": ".2 风险评估和处置"
+        },
+        {
+          "number": "1.2",
+          "title": ".3 理解和应用威胁建模的概念和方法"
+        },
+        {
+          "number": "1.2",
+          "title": ".4 将风险管理应用到供应链中"
+        },
+        {
+          "number": "1.2",
+          "title": ".5 人员安全和意识教育、培训"
+        },
+        {
+          "number": "1.3",
+          "title": "业务连续性计划"
+        },
+        {
+          "number": "1.3",
+          "title": ".1 业务连续性计划概述"
+        },
+        {
+          "number": "1.3",
+          "title": ".2 开发业务连续性计划项目"
+        },
+        {
+          "number": "2.1",
+          "title": "资产安全概述"
+        },
+        {
+          "number": "2.1",
+          "title": ".1 资产安全基本概念"
+        },
+        {
+          "number": "2.1",
+          "title": ".2 资产识别、分类和控制"
+        },
+        {
+          "number": "2.1",
+          "title": ".3 资产安全相关的角色和责任"
+        }
+      ],
+      "content_preview": "D1：安全和风险管理\n1.1 通过原则和策略进行安全治理\n1.1.1 安全101（Security 101）\n\t安全应该被视为业务管理的一个要素，而不是IT问题。\n\t应该采用一个安全框架，为如何实现安全提供一个起点，一旦完成了安全启动，就可以通过评估来微调该安全。\n\t安全应该具有成本效益。\n\t安全应该是有法律依据的。\n\t安全是一段旅程，而不是终点线。\n1.1.2 理解和应用机密性、完整性和可用性的概念\nA、信息安全的定义\t\n\t业务视角：采取措施保护信息资产，使之不因偶然或者恶意侵犯而遭受破坏、更改及泄露，保证信息系统能够连续、可靠、正常地运行，使安全事件对业务造成的影响减到最小，确保组织业务运行的连续性。\n\t安全视角：安全的核心目标是为关键资产提供可用性、完整性和机密性（CIA三元组）保护。\nB、\t信息安全的核心原则\n\t信息安全的核心原则是为重要业务信息系统提供机密性、完整性和可用性（CIA三元组）的保护。其中：\n\t- 机密性（Confidentiality）：确保信息在存储、使用、传输过程中不会泄露给非授权用户或实体\n\t- 完整性（Integrity）：确保信息在存储、使用、传输过程",
+      "page_count": 0,
+      "indexed_at": "2026-04-27T22:09:37.408008"
+    },
+    {
+      "file_name": "OSG-9英文版-机翻版(1).pdf",
+      "relative_path": "OSG/OSG-9英文版-机翻版(1).pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/OSG-9英文版-机翻版(1).pdf",
+      "file_hash": "e478446b2c75a2030274dd78db0758e9",
+      "file_size": 22960852,
+      "modified_time": "2021-12-28T09:09:26.670978",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第一章",
+          "title": "通过原则和政策进行安全治理 1"
+        },
+        {
+          "number": "第一章",
+          "title": "：通过原则和政策进行安全治理"
+        },
+        {
+          "number": "第二章",
+          "title": "：人员安全和风险管理"
+        },
+        {
+          "number": "第三章",
+          "title": "：业务连续性规划1049"
+        },
+        {
+          "number": "第四章",
+          "title": "：法律、法规和合规性1051"
+        },
+        {
+          "number": "第五章",
+          "title": "：保护资产安全1053"
+        },
+        {
+          "number": "第6章",
+          "title": "：密码学和对称密钥算法1056"
+        },
+        {
+          "number": "第7章",
+          "title": "：PKI和密码应用1058"
+        },
+        {
+          "number": "第8章",
+          "title": "：安全模型、设计和维护的原则"
+        },
+        {
+          "number": "第9章",
+          "title": "：安全漏洞、威胁和威胁"
+        },
+        {
+          "number": "第10章",
+          "title": "：物理安全要求1067"
+        },
+        {
+          "number": "第11章",
+          "title": "：安全网络体系结构和组件1071"
+        },
+        {
+          "number": "第12章",
+          "title": "：安全通信和网络攻击1075"
+        },
+        {
+          "number": "第13章",
+          "title": "：管理身份和身份验证1078"
+        },
+        {
+          "number": "第14章",
+          "title": "：控制和监视访问1080"
+        },
+        {
+          "number": "第15章",
+          "title": "：安全评估和测试1082"
+        },
+        {
+          "number": "第16章",
+          "title": "：管理安全操作1084 第17章：预防和应对事故1086"
+        },
+        {
+          "number": "第18章",
+          "title": "：灾难恢复规划  1089"
+        },
+        {
+          "number": "第19章",
+          "title": "：调查与道德  1091"
+        },
+        {
+          "number": "第20章",
+          "title": "：软件开发安全  1093"
+        },
+        {
+          "number": "1.1",
+          "title": "客观的"
+        },
+        {
+          "number": "1.1",
+          "title": ".1  ■ （ISC）²职业道德规范  19"
+        },
+        {
+          "number": "1.1",
+          "title": ".2  ■ 组织道德规范  19"
+        },
+        {
+          "number": "1.2",
+          "title": "理解并应用安全概念  1."
+        },
+        {
+          "number": "1.2",
+          "title": ".1  ■ 机密性、完整性、可用性、真实性和  1."
+        },
+        {
+          "number": "1.3",
+          "title": "评估和应用安全治理原则  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".1  ■ 使安全功能与业务战略、目标、使命和目标保持一致  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".2  ■ 组织流程（如收购、资产剥离、政府委员会）  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".3  ■ 组织作用和责任 1."
+        },
+        {
+          "number": "1.3",
+          "title": ".4  ■ 安全控制框架  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".5  ■ 尽职调查 /尽职调查  1."
+        },
+        {
+          "number": "1.4",
+          "title": "确定合规性和其他要求  4."
+        },
+        {
+          "number": "1.4",
+          "title": ".1  ■ 合同、法律、行业标准和监管要求  4."
+        },
+        {
+          "number": "1.4",
+          "title": ".2  ■ 隐私要求  4."
+        },
+        {
+          "number": "1.5",
+          "title": "全面了解与信息安全相关的法律和法规问题 4."
+        },
+        {
+          "number": "1.5",
+          "title": ".1  ■ 网络犯罪和数据泄露  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".2  ■ 许可和知识产权（IP ）要求  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".3  ■ 进出口管制  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".4  ■ 跨境数据流  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".5  ■ 隐私  4."
+        }
+      ],
+      "content_preview": "t^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O \n \n \n  \n \n  \n \n  \n \n \n认证信息系统安全专业人\n员 \n \n \n \n官方学习 指南 \n第九版 \n迈克·查普 \n詹姆斯·迈克尔·斯 图尔特，\nCISSP  \n \n \n \n涵盖所有2021年更新的考试目标，包 括资产安全、\n软件开发安全、安全操作等。。。  \n包括交互 式在线学习环境和学习 工具，包括：  \n \n \n拜基电话\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O （ISC）2®  \nCISSP®认证信息系统安全专\n业人员官 方学习指南  \n第九版\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O （ISC）2®  \nCISSP®认证信息系统安全专\n业人员官 方学习指南  \n第九版   \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n迈克·查普尔·詹\n姆斯·迈克尔·斯图尔\n特 \n达里尔·吉布森\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O  \n约翰·威利父子公司版权所有©2021 。保留所有权利。由新",
+      "page_count": 1254,
+      "indexed_at": "2026-04-27T22:10:08.650679"
+    },
+    {
+      "file_name": "CISSP官方学习手册（OSG第9版中文）上册.pdf",
+      "relative_path": "OSG/CISSP官方学习手册（OSG第9版中文）上册.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/CISSP官方学习手册（OSG第9版中文）上册.pdf",
+      "file_hash": "ad93cf72bd644e9ce804c1b5713d7fcf",
+      "file_size": 17346657,
+      "modified_time": "2023-08-02T17:19:14.606045",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第1章",
+          "title": "实现安全治理的原则和策略 1"
+        },
+        {
+          "number": "第2章",
+          "title": "人员安全和风险管理的概念 32"
+        },
+        {
+          "number": "第3章",
+          "title": "业务连续性计划．....…. ..…·86"
+        },
+        {
+          "number": "第4章",
+          "title": "法律、法规和合规…．．.....…… ·108"
+        },
+        {
+          "number": "第5章",
+          "title": "保护资产安全………..........……… ·135"
+        },
+        {
+          "number": "第6章",
+          "title": "密码学和对称密钥算法 167"
+        },
+        {
+          "number": "第7章",
+          "title": "PKI和密码应用…....…....…..…… ·201"
+        },
+        {
+          "number": "第8章",
+          "title": "安全模型、设计和能力的"
+        },
+        {
+          "number": "第9章",
+          "title": "安全漏洞、威胁和对策 ············272"
+        },
+        {
+          "number": "第10章",
+          "title": "物理安全要求．..…….........… ··348"
+        },
+        {
+          "number": "第11章",
+          "title": "安全网络架构和组件 . 384"
+        },
+        {
+          "number": "第12章",
+          "title": "安全通信与网络攻击 . 449"
+        },
+        {
+          "number": "第13章",
+          "title": "管理身份和认证 .........….. 492"
+        },
+        {
+          "number": "第14章",
+          "title": "控制和监控访问…………．．．… ······522"
+        },
+        {
+          "number": "第15章",
+          "title": "15.1"
+        },
+        {
+          "number": "第16章",
+          "title": "安全运营管理·……………………… 590"
+        },
+        {
+          "number": "第17章",
+          "title": "事件的预防和响应…．．．．… ··619"
+        },
+        {
+          "number": "第18章",
+          "title": "灾难恢复计划…………......……… 667"
+        },
+        {
+          "number": "第19章",
+          "title": "调查和道德 ·…….......… 703"
+        },
+        {
+          "number": "第20章",
+          "title": "软件开发安全……………………… 726"
+        },
+        {
+          "number": "393.0",
+          "title": "8-62"
+        },
+        {
+          "number": "228.00",
+          "title": "元（全二册）"
+        },
+        {
+          "number": "1.1",
+          "title": "理解、坚持和弘扬职业道德"
+        },
+        {
+          "number": "1.1",
+          "title": ".1 (ISC)2职业道德规范"
+        },
+        {
+          "number": "1.1",
+          "title": ".2 组织道德规范"
+        },
+        {
+          "number": "1.2",
+          "title": "理解和应用安全概念"
+        },
+        {
+          "number": "1.2",
+          "title": ".1 保密性、完整性、可用性、真实性和不可否认性"
+        },
+        {
+          "number": "1.3",
+          "title": "评估和应用安全治理原则"
+        },
+        {
+          "number": "1.3",
+          "title": ".1 安全功能与业务战略、目标、使命和宗旨保待一致"
+        },
+        {
+          "number": "1.3",
+          "title": ".2 组织流程（如收购、资产剥离、治理委员会）"
+        },
+        {
+          "number": "1.3",
+          "title": ".3 组织的角色与责任19"
+        },
+        {
+          "number": "1.3",
+          "title": ".4 安全控制框架"
+        },
+        {
+          "number": "1.3",
+          "title": ".5 应尽关心和尽职审查"
+        },
+        {
+          "number": "1.4",
+          "title": "确定合规和其他要求 4"
+        },
+        {
+          "number": "1.4",
+          "title": ".1 合同、法律、行业标准和监管要求 4"
+        },
+        {
+          "number": "1.4",
+          "title": ".2 隐私要求 4"
+        },
+        {
+          "number": "1.5",
+          "title": "全面理解全球范围内与信息安全相关的法律和监管问题 4"
+        },
+        {
+          "number": "1.5",
+          "title": ".1 网络犯罪和数据泄露 4"
+        },
+        {
+          "number": "1.5",
+          "title": ".2 许可和知识产权 (IP)要求 4"
+        },
+        {
+          "number": "1.5",
+          "title": ".3 进口／出口控制 4"
+        }
+      ],
+      "content_preview": "CISSP: Ce rtified Information Systems Secur ity \nProfessional Official Study Guide, Ninth Edition \n官方学习手册\n（第9版）（上册）\n迈克·查普尔 (M ikeChapple), CISSP \n［美］詹姆斯·迈克尔·斯图尔特(J amesMichael Stewart), CISSP 著\n达瑞尔·吉布森 (Darr i lGibson), CISSP \n杨玉忠吴潇张好刘北水罗爱国 译\n北京爱思考科技有限公司 审\n涵盖CISSP 2021年更新的\n所有考试目标，全面讲解\n资产安全软件开发安全、\n安全运营等重要主题！\n网络空间安全丛书\nCISSP 官方学习手册\n（第9版）\n（上册）\n迈克·查普尔 (MikeChapple), CISSP \n［美］詹姆斯·迈克尔·斯图尔特(J amesMichael Stewart), CISSP 著\n达瑞尔·吉布森 (Darr ilGibson), CISSP \n杨玉忠吴潇张好刘北水罗爱国 译\n汁系久孚出版社\n北京\n北京市版权局著作权合同登记号 图字： 01-",
+      "page_count": 502,
+      "indexed_at": "2026-04-27T22:10:25.942000"
+    },
+    {
+      "file_name": "CISSP官方学习指南9th中文.pdf",
+      "relative_path": "OSG/CISSP官方学习指南9th中文.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/CISSP官方学习指南9th中文.pdf",
+      "file_hash": "6014c796c193ce9b370dee5f645f3ffa",
+      "file_size": 95085857,
+      "modified_time": "2023-12-12T12:16:57.643560",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第2章",
+          "title": "人员安全和风险管理的概念 ·······32"
+        },
+        {
+          "number": "第3章",
+          "title": "业务连续性计划·……………… ··········86"
+        },
+        {
+          "number": "第4章",
+          "title": "法律、法规和合规..…… ··············108"
+        },
+        {
+          "number": "第5章",
+          "title": "保护资产安全.....…………·······…… ·135"
+        },
+        {
+          "number": "第6章",
+          "title": "密码学和对称密钥算法....…… ···167"
+        },
+        {
+          "number": "第7章",
+          "title": "PKI和密码应用..…………….....… ··201"
+        },
+        {
+          "number": "第8章",
+          "title": "安全模型、设计和能力的"
+        },
+        {
+          "number": "第9章",
+          "title": "安全漏洞、威胁和对策............. 272"
+        },
+        {
+          "number": "第10章",
+          "title": "物理安全要求………...........……… 348"
+        },
+        {
+          "number": "第11章",
+          "title": "安全网络架构和组件….....… ·····384"
+        },
+        {
+          "number": "第12章",
+          "title": "安全通信与网络攻击………… ···449"
+        },
+        {
+          "number": "第13章",
+          "title": "管理身份和认证.....…....．…… ··492"
+        },
+        {
+          "number": "第14章",
+          "title": "控制和监控访问………...…......... 522"
+        },
+        {
+          "number": "第15章",
+          "title": "15.1"
+        },
+        {
+          "number": "第16章",
+          "title": "安全运营管理，..........……… 590"
+        },
+        {
+          "number": "第17章",
+          "title": "事件的预防和响应................… ·619"
+        },
+        {
+          "number": "第18章",
+          "title": "灾难恢复计划·……………………… ·667"
+        },
+        {
+          "number": "第19章",
+          "title": "调查和道德·······…..……… ············703"
+        },
+        {
+          "number": "第20章",
+          "title": "软件开发安全·…………..…… ·······726"
+        },
+        {
+          "number": "第21章",
+          "title": "恶意代码和应用攻击．．．．…… ··765"
+        },
+        {
+          "number": "2022.10",
+          "title": "（网络空间安全丛书）"
+        },
+        {
+          "number": "393.0",
+          "title": "8-62"
+        },
+        {
+          "number": "228.00",
+          "title": "元（全二册）"
+        },
+        {
+          "number": "1.1",
+          "title": "理解、坚持和弘扬职业道德 19"
+        },
+        {
+          "number": "1.1",
+          "title": ".1 (ISC)2职业道德规范"
+        },
+        {
+          "number": "1.1",
+          "title": ".2 组织道德规范"
+        },
+        {
+          "number": "1.2",
+          "title": "理解和应用安全概念"
+        },
+        {
+          "number": "1.2",
+          "title": ".1 保密性、完整性、可用性、真实性和不可否认性"
+        },
+        {
+          "number": "1.3",
+          "title": "评估和应用安全治理原则"
+        },
+        {
+          "number": "1.3",
+          "title": ".1 安全功能与业务战略、目标、使命和宗旨保待一致"
+        },
+        {
+          "number": "1.3",
+          "title": ".2 组织流程（如收购、资产剥离、治理委员会）"
+        },
+        {
+          "number": "1.3",
+          "title": ".3 组织的角色与责任19"
+        },
+        {
+          "number": "1.3",
+          "title": ".4 安全控制框架"
+        },
+        {
+          "number": "1.3",
+          "title": ".5 应尽关心和尽职审查"
+        },
+        {
+          "number": "1.4",
+          "title": "确定合规和其他要求"
+        },
+        {
+          "number": "1.4",
+          "title": ".1 合同、法律、行业标准和监管要求"
+        },
+        {
+          "number": "1.4",
+          "title": ".2 隐私要求"
+        },
+        {
+          "number": "1.5",
+          "title": "全面理解全球范围内与信息安全相关的法律和监管问题"
+        },
+        {
+          "number": "1.5",
+          "title": ".1 网络犯罪和数据泄露"
+        },
+        {
+          "number": "1.5",
+          "title": ".2 许可和知识产权 (IP)要求"
+        }
+      ],
+      "content_preview": "网络空阮安全丛书\nCISSP 官方学习手册\n（第9版）\n（上册）\n迈克·查普尔 (MikeChapple), CISSP \n［美］詹姆斯·迈克尔·斯图尔特 (JamesMichael Stewart), CISSP 著\n达瑞尔·吉布森 (DarrilGibson), CISSP \n杨玉忠吴潇张好刘北水罗爱国 译\n计系丈浮出版社\n北京\n北京市版权局著作权合同登记号 图字： 01-2022-0422\nAll Rights Reserved. 加stranslation published under license. Authorized translation from the English \nlanguage edition, entitled CISSP: Certified Information Systems Security Professional Q.fficial Study Guide, \nNinth Edition, ISBN 9781119786238, by Mike Chapple, Jan1es Michael Stewart, Darril Gibson",
+      "page_count": 912,
+      "indexed_at": "2026-04-27T22:10:43.029906"
+    },
+    {
+      "file_name": "OSG9-机翻版.pdf",
+      "relative_path": "OSG/OSG9-机翻版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/OSG9-机翻版.pdf",
+      "file_hash": "e478446b2c75a2030274dd78db0758e9",
+      "file_size": 22960852,
+      "modified_time": "2022-05-16T17:12:52.347552",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第一章",
+          "title": "通过原则和政策进行安全治理 1"
+        },
+        {
+          "number": "第一章",
+          "title": "：通过原则和政策进行安全治理"
+        },
+        {
+          "number": "第二章",
+          "title": "：人员安全和风险管理"
+        },
+        {
+          "number": "第三章",
+          "title": "：业务连续性规划1049"
+        },
+        {
+          "number": "第四章",
+          "title": "：法律、法规和合规性1051"
+        },
+        {
+          "number": "第五章",
+          "title": "：保护资产安全1053"
+        },
+        {
+          "number": "第6章",
+          "title": "：密码学和对称密钥算法1056"
+        },
+        {
+          "number": "第7章",
+          "title": "：PKI和密码应用1058"
+        },
+        {
+          "number": "第8章",
+          "title": "：安全模型、设计和维护的原则"
+        },
+        {
+          "number": "第9章",
+          "title": "：安全漏洞、威胁和威胁"
+        },
+        {
+          "number": "第10章",
+          "title": "：物理安全要求1067"
+        },
+        {
+          "number": "第11章",
+          "title": "：安全网络体系结构和组件1071"
+        },
+        {
+          "number": "第12章",
+          "title": "：安全通信和网络攻击1075"
+        },
+        {
+          "number": "第13章",
+          "title": "：管理身份和身份验证1078"
+        },
+        {
+          "number": "第14章",
+          "title": "：控制和监视访问1080"
+        },
+        {
+          "number": "第15章",
+          "title": "：安全评估和测试1082"
+        },
+        {
+          "number": "第16章",
+          "title": "：管理安全操作1084 第17章：预防和应对事故1086"
+        },
+        {
+          "number": "第18章",
+          "title": "：灾难恢复规划  1089"
+        },
+        {
+          "number": "第19章",
+          "title": "：调查与道德  1091"
+        },
+        {
+          "number": "第20章",
+          "title": "：软件开发安全  1093"
+        },
+        {
+          "number": "1.1",
+          "title": "客观的"
+        },
+        {
+          "number": "1.1",
+          "title": ".1  ■ （ISC）²职业道德规范  19"
+        },
+        {
+          "number": "1.1",
+          "title": ".2  ■ 组织道德规范  19"
+        },
+        {
+          "number": "1.2",
+          "title": "理解并应用安全概念  1."
+        },
+        {
+          "number": "1.2",
+          "title": ".1  ■ 机密性、完整性、可用性、真实性和  1."
+        },
+        {
+          "number": "1.3",
+          "title": "评估和应用安全治理原则  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".1  ■ 使安全功能与业务战略、目标、使命和目标保持一致  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".2  ■ 组织流程（如收购、资产剥离、政府委员会）  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".3  ■ 组织作用和责任 1."
+        },
+        {
+          "number": "1.3",
+          "title": ".4  ■ 安全控制框架  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".5  ■ 尽职调查 /尽职调查  1."
+        },
+        {
+          "number": "1.4",
+          "title": "确定合规性和其他要求  4."
+        },
+        {
+          "number": "1.4",
+          "title": ".1  ■ 合同、法律、行业标准和监管要求  4."
+        },
+        {
+          "number": "1.4",
+          "title": ".2  ■ 隐私要求  4."
+        },
+        {
+          "number": "1.5",
+          "title": "全面了解与信息安全相关的法律和法规问题 4."
+        },
+        {
+          "number": "1.5",
+          "title": ".1  ■ 网络犯罪和数据泄露  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".2  ■ 许可和知识产权（IP ）要求  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".3  ■ 进出口管制  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".4  ■ 跨境数据流  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".5  ■ 隐私  4."
+        }
+      ],
+      "content_preview": "t^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O \n \n \n  \n \n  \n \n  \n \n \n认证信息系统安全专业人\n员 \n \n \n \n官方学习 指南 \n第九版 \n迈克·查普 \n詹姆斯·迈克尔·斯 图尔特，\nCISSP  \n \n \n \n涵盖所有2021年更新的考试目标，包 括资产安全、\n软件开发安全、安全操作等。。。  \n包括交互 式在线学习环境和学习 工具，包括：  \n \n \n拜基电话\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O （ISC）2®  \nCISSP®认证信息系统安全专\n业人员官 方学习指南  \n第九版\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O （ISC）2®  \nCISSP®认证信息系统安全专\n业人员官 方学习指南  \n第九版   \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n迈克·查普尔·詹\n姆斯·迈克尔·斯图尔\n特 \n达里尔·吉布森\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O  \n约翰·威利父子公司版权所有©2021 。保留所有权利。由新",
+      "page_count": 1254,
+      "indexed_at": "2026-04-27T22:10:48.899144"
+    },
+    {
+      "file_name": "CISSP串讲 (2022).pdf",
+      "relative_path": "OSG/CISSP串讲 (2022).pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/CISSP串讲 (2022).pdf",
+      "file_hash": "50a22c70aff4e3ef5a4fd571bfbfba8c",
+      "file_size": 5250882,
+      "modified_time": "2022-06-27T16:30:23.215852",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 0,
+      "chapters": [],
+      "content_preview": "CISSP串讲资料\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00001\n安全管理 (1)\n(战略)\n安全工程（ 3）\n（战术）\n安全运行（ 7）\n（行动）资产安全（ 2）\n（CIA）网络安全 (4)\n(传输)\n访问安全（ 5）\n（调用）\n开发安全（ 8）\n（操作）\n管\n控\n技\n控\n安全测评（ 6）\n确保安全措施有效实施\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00002\n域1：安全与风险管理\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u00002\u00002\u00000\u00006\u00002\u00007\n\u00003\n模块主题\nModule Topic \n介绍\nIntroduction\n机密性、完整性和可用性的概念\nConcepts of Confidentiality, Integrity, and Availability\n\u0000B\u0000J\u00005\u00000\u00001\u00002\u0000",
+      "page_count": 459,
+      "indexed_at": "2026-04-27T22:10:51.514308"
+    },
+    {
+      "file_name": "1_1_1_10_CISSP官方学习手册（OSG第9版中文）上册.pdf",
+      "relative_path": "OSG/1_1_1_10_CISSP官方学习手册（OSG第9版中文）上册.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/1_1_1_10_CISSP官方学习手册（OSG第9版中文）上册.pdf",
+      "file_hash": "ad93cf72bd644e9ce804c1b5713d7fcf",
+      "file_size": 17346657,
+      "modified_time": "2024-08-07T10:57:12.238195",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第1章",
+          "title": "实现安全治理的原则和策略 1"
+        },
+        {
+          "number": "第2章",
+          "title": "人员安全和风险管理的概念 32"
+        },
+        {
+          "number": "第3章",
+          "title": "业务连续性计划．....…. ..…·86"
+        },
+        {
+          "number": "第4章",
+          "title": "法律、法规和合规…．．.....…… ·108"
+        },
+        {
+          "number": "第5章",
+          "title": "保护资产安全………..........……… ·135"
+        },
+        {
+          "number": "第6章",
+          "title": "密码学和对称密钥算法 167"
+        },
+        {
+          "number": "第7章",
+          "title": "PKI和密码应用…....…....…..…… ·201"
+        },
+        {
+          "number": "第8章",
+          "title": "安全模型、设计和能力的"
+        },
+        {
+          "number": "第9章",
+          "title": "安全漏洞、威胁和对策 ············272"
+        },
+        {
+          "number": "第10章",
+          "title": "物理安全要求．..…….........… ··348"
+        },
+        {
+          "number": "第11章",
+          "title": "安全网络架构和组件 . 384"
+        },
+        {
+          "number": "第12章",
+          "title": "安全通信与网络攻击 . 449"
+        },
+        {
+          "number": "第13章",
+          "title": "管理身份和认证 .........….. 492"
+        },
+        {
+          "number": "第14章",
+          "title": "控制和监控访问…………．．．… ······522"
+        },
+        {
+          "number": "第15章",
+          "title": "15.1"
+        },
+        {
+          "number": "第16章",
+          "title": "安全运营管理·……………………… 590"
+        },
+        {
+          "number": "第17章",
+          "title": "事件的预防和响应…．．．．… ··619"
+        },
+        {
+          "number": "第18章",
+          "title": "灾难恢复计划…………......……… 667"
+        },
+        {
+          "number": "第19章",
+          "title": "调查和道德 ·…….......… 703"
+        },
+        {
+          "number": "第20章",
+          "title": "软件开发安全……………………… 726"
+        },
+        {
+          "number": "393.0",
+          "title": "8-62"
+        },
+        {
+          "number": "228.00",
+          "title": "元（全二册）"
+        },
+        {
+          "number": "1.1",
+          "title": "理解、坚持和弘扬职业道德"
+        },
+        {
+          "number": "1.1",
+          "title": ".1 (ISC)2职业道德规范"
+        },
+        {
+          "number": "1.1",
+          "title": ".2 组织道德规范"
+        },
+        {
+          "number": "1.2",
+          "title": "理解和应用安全概念"
+        },
+        {
+          "number": "1.2",
+          "title": ".1 保密性、完整性、可用性、真实性和不可否认性"
+        },
+        {
+          "number": "1.3",
+          "title": "评估和应用安全治理原则"
+        },
+        {
+          "number": "1.3",
+          "title": ".1 安全功能与业务战略、目标、使命和宗旨保待一致"
+        },
+        {
+          "number": "1.3",
+          "title": ".2 组织流程（如收购、资产剥离、治理委员会）"
+        },
+        {
+          "number": "1.3",
+          "title": ".3 组织的角色与责任19"
+        },
+        {
+          "number": "1.3",
+          "title": ".4 安全控制框架"
+        },
+        {
+          "number": "1.3",
+          "title": ".5 应尽关心和尽职审查"
+        },
+        {
+          "number": "1.4",
+          "title": "确定合规和其他要求 4"
+        },
+        {
+          "number": "1.4",
+          "title": ".1 合同、法律、行业标准和监管要求 4"
+        },
+        {
+          "number": "1.4",
+          "title": ".2 隐私要求 4"
+        },
+        {
+          "number": "1.5",
+          "title": "全面理解全球范围内与信息安全相关的法律和监管问题 4"
+        },
+        {
+          "number": "1.5",
+          "title": ".1 网络犯罪和数据泄露 4"
+        },
+        {
+          "number": "1.5",
+          "title": ".2 许可和知识产权 (IP)要求 4"
+        },
+        {
+          "number": "1.5",
+          "title": ".3 进口／出口控制 4"
+        }
+      ],
+      "content_preview": "CISSP: Ce rtified Information Systems Secur ity \nProfessional Official Study Guide, Ninth Edition \n官方学习手册\n（第9版）（上册）\n迈克·查普尔 (M ikeChapple), CISSP \n［美］詹姆斯·迈克尔·斯图尔特(J amesMichael Stewart), CISSP 著\n达瑞尔·吉布森 (Darr i lGibson), CISSP \n杨玉忠吴潇张好刘北水罗爱国 译\n北京爱思考科技有限公司 审\n涵盖CISSP 2021年更新的\n所有考试目标，全面讲解\n资产安全软件开发安全、\n安全运营等重要主题！\n网络空间安全丛书\nCISSP 官方学习手册\n（第9版）\n（上册）\n迈克·查普尔 (MikeChapple), CISSP \n［美］詹姆斯·迈克尔·斯图尔特(J amesMichael Stewart), CISSP 著\n达瑞尔·吉布森 (Darr ilGibson), CISSP \n杨玉忠吴潇张好刘北水罗爱国 译\n汁系久孚出版社\n北京\n北京市版权局著作权合同登记号 图字： 01-",
+      "page_count": 502,
+      "indexed_at": "2026-04-27T22:11:23.655646"
+    },
+    {
+      "file_name": "OSG-9英文版-机翻版.pdf",
+      "relative_path": "OSG/OSG-9英文版-机翻版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/OSG/OSG-9英文版-机翻版.pdf",
+      "file_hash": "e478446b2c75a2030274dd78db0758e9",
+      "file_size": 22960852,
+      "modified_time": "2021-12-01T09:24:49.851673",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 40,
+      "chapters": [
+        {
+          "number": "第一章",
+          "title": "通过原则和政策进行安全治理 1"
+        },
+        {
+          "number": "第一章",
+          "title": "：通过原则和政策进行安全治理"
+        },
+        {
+          "number": "第二章",
+          "title": "：人员安全和风险管理"
+        },
+        {
+          "number": "第三章",
+          "title": "：业务连续性规划1049"
+        },
+        {
+          "number": "第四章",
+          "title": "：法律、法规和合规性1051"
+        },
+        {
+          "number": "第五章",
+          "title": "：保护资产安全1053"
+        },
+        {
+          "number": "第6章",
+          "title": "：密码学和对称密钥算法1056"
+        },
+        {
+          "number": "第7章",
+          "title": "：PKI和密码应用1058"
+        },
+        {
+          "number": "第8章",
+          "title": "：安全模型、设计和维护的原则"
+        },
+        {
+          "number": "第9章",
+          "title": "：安全漏洞、威胁和威胁"
+        },
+        {
+          "number": "第10章",
+          "title": "：物理安全要求1067"
+        },
+        {
+          "number": "第11章",
+          "title": "：安全网络体系结构和组件1071"
+        },
+        {
+          "number": "第12章",
+          "title": "：安全通信和网络攻击1075"
+        },
+        {
+          "number": "第13章",
+          "title": "：管理身份和身份验证1078"
+        },
+        {
+          "number": "第14章",
+          "title": "：控制和监视访问1080"
+        },
+        {
+          "number": "第15章",
+          "title": "：安全评估和测试1082"
+        },
+        {
+          "number": "第16章",
+          "title": "：管理安全操作1084 第17章：预防和应对事故1086"
+        },
+        {
+          "number": "第18章",
+          "title": "：灾难恢复规划  1089"
+        },
+        {
+          "number": "第19章",
+          "title": "：调查与道德  1091"
+        },
+        {
+          "number": "第20章",
+          "title": "：软件开发安全  1093"
+        },
+        {
+          "number": "1.1",
+          "title": "客观的"
+        },
+        {
+          "number": "1.1",
+          "title": ".1  ■ （ISC）²职业道德规范  19"
+        },
+        {
+          "number": "1.1",
+          "title": ".2  ■ 组织道德规范  19"
+        },
+        {
+          "number": "1.2",
+          "title": "理解并应用安全概念  1."
+        },
+        {
+          "number": "1.2",
+          "title": ".1  ■ 机密性、完整性、可用性、真实性和  1."
+        },
+        {
+          "number": "1.3",
+          "title": "评估和应用安全治理原则  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".1  ■ 使安全功能与业务战略、目标、使命和目标保持一致  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".2  ■ 组织流程（如收购、资产剥离、政府委员会）  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".3  ■ 组织作用和责任 1."
+        },
+        {
+          "number": "1.3",
+          "title": ".4  ■ 安全控制框架  1."
+        },
+        {
+          "number": "1.3",
+          "title": ".5  ■ 尽职调查 /尽职调查  1."
+        },
+        {
+          "number": "1.4",
+          "title": "确定合规性和其他要求  4."
+        },
+        {
+          "number": "1.4",
+          "title": ".1  ■ 合同、法律、行业标准和监管要求  4."
+        },
+        {
+          "number": "1.4",
+          "title": ".2  ■ 隐私要求  4."
+        },
+        {
+          "number": "1.5",
+          "title": "全面了解与信息安全相关的法律和法规问题 4."
+        },
+        {
+          "number": "1.5",
+          "title": ".1  ■ 网络犯罪和数据泄露  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".2  ■ 许可和知识产权（IP ）要求  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".3  ■ 进出口管制  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".4  ■ 跨境数据流  4."
+        },
+        {
+          "number": "1.5",
+          "title": ".5  ■ 隐私  4."
+        }
+      ],
+      "content_preview": "t^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O \n \n \n  \n \n  \n \n  \n \n \n认证信息系统安全专业人\n员 \n \n \n \n官方学习 指南 \n第九版 \n迈克·查普 \n詹姆斯·迈克尔·斯 图尔特，\nCISSP  \n \n \n \n涵盖所有2021年更新的考试目标，包 括资产安全、\n软件开发安全、安全操作等。。。  \n包括交互 式在线学习环境和学习 工具，包括：  \n \n \n拜基电话\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O （ISC）2®  \nCISSP®认证信息系统安全专\n业人员官 方学习指南  \n第九版\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O （ISC）2®  \nCISSP®认证信息系统安全专\n业人员官 方学习指南  \n第九版   \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n迈克·查普尔·詹\n姆斯·迈克尔·斯图尔\n特 \n达里尔·吉布森\nt^\u001a[fTXN\u0013u(\u0000 ykbY\u0016O  \n约翰·威利父子公司版权所有©2021 。保留所有权利。由新",
+      "page_count": 1254,
+      "indexed_at": "2026-04-27T22:11:27.612368"
+    },
+    {
+      "file_name": "网络安全人才实战能力白皮书V12.pdf",
+      "relative_path": "Industrial Reference/网络安全人才实战能力白皮书V12.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Industrial Reference/网络安全人才实战能力白皮书V12.pdf",
+      "file_hash": "4a09f171f855cba3226970745d1f409a",
+      "file_size": 2164281,
+      "modified_time": "2022-09-09T12:13:03.970374",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 33,
+      "chapters": [
+        {
+          "number": "第一章",
+          "title": "网络安全产业人才状况分析"
+        },
+        {
+          "number": "第二章",
+          "title": "网络安全人才攻防实战能力分析"
+        },
+        {
+          "number": "第三章",
+          "title": "用人单位网络安全人才实战能力需求分析"
+        },
+        {
+          "number": "第四章",
+          "title": "网络安全人才攻防实战能力提升分析"
+        },
+        {
+          "number": "第五章",
+          "title": "网络安全人才攻防实战能力评价分析"
+        },
+        {
+          "number": "第六章",
+          "title": "总结和建议"
+        },
+        {
+          "number": "第一章",
+          "title": "目前， 美国是网络空间最强国， 网络空间安全人才培养数量和质量优于其他国家，"
+        },
+        {
+          "number": "第二章",
+          "title": "随着数字化进程的加速， 网络边界逐步消失， 网络攻击暴露面无限扩大， 给网络空间"
+        },
+        {
+          "number": "第三章",
+          "title": "当前， 随着数字经济的加速发展， 数字化技术更加深入的应用到企业生产经营的方"
+        },
+        {
+          "number": "第四章",
+          "title": "�"
+        },
+        {
+          "number": "第五章",
+          "title": "网络安全人才"
+        },
+        {
+          "number": "第五章",
+          "title": "��"
+        },
+        {
+          "number": "第六章",
+          "title": "��"
+        },
+        {
+          "number": "1.1",
+          "title": "宏观政策环境"
+        },
+        {
+          "number": "1.1",
+          "title": ".1   国际情况"
+        },
+        {
+          "number": "1.1",
+          "title": ".2国内情况"
+        },
+        {
+          "number": "1.2",
+          "title": "人才发展环境"
+        },
+        {
+          "number": "1.2",
+          "title": ".1院校培养环境"
+        },
+        {
+          "number": "1.2",
+          "title": ".2单位使用环境"
+        },
+        {
+          "number": "1.3",
+          "title": "网络安全人才实战能力类别"
+        },
+        {
+          "number": "1.3",
+          "title": ".1网络安全人才实战能力定义"
+        },
+        {
+          "number": "1.3",
+          "title": ".2网络安全人才实战能力模型"
+        },
+        {
+          "number": "2.1",
+          "title": "网络安全攻防实战人才现状"
+        },
+        {
+          "number": "2.1",
+          "title": ".1性别、年龄及学历情况"
+        },
+        {
+          "number": "2.1",
+          "title": ".2地域及行业情况图2-4 网络安全攻防实战人才学历情况图2-3 不同年龄群体属性分布"
+        },
+        {
+          "number": "2.2",
+          "title": "网络安全攻防实战能力现状"
+        },
+        {
+          "number": "2.2",
+          "title": ".1网络安全攻防实战能力技术"
+        },
+        {
+          "number": "2.2",
+          "title": ".2网络安全攻防实战能力情况"
+        },
+        {
+          "number": "2.3",
+          "title": "网络安全攻防实战经验分析"
+        },
+        {
+          "number": "2.3",
+          "title": ".1网络安全竞赛人员参与情况"
+        },
+        {
+          "number": "2.3",
+          "title": ".2网络安全竞赛经验成果"
+        },
+        {
+          "number": "3.1",
+          "title": "用人单位的特点及人才需求分析"
+        },
+        {
+          "number": "3.1",
+          "title": ".1按地域维度分析"
+        }
+      ],
+      "content_preview": "攻防实战能力篇网络安全人才实战能力白皮书\n攻防实战能力篇网络安全人才实战能力白皮书\n编写组织\n指导单位 ：\n教育部高等学校网络空间安全专业教学指导委员会\n主编单位 ：\n北京航空航天大学\n中国科学技术大学\n北京永信至诚科技股份有限公司\n副主编单位：\n西安电子科技大学\n东南大学\n武汉大学\n华中科技大学\n上海交通大学\n参编单位 ：\n北京电子科技学院\n山东大学\n四川大学\n北京邮电大学\n编委会主任：  \n编委会副主任：  \n主         编：  \n副主编 ： 李    晖        程    光        赵    波        \n编               委：\n杨    旭        周    潮        张    丽                                                陈鹤影        陈    凯        陈晓琳                  \n                                （排名不分先后）            邹德清        刘功申        蔡晶晶\n付",
+      "page_count": 96,
+      "indexed_at": "2026-04-27T22:11:29.690181"
+    },
+    {
+      "file_name": "202508 AI时代的网络安全.pdf",
+      "relative_path": "Industrial Reference/202508 AI时代的网络安全.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Industrial Reference/202508 AI时代的网络安全.pdf",
+      "file_hash": "db623343ffa036613ed2558ca5e35bba",
+      "file_size": 2385585,
+      "modified_time": "2025-08-18T11:14:07.093716",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 4,
+      "chapters": [
+        {
+          "number": "8.15",
+          "title": "AI：网络安全新护盾，还是潘多"
+        },
+        {
+          "number": "91.1",
+          "title": "% 的组织称他们已遭受到了被 AI增强的电子邮件攻击"
+        },
+        {
+          "number": "1.5",
+          "title": "，其中包含了一些疑似借助人工智能"
+        },
+        {
+          "number": "2.0",
+          "title": ": 自适应响应流程"
+        }
+      ],
+      "content_preview": "高峡   2 0 2 4 .8.15AI：网络安全新护盾，还是潘多\n拉魔盒？\n目录\nCATALOGUE\nAI Security 与 AI \nfor Security01\nAI自身的安全02\n伦理与道德：\n负责任的 AI03\nAI技术浪潮\n3•AI（artificial intelligence ），人工智能，是研究、开发用于模拟、延伸\n和扩展人的智能的理论、方法、技术及应用系统的一门综合性科学\n•从“计算”到“认知”的演进\n人工智能 (AI)\n模拟人类智能的系统机器学习 (ML )\n从数据中学习的算法深度学习 (DL)\n基于神经网络的复杂学习\n人工智能的发展阶段\n•按智能水平对人工智能进行阶段划分：\n•弱人工智能（ Weak AI ）：也被称为狭义人工智能\n（ANI），只专精于单一任务或一组相关的任务，\n不具备通用智能能力。目前， AI就处于这个阶段\n•例如：智能推荐购物、战胜柯洁的 AlphaGo 、\n人脸/语音识别等\n•强人工智能（ Strong AI ）：具有人类一样的通用智能能力，能够理解、学习并应用\n于各种不同的任务。目前，这个还处于理论和研究阶段，还没落地\n•超人工智能（ ",
+      "page_count": 34,
+      "indexed_at": "2026-04-27T22:11:30.404849"
+    },
+    {
+      "file_name": "大数据白皮书（2022年）.pdf",
+      "relative_path": "Industrial Reference/大数据白皮书（2022年）.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Industrial Reference/大数据白皮书（2022年）.pdf",
+      "file_hash": "3cb28d9a413f09cd408ac321750175fc",
+      "file_size": 1980435,
+      "modified_time": "2023-02-22T09:53:48.932562",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "1.3",
+          "title": "万亿元，复合增长率超过 30%1；二是创新能力不断增强， 2021"
+        },
+        {
+          "number": "2021.11",
+          "title": "工信部"
+        },
+        {
+          "number": "2022.1",
+          "title": "国务院"
+        },
+        {
+          "number": "2022.4",
+          "title": "中共中央  国务院"
+        },
+        {
+          "number": "5.5",
+          "title": "亿美元；国内方面 ，2021上半年我国大数据平台市场规模达 54.2亿"
+        },
+        {
+          "number": "43.5",
+          "title": "%7；2021年我国数据库市场规模预计达 305.78亿"
+        },
+        {
+          "number": "26.93",
+          "title": "%8。同时我国大数据基础软件第一股星环科技于"
+        },
+        {
+          "number": "6.5",
+          "title": "TB的数据泄露，其中包含敏感的飞"
+        },
+        {
+          "number": "88.7",
+          "title": "%，2022年参评企业增"
+        },
+        {
+          "number": "152.9",
+          "title": "%，两年获证企业数量平均增速达到了 120.8%。"
+        },
+        {
+          "number": "2.4",
+          "title": "PB，数据采集范围拓展至竞争性业务、金融业"
+        },
+        {
+          "number": "2022.01",
+          "title": "国务院"
+        },
+        {
+          "number": "2022.04",
+          "title": "国务院"
+        },
+        {
+          "number": "46.2",
+          "title": "43.8 43 32.1 34.3"
+        },
+        {
+          "number": "15.3",
+          "title": "15.1 13.8 10.9 11.8"
+        },
+        {
+          "number": "8.4",
+          "title": "8.5 8.6 5.7 6.1"
+        },
+        {
+          "number": "11.5",
+          "title": "10 9.1 7.5 7.9"
+        },
+        {
+          "number": "10.3",
+          "title": "11.4 8 8.5"
+        },
+        {
+          "number": "5.3",
+          "title": "亿次拓客营销、 提供 2486"
+        },
+        {
+          "number": "34.7",
+          "title": "8%的金融"
+        }
+      ],
+      "content_preview": "No.202225 \n中国信息通信研究 院 \n2023年1月 大数据白皮书 \n(2022年)\n版权声明\n本白皮书 版权属于 中国信息通信研究院 ，并受法律保\n护。转载、摘编或利用其它方式使用 本白皮书文字或者观\n点的，应 注明“来源：中国信息通信研究院” 。违反上述\n声明者，本院 将追究其相关法律责任。\n前  言 \n中央全面深化改革委员会第二十六次会议指出， 数据作为新型生\n产要素， 是数字化、 网络化、 智能化的基础， 已快速融入生产、 分配、\n流通、消费和社会服务管理等各个环节，深刻改变着生产方式、生活\n方式和社会治理方式。大数据是数据的集合，是围绕数据形成的一套\n技术体系，并衍生出了丰富的产业生态，成为释放数据价值的重要引\n擎。  \n近一年来，从宏观看， 各国通过政策、法案、设立机构等方式，\n持续推进自身大数据战略，我国 党中央、国务院围绕数据要素市场建\n设、数据要素价值 释放密集提出一系列重要论断、作出一系列战略部\n署， 进一步增强了 我国大数据发展动能。 从微观看， 数据存储与计算 、\n数据管理、数据流通、数据应用、数据安全五大核心领域均伴随 相关\n政策、技术、产业、应用 的",
+      "page_count": 56,
+      "indexed_at": "2026-04-27T22:11:52.386318"
+    },
+    {
+      "file_name": "ISO+IEC+27001-2022+信息安全+网.pdf",
+      "relative_path": "Industrial Reference/ISO+IEC+27001-2022+信息安全+网.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Industrial Reference/ISO+IEC+27001-2022+信息安全+网.pdf",
+      "file_hash": "200754c53d78e89fde730a8cb02d74c5",
+      "file_size": 1074466,
+      "modified_time": "2023-01-09T18:22:30.953289",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "0.1",
+          "title": "概述 ................................ .............."
+        },
+        {
+          "number": "0.2",
+          "title": "与其他管理体系标准的兼容性  ................................ .."
+        },
+        {
+          "number": "4.1",
+          "title": "了解组织及其背景  ................................ ......."
+        },
+        {
+          "number": "4.2",
+          "title": "了解相关方的需求和期望 ................................ ....."
+        },
+        {
+          "number": "4.3",
+          "title": "确定信息安全管理系统的 范围 ................................ .."
+        },
+        {
+          "number": "4.4",
+          "title": "信息安全管理系统  ................................ ......."
+        },
+        {
+          "number": "5.1",
+          "title": "领导力和承诺  ................................ ........."
+        },
+        {
+          "number": "5.2",
+          "title": "政策 ................................ .............."
+        },
+        {
+          "number": "5.3",
+          "title": "组织角色、职责和权限  ................................ ....."
+        },
+        {
+          "number": "6.1",
+          "title": "应对风险和机遇的行动  ................................ ....."
+        },
+        {
+          "number": "6.1",
+          "title": ".1 一般原则  ................................ ........"
+        },
+        {
+          "number": "6.1",
+          "title": ".2 信息安全风险评估 ................................ ....."
+        },
+        {
+          "number": "6.1",
+          "title": ".3 信息安全风险处理 ................................ ....."
+        },
+        {
+          "number": "6.2",
+          "title": "信息安全目标及其实现计划  ................................ ..."
+        },
+        {
+          "number": "6.3",
+          "title": "变更计划  ................................ ..........."
+        },
+        {
+          "number": "7.1",
+          "title": "资源 ................................ .............."
+        },
+        {
+          "number": "7.2",
+          "title": "能力 ................................ .............."
+        },
+        {
+          "number": "7.3",
+          "title": "意识 ................................ .............."
+        },
+        {
+          "number": "7.4",
+          "title": "沟通 ................................ .............."
+        },
+        {
+          "number": "7.5",
+          "title": "文件化的信息  ................................ ........."
+        }
+      ],
+      "content_preview": "国际标准  ISO/IEC 27001 -2022 \n  2022  \n信息安全、网络安全和隐私保护 -\n信息安全管理 体系-要求 \nInformation security, cybersecurity and privacy \nprotection — Information security management systems \n— Requirements  \n编译 樊山\n编译 樊山 \n2022 -10-28 \n信息安全、网络安全和隐私保护 -信息安全管理体系 -要求 \n \n \n1 国际标准   ISO/IEC 27001  \n信息安全、网络安全和隐私保护 -信\n息安全管理体系 -要求 \nInformation security, cybersecurity and privacy protection \n— Information security management systems — Requirements  \n本文档仅适用于学习交流，不得用于任何商业用途  \n翻译：樊山  （鹰眼翻译社区）  \n第三版  \n2022 -10\n编译 樊山 \n2022 -10-28 \n",
+      "page_count": 32,
+      "indexed_at": "2026-04-27T22:11:53.744755"
+    },
+    {
+      "file_name": "安永 - 2022 - 全球数据合规与隐私科技发展报告.pdf",
+      "relative_path": "Industrial Reference/安永 - 2022 - 全球数据合规与隐私科技发展报告.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Industrial Reference/安永 - 2022 - 全球数据合规与隐私科技发展报告.pdf",
+      "file_hash": "fc41909e841075fc2cc3ab68cb4049b2",
+      "file_size": 8154654,
+      "modified_time": "2023-02-25T11:45:25.059986",
+      "domains": [
+        "安全与风险管理",
+        "资产安全"
+      ],
+      "chapter_count": 22,
+      "chapters": [
+        {
+          "number": "第四章",
+          "title": "明确了企业应遵循的数据安全保"
+        },
+        {
+          "number": "第五章",
+          "title": "规定了企业作"
+        },
+        {
+          "number": "1.1",
+          "title": "1.202"
+        },
+        {
+          "number": "3.5",
+          "title": "5.1"
+        },
+        {
+          "number": "5.5",
+          "title": "5.64.1"
+        },
+        {
+          "number": "4.2",
+          "title": "4.32.1"
+        },
+        {
+          "number": "2.3",
+          "title": "2.4“隐私科技”的概念界定"
+        },
+        {
+          "number": "1.2",
+          "title": "全球数据合规与隐私保护挑战"
+        },
+        {
+          "number": "7.46",
+          "title": "亿欧元罚款。不仅 GDPR 的执法"
+        },
+        {
+          "number": "80.2",
+          "title": "6 亿元人"
+        },
+        {
+          "number": "2.71",
+          "title": "倍，因此仍有 42% 的公司打算在隐私计划上花费超"
+        },
+        {
+          "number": "2.2",
+          "title": "算法应用合规现状与趋势"
+        },
+        {
+          "number": "2.3",
+          "title": "监管路径与发展趋势业数据利用和公民个人数据保护之间的利益诉求。"
+        },
+        {
+          "number": "80.26",
+          "title": "亿元人民币罚款，对公司"
+        },
+        {
+          "number": "8.89",
+          "title": "亿英镑的诉讼，被"
+        },
+        {
+          "number": "4.02",
+          "title": "亿美元）罚款《通用数据保护条例》"
+        },
+        {
+          "number": "2.4",
+          "title": "从算法监管看隐私科技的破局思路"
+        },
+        {
+          "number": "3.2",
+          "title": "企业隐私科技应用程度"
+        },
+        {
+          "number": "3.3",
+          "title": "企业隐私科技投资趋势"
+        },
+        {
+          "number": "3.4",
+          "title": "企业对国内隐私科技市场的期望"
+        },
+        {
+          "number": "3.5",
+          "title": "企业实施隐私科技所面临的挑战"
+        },
+        {
+          "number": "4.2",
+          "title": "典型案例 1：运营商行业数据分类分级"
+        }
+      ],
+      "content_preview": "本报告版权属于出品方所有，并受法律保护。转载、摘编或利用其他方式使用报告文字\n或者观点的，应注明来源。违反上述声明者，本单位将追究其相关法律责任。\nCOPYRIGHT STATEMENT\n出品方\n编写组成员安永（中国）企业咨询有限公司\n上海赛博网络安全产业创新研究院\n高轶峰\n惠志斌\n王瑾\n周雪静\n蒋采玲\n王龙飞\n吴梦庭\n李顾元\n孙思瑄安永（中国）企业咨询有限公司大中华区网络安全和隐私保护服务主管合伙人\n上海赛博网络安全产业创新研究院院长，首席研究员\n安永（中国）企业咨询有限公司网络安全和隐私保护咨询服务高级经理\n上海赛博网络安全产业创新研究院高级研究员\n安永（中国）企业咨询有限公司网络安全和隐私保护咨询服务经理\n上海数据安全协同创新实验室秘书长\n安永（中国）企业咨询有限公司网络安全和隐私保护咨询服务顾问\n某公司隐私合规专家\n某公司隐私合规专家版权声明\n2022 年是中国数据合规全面发展的一年，也是隐私科技进一步从概念走向落地的一年。回顾近\n一年的发展，安永与赛博研究院联合发布第二期年度《全球数据合规与隐私科技发展报告》。本报\n告全面梳理了国内外数据安全与算法应用的合规体系，对隐私科技的",
+      "page_count": 58,
+      "indexed_at": "2026-04-27T22:11:54.865076"
+    },
+    {
+      "file_name": "CISSP-May-2021认证考试大纲 中文版.pdf",
+      "relative_path": "00. Manual/CISSP-May-2021认证考试大纲 中文版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/00. Manual/CISSP-May-2021认证考试大纲 中文版.pdf",
+      "file_hash": "1dea9b38e84f88109dc39be3d43a2ba1",
+      "file_size": 857592,
+      "modified_time": "2022-02-22T16:41:35.228369",
+      "domains": [
+        "安全与风险管理",
+        "通信与网络安全"
+      ],
+      "chapter_count": 20,
+      "chapters": [
+        {
+          "number": "1.1",
+          "title": "理解、遵从与提升职业道德"
+        },
+        {
+          "number": "1.2",
+          "title": "理解和应用安全概念"
+        },
+        {
+          "number": "1.3",
+          "title": "评估和应用安全治理的原理"
+        },
+        {
+          "number": "1.4",
+          "title": "确定合规性和其他要求"
+        },
+        {
+          "number": "1.5",
+          "title": "理解在全球背景下与信息安全相关的法律和监管问题"
+        },
+        {
+          "number": "1.6",
+          "title": "理解调查类型的要求（即行政、刑事、民事、监管、行业标准）"
+        },
+        {
+          "number": "1.7",
+          "title": "制定、记录和实施安全政策、标准、程序和指南   »将安全功能与业务战略、目标、使命和宗旨相关联"
+        },
+        {
+          "number": "1.8",
+          "title": "对业务连续性 (BC) 要求进行识别、分析及优先级排序"
+        },
+        {
+          "number": "1.9",
+          "title": "协助制定和实施人员安全政策和程序"
+        },
+        {
+          "number": "1.10",
+          "title": "理解并应用风险管理概念"
+        },
+        {
+          "number": "1.11",
+          "title": "理解并应用威胁建模的概念和方法"
+        },
+        {
+          "number": "1.12",
+          "title": "应用供应链风险管理 (SCRM) 概念"
+        },
+        {
+          "number": "1.13",
+          "title": "制定并维护安全意识、教育和培训计划 »员工筛选与雇佣"
+        },
+        {
+          "number": "2.1",
+          "title": "识别并分类信息和资产"
+        },
+        {
+          "number": "2.2",
+          "title": "制定信息和资产处理要求"
+        },
+        {
+          "number": "2.3",
+          "title": "安全配置资源"
+        },
+        {
+          "number": "2.4",
+          "title": "管理数据生命周期"
+        },
+        {
+          "number": "2.5",
+          "title": "确保适当的资产保留（例如，使用寿命结束 (EOL)，支持结束 (EOS))"
+        },
+        {
+          "number": "2.6",
+          "title": "确定数据安全控制和合规要求 »信息和资产所有权"
+        },
+        {
+          "number": "3.1",
+          "title": "使用安全设计原理来研究、实施与管理工程过程"
+        }
+      ],
+      "content_preview": "认证考试大纲\n生效日期：2021 年 5 月 1 日\n2\nCISSP认证考试大纲关于 CISSP \n信息系统安全认证专家 (CISSP ) 是信息安全领域最被全球广泛认可的认证。CISSP 认证反映了持证者具备有效设\n计、构建及管理组织整体安全态势所需的深厚信息安全技术、管理知识、技能与经验。\nCISSP 公共知识体系 (CBK®) 中包含的广泛议题确保了与信息安全领域所有原理的相关性。通过认证的考生展示\n了在以下八大知识域的能力：    \n• 安全与风险管理 \n• 资产安全 \n• 安全架构与工程 \n• 通信与网络安全 \n• 身份识别访问管理 \n• 安全评估与测试 \n• 安全运营 \n• 软件开发安全  \n经验要求 \n考生必须在 CISSP 公共知识体系 (CBK) 八大知识域中的至少两个或两个以上领域，拥有至少 5 年全职工作经\n验。拥有 4 年大学本科学历或同等学历，或者 (ISC )2 认可的其它证书可以抵免一年的工作经验。所有教育学位\n最多只能抵免一年工作经验。\n没有满足 CISSP 所需工作经验的考生，如果能够通过 CISSP 考试则可以成为 (ISC)2 的准会员(即 Ass",
+      "page_count": 16,
+      "indexed_at": "2026-04-27T22:11:59.075684"
+    },
+    {
+      "file_name": "ISC²考生手册中文版.pdf",
+      "relative_path": "00. Manual/ISC²考生手册中文版.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/00. Manual/ISC²考生手册中文版.pdf",
+      "file_hash": "f5f175163e72c87ed05553992d05225b",
+      "file_size": 434593,
+      "modified_time": "2022-05-11T10:45:04.969359",
+      "domains": [
+        "安全与风险管理"
+      ],
+      "chapter_count": 6,
+      "chapters": [
+        {
+          "number": "86.10",
+          "title": ".58731396"
+        },
+        {
+          "number": "1.800",
+          "title": ".466.0450或."
+        },
+        {
+          "number": "1.952",
+          "title": ".905.7025.需要注意的是， 有住宿需求的考生请在考试前请先电话联系(ISC)²， 不要通过P"
+        },
+        {
+          "number": "1.866",
+          "title": ".331.ISC2.(4722),.请按1."
+        },
+        {
+          "number": "1.866",
+          "title": ".331.ISC2.(4722)."
+        },
+        {
+          "number": "203.300",
+          "title": ".1625."
+        }
+      ],
+      "content_preview": "1\n考生手册\n(ISC)² Candidate Information Bulletin （考生手册）2关于认证 .............................................................................................................................................................. 4\n为何要获取这个认证？ 成为更好的自己.............................................................................................................. 4\n哪种认证适合您？ ..............................................................................................................................................",
+      "page_count": 20,
+      "indexed_at": "2026-04-27T22:12:00.077281"
+    },
+    {
+      "file_name": "《保护云中医疗健康数据隐私》.pdf",
+      "relative_path": "Reference/《保护云中医疗健康数据隐私》.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Reference/《保护云中医疗健康数据隐私》.pdf",
+      "file_hash": "d33c1a7459bb051e3ccb72830d5c9fff",
+      "file_size": 1041611,
+      "modified_time": "2022-05-20T10:12:19.734715",
+      "domains": [
+        "安全与风险管理",
+        "身份与访问管理"
+      ],
+      "chapter_count": 9,
+      "chapters": [
+        {
+          "number": "3.1",
+          "title": "创建................................................"
+        },
+        {
+          "number": "3.2",
+          "title": "存储................................................"
+        },
+        {
+          "number": "3.3",
+          "title": "使用................................................"
+        },
+        {
+          "number": "3.4",
+          "title": "共享................................................"
+        },
+        {
+          "number": "3.5",
+          "title": "存档................................................"
+        },
+        {
+          "number": "3.6",
+          "title": "销毁................................................"
+        },
+        {
+          "number": "10.1007",
+          "title": "/s10916-020-01631-5）。实体在数据处理生态系统中的角色是隐私风险管理的一个关键因素"
+        },
+        {
+          "number": "10.6028",
+          "title": "/NIST.IR.8062"
+        },
+        {
+          "number": "10.6028",
+          "title": "/NIST.SP.800-53r5"
+        }
+      ],
+      "content_preview": "©2022云安全联盟大中华区版权所有\n1保护云中医疗健康数据隐私\n©2022云安全联盟大中华区版权所有\n2云安全联盟健康信息管理工作组研究的官方网址：\nhttps://cloudsecurityalliance.org/research/working-groups/health-information-management/\n@2022云安全联盟大中华区-保留所有权利。本文档英文版本发布在云安全联盟官网\n（https://cloudsecurityalliance.org），中文版本发布在云安全联盟大中华区官网(http://www.c-csa.cn)。您可\n在满足如下要求的情况下在您本人计算机上下载、存储、展示、查看、打印此文档：（a）本文只可作个人\n信息获取，不可用作商业用途；(b)本文内容不得篡改;(c)不得对本文进行转发散布;(d)不得删除文中商标、\n版权声明或其他声明。在遵循美国版权法相关条款情况下合理使用本文内容，使用时请注明引用于云安全\n联盟。\n©2022云安全联盟大中华区版权所有\n3序言\n数字经济时代，医疗健康数据的开发利用有利于广大民众的健康生活，但同时作为一类特殊",
+      "page_count": 24,
+      "indexed_at": "2026-04-27T22:12:12.871810"
+    }
+  ]
+}

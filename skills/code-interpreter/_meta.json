@@ -1,0 +1,10 @@
+{
+  "name": "code-interpreter",
+  "version": "1.0.0",
+  "source": "custom",
+  "sourceRef": "manually-created",
+  "installedAt": "2026-04-12T09:10:00+08:00",
+  "autoUpdate": false,
+  "dependencies": ["python3"],
+  "category": "core"
+}

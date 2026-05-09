@@ -1,0 +1,169 @@
+# =============================================================================
+# 表格检测配置
+# =============================================================================
+# 用于 OCR 中的表格识别、边框检测、单元格重建
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 全局配置
+# -----------------------------------------------------------------------------
+global:
+  enable_table_detection: true     # 启用表格检测
+  min_table_size: 100              # 表格最小尺寸（像素）
+  max_table_gap: 20                # 单元格最大间距（像素）
+
+# -----------------------------------------------------------------------------
+# 边框检测参数
+# -----------------------------------------------------------------------------
+border_detection:
+  # 水平线检测
+  horizontal:
+    min_line_length: 50            # 最小线长（像素）
+    max_line_gap: 10               # 最大线间隙
+    threshold: 100                 # 边缘检测阈值
+
+  # 垂直线检测
+  vertical:
+    min_line_length: 30            # 最小线长（像素）
+    max_line_gap: 10               # 最大线间隙
+    threshold: 100                 # 边缘检测阈值
+
+  # 边框类型
+  border_types:
+    solid: true                    # 实线边框
+    dashed: true                   # 虚线边框（部分识别）
+    implicit: true                 # 隐式边框（通过文字对齐推断）
+
+# -----------------------------------------------------------------------------
+# 单元格重建参数
+# -----------------------------------------------------------------------------
+cell_reconstruction:
+  enable_merge: true               # 启用单元格合并检测
+  min_cell_width: 30               # 最小单元格宽度
+  min_cell_height: 15              # 最小单元格高度
+  text_alignment_threshold: 5      # 文字对齐容差（像素）
+
+  # 跨行/跨列检测
+  span_detection:
+    enable: true
+    max_row_span: 10               # 最大跨行数
+    max_col_span: 10               # 最大跨列数
+
+# -----------------------------------------------------------------------------
+# 表格结构验证
+# -----------------------------------------------------------------------------
+structure_validation:
+  enable: true                     # 启用结构验证
+  min_cells_per_table: 4           # 表格最少单元格数
+  max_empty_cells_ratio: 0.7       # 最大空单元格比例
+
+  # 完整性评分权重
+  integrity_weights:
+    border_completeness: 0.3       # 边框完整性权重
+    cell_regularity: 0.3           # 单元格规整度权重
+    text_coverage: 0.2             # 文字覆盖率权重
+    alignment_consistency: 0.2     # 对齐一致性权重
+
+# -----------------------------------------------------------------------------
+# 表格类型识别
+# -----------------------------------------------------------------------------
+table_types:
+  # 标准网格表格（最常见）
+  grid_table:
+    enable: true
+    priority: 1
+
+  # 无边框表格（仅通过文字对齐）
+  borderless_table:
+    enable: true
+    priority: 2
+
+  # 嵌套表格
+  nested_table:
+    enable: false                   # 默认禁用（复杂度高）
+    priority: 3
+
+  # 倾斜表格
+  skewed_table:
+    enable: true
+    max_skew_angle: 15              # 最大倾斜角度（度）
+    enable_deskew: true             # 自动纠偏
+
+# -----------------------------------------------------------------------------
+# OCR 后处理 - 表格内容优化
+# -----------------------------------------------------------------------------
+post_processing:
+  # 数字列优化
+  numeric_columns:
+    enable: true
+    align_decimal_points: true      # 小数点对齐
+    fix_broken_numbers: true        # 修复断裂数字
+
+  # 表头检测
+  header_detection:
+    enable: true
+    first_row_as_header: true       # 首行默认作为表头
+    bold_text_as_header: true       # 粗体文字作为表头
+
+  # 空单元格填充
+  empty_cell_handling:
+    fill_with: ''                   # 空单元格填充内容
+    mark_merged: true               # 标记合并单元格
+
+# -----------------------------------------------------------------------------
+# 输出格式配置
+# -----------------------------------------------------------------------------
+output:
+  formats:
+    markdown: true                  # Markdown 表格
+    html: true                      # HTML 表格
+    json: true                      # JSON 结构
+    csv: true                       # CSV 格式
+
+  # Markdown 输出选项
+  markdown:
+    align_columns: true             # 列对齐
+    max_col_width: 50               # 最大列宽（字符）
+    wrap_long_text: true            # 长文本自动换行
+
+  # JSON 输出选项
+  json:
+    include_bounding_boxes: true    # 包含边框坐标
+    include_confidence: true         # 包含置信度
+    include_cell_spans: true         # 包含合并信息
+
+# -----------------------------------------------------------------------------
+# 性能调优
+# -----------------------------------------------------------------------------
+performance:
+  enable_image_preprocessing: true  # 启用图像预处理
+  downscale_large_images: true      # 大图像降采样
+  max_image_dimension: 2000         # 最大图像尺寸（像素）
+
+  # 预处理步骤
+  preprocessing_steps:
+    grayscale: true                 # 灰度化
+    denoise: true                   # 去噪
+    threshold: true                 # 二值化
+    deskew: true                    # 纠偏
+
+# -----------------------------------------------------------------------------
+# 调试配置
+# -----------------------------------------------------------------------------
+debug:
+  enable: false                     # 启用调试模式
+  save_debug_images: false          # 保存调试图像
+  debug_output_dir: debug           # 调试输出目录
+
+  debug_outputs:
+    edge_detection: false           # 边缘检测结果
+    line_detection: false           # 线条检测结果
+    cell_detection: false           # 单元格检测结果
+    final_table: true               # 最终表格结构
+
+# =============================================================================
+# 版本信息
+# =============================================================================
+version: '1.0'
+created: '2026-04-24'
+source: 'ocr-engine 通用底层技能 - 表格检测模块'

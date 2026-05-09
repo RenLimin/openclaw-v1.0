@@ -1,0 +1,571 @@
+{
+  "documents": {
+    "ones_sample_001": {
+      "title": "App安全加固产品手册",
+      "source": "ONES知识库",
+      "word_count": 1520,
+      "categories": [
+        "产品技术",
+        "应用安全"
+      ]
+    },
+    "ones_sample_002": {
+      "title": "威胁感知平台部署指南",
+      "source": "ONES知识库",
+      "word_count": 2340,
+      "categories": [
+        "产品技术",
+        "威胁感知"
+      ]
+    },
+    "ones_sample_003": {
+      "title": "安全咨询服务交付规范",
+      "source": "ONES知识库",
+      "word_count": 1890,
+      "categories": [
+        "服务交付",
+        "咨询服务"
+      ]
+    },
+    "68dfd489b474c177": {
+      "title": "【参考】保护类产品Release版本信息表.xlsx",
+      "source": "本地产品文档",
+      "word_count": 15485,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "848cebe614fc559e": {
+      "title": "2022产品服务报价-20220620.xlsx",
+      "source": "本地产品文档",
+      "word_count": 16653,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "6f724bceee61a542": {
+      "title": "产品服务规格说明书-20220620.xlsx",
+      "source": "本地产品文档",
+      "word_count": 5524,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "597f40e4aa8ca150": {
+      "title": "2022新合同模板使用讲解V1.0-202206.pdf",
+      "source": "本地产品文档",
+      "word_count": 317758,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "4357e0a18c7fa0ed": {
+      "title": "代码审计试用环境资源环境说明(1).xlsx",
+      "source": "本地产品文档",
+      "word_count": 2521,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "b5b2eefd0f06a1dc": {
+      "title": "CodePecker源代码缺陷分析系统V4.0白皮书202004(1).pdf",
+      "source": "本地产品文档",
+      "word_count": 176178,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "5050fa3e804b83cb": {
+      "title": "产品部署PCM梳理.xlsx",
+      "source": "本地产品文档",
+      "word_count": 2365,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "64b4c1b313996b1f": {
+      "title": "黑盒交付标准.xlsx",
+      "source": "本地产品文档",
+      "word_count": 2451,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "012a107ac21a8491": {
+      "title": "各产品license授权需要提供的信息.docx",
+      "source": "本地产品文档",
+      "word_count": 1688,
+      "categories": [
+        "产品文档",
+        "Word"
+      ]
+    },
+    "f142730dca92f742": {
+      "title": "梆梆安全2021报价清单及说明V1.0-0708-含交付说明.xlsx",
+      "source": "本地产品文档",
+      "word_count": 15664,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "05df885537445fe4": {
+      "title": "POC标准矩阵-2020.xlsx",
+      "source": "本地产品文档",
+      "word_count": 1862,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "f037dd576688b42f": {
+      "title": "梆梆安全产品形态-2021.pptx",
+      "source": "本地产品文档",
+      "word_count": 388441,
+      "categories": [
+        "产品文档",
+        "PowerPoint"
+      ]
+    },
+    "9deb3d073e4f56f2": {
+      "title": "产品编码规则.xlsx",
+      "source": "本地产品文档",
+      "word_count": 1765,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "5d69cc352a303a65": {
+      "title": "产品Roadmap-2021-0617-汇报版.pptx",
+      "source": "本地产品文档",
+      "word_count": 176236,
+      "categories": [
+        "产品文档",
+        "PowerPoint"
+      ]
+    },
+    "40b37b6316ad0b3e": {
+      "title": "2021产品销售服务模式培训-V5.pptx",
+      "source": "本地产品文档",
+      "word_count": 138784,
+      "categories": [
+        "产品文档",
+        "PowerPoint"
+      ]
+    },
+    "93d69556c0c3d7c2": {
+      "title": "产品线销售模式+服务-Beta v0.97.xlsx",
+      "source": "本地产品文档",
+      "word_count": 13334,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "7f36fb5813f47cde": {
+      "title": "各产品登录地址及演示账号信息.xlsx",
+      "source": "本地产品文档",
+      "word_count": 1085,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "6c83be5b817a7ca0": {
+      "title": "产品报价及合同模板推进时间计划图.xlsx",
+      "source": "本地产品文档",
+      "word_count": 1438,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "64a7e3f493f1e70e": {
+      "title": "梆梆安全2021报价清单及说明V1.0-0708.xlsx",
+      "source": "本地产品文档",
+      "word_count": 6815,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "efc581b774f443eb": {
+      "title": "梆梆安全产品服务报价体系2021-销管中心版本1.0.xlsx",
+      "source": "本地产品文档",
+      "word_count": 10314,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "860cddc7f97d766b": {
+      "title": "2021产品销售服务模式培训-V7.pptx",
+      "source": "本地产品文档",
+      "word_count": 141316,
+      "categories": [
+        "产品文档",
+        "PowerPoint"
+      ]
+    },
+    "8bcaa3347aade276": {
+      "title": "爱加密-App违法违规收集使用个人信息-合规评估白皮书V2.0.0.docx",
+      "source": "本地产品文档",
+      "word_count": 27782,
+      "categories": [
+        "产品文档",
+        "Word"
+      ]
+    },
+    "ea01e96826ba5eb6": {
+      "title": "【3】（337号文）工业和信息化部关于开展APP侵害用户权益专项整治工作的通知.pdf",
+      "source": "本地产品文档",
+      "word_count": 54287,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "74f274289b1fe6f8": {
+      "title": "【5】（央行 237号文）中国人民银行关于发布金融行业标准加强移动金融客户端应用软件安全管理的通知.pdf",
+      "source": "本地产品文档",
+      "word_count": 566241,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "ef664e7f62e69991": {
+      "title": "【14】JR∕T 0171-2020 个人金融信息保护技术规范.pdf",
+      "source": "本地产品文档",
+      "word_count": 841518,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "73356f0957d857b4": {
+      "title": "【7】中华人民共和国个人信息保护法（全文）.pdf",
+      "source": "本地产品文档",
+      "word_count": 36239,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "166bc07e44917bbd": {
+      "title": "参考条文小结.xlsx",
+      "source": "本地产品文档",
+      "word_count": 1189,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "bfe3a324383fe60e": {
+      "title": "【1】（191号文）关于印发《App违法违规收集使用个人信息行为认定方法》的通知-中央网信办.pdf",
+      "source": "本地产品文档",
+      "word_count": 66255,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "40e3ea439e0a7a07": {
+      "title": "【6】（165号文）关于开展互联网行业市场秩序专项整治行动的通知.pdf",
+      "source": "本地产品文档",
+      "word_count": 207129,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "dd8519bf542402ab": {
+      "title": "【2】（164号文）工业和信息化部关于开展纵深推进APP侵害用户权益专项整治行动的通知.pdf",
+      "source": "本地产品文档",
+      "word_count": 30209,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "29726eaf484f6f81": {
+      "title": "GB_T 41391-2022 信息安全技术 移动互联网应用程序（App）收集个人信息基本要求_20220512_152653.pdf",
+      "source": "本地产品文档",
+      "word_count": 3355187,
+      "categories": [
+        "产品文档",
+        "PDF"
+      ]
+    },
+    "993ecec4a87140e4": {
+      "title": "BANGCLE-产品服务报价2020-对照编号版.xlsx",
+      "source": "本地产品文档",
+      "word_count": 45825,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "ae961af8356fd661": {
+      "title": "Java安全编码规范 - 20200820.docx",
+      "source": "本地产品文档",
+      "word_count": 25813,
+      "categories": [
+        "产品文档",
+        "Word"
+      ]
+    },
+    "5fef0a8fedf640a7": {
+      "title": "iOS安全编码规范 - 20200824.docx",
+      "source": "本地产品文档",
+      "word_count": 23848,
+      "categories": [
+        "产品文档",
+        "Word"
+      ]
+    },
+    "f48dd5f4145b4c87": {
+      "title": "工行软件安全开发体系建设-第一阶段汇报B7.pptx",
+      "source": "本地产品文档",
+      "word_count": 56047,
+      "categories": [
+        "产品文档",
+        "PowerPoint"
+      ]
+    },
+    "36f8a88df8489d69": {
+      "title": "Android安全编码规范 - 20200824.docx",
+      "source": "本地产品文档",
+      "word_count": 24401,
+      "categories": [
+        "产品文档",
+        "Word"
+      ]
+    },
+    "2ed0f38e25e96e77": {
+      "title": "移动应用安全常用攻击工具及思路.pptx",
+      "source": "本地产品文档",
+      "word_count": 1331842,
+      "categories": [
+        "产品文档",
+        "PowerPoint"
+      ]
+    },
+    "7d3040f46020c0c9": {
+      "title": "安全设计培训v2.pptx",
+      "source": "本地产品文档",
+      "word_count": 216508,
+      "categories": [
+        "产品文档",
+        "PowerPoint"
+      ]
+    },
+    "856b1fa444029e01": {
+      "title": "移动应用常见漏洞v2.pptx",
+      "source": "本地产品文档",
+      "word_count": 453553,
+      "categories": [
+        "产品文档",
+        "PowerPoint"
+      ]
+    },
+    "ab7eee98ab0033b8": {
+      "title": "License控制点清单.xlsx",
+      "source": "本地产品文档",
+      "word_count": 3293,
+      "categories": [
+        "产品文档",
+        "Excel"
+      ]
+    },
+    "ec59a0672d82adc8": {
+      "title": "梆梆授权管理平台用户使用手册V1.0.docx",
+      "source": "本地产品文档",
+      "word_count": 516143,
+      "categories": [
+        "产品文档",
+        "Word"
+      ]
+    }
+  },
+  "term_index": {
+    "app安全加固产品手册": [
+      "ones_sample_001"
+    ],
+    "梆梆安全app安全加固产品，提供dex文件加密、so文件加密、资源文件保护、反调试、反篡改等全方位安全防护能力。支持android和ios双平台，有效防止应用被逆向分析和二次打包。": [
+      "ones_sample_001"
+    ],
+    "威胁感知平台部署指南": [
+      "ones_sample_002"
+    ],
+    "威胁感知平台采用大数据架构，实时收集和分析各类安全日志，通过关联分析、机器学习等技术，发现潜在的安全威胁。部署方式支持单机、分布式、云原生等多种模式。": [
+      "ones_sample_002"
+    ],
+    "安全咨询服务交付规范": [
+      "ones_sample_003"
+    ],
+    "安全咨询服务包括：渗透测试、代码审计、安全评估、应急响应等。交付规范明确了项目启动、现场实施、报告撰写、客户验收等各阶段的标准流程和质量要求。": [
+      "ones_sample_003"
+    ],
+    "【参考】保护类产品release版本信息表.xlsx": [
+      "68dfd489b474c177"
+    ],
+    "2022产品服务报价-20220620.xlsx": [
+      "848cebe614fc559e"
+    ],
+    "产品服务规格说明书-20220620.xlsx": [
+      "6f724bceee61a542"
+    ],
+    "2022新合同模板使用讲解v1.0-202206.pdf": [
+      "597f40e4aa8ca150"
+    ],
+    "代码审计试用环境资源环境说明(1).xlsx": [
+      "4357e0a18c7fa0ed"
+    ],
+    "codepecker源代码缺陷分析系统v4.0白皮书202004(1).pdf": [
+      "b5b2eefd0f06a1dc"
+    ],
+    "产品部署pcm梳理.xlsx": [
+      "5050fa3e804b83cb"
+    ],
+    "黑盒交付标准.xlsx": [
+      "64b4c1b313996b1f"
+    ],
+    "各产品license授权需要提供的信息.docx": [
+      "012a107ac21a8491"
+    ],
+    "梆梆安全2021报价清单及说明v1.0-0708-含交付说明.xlsx": [
+      "f142730dca92f742"
+    ],
+    "poc标准矩阵-2020.xlsx": [
+      "05df885537445fe4"
+    ],
+    "梆梆安全产品形态-2021.pptx": [
+      "f037dd576688b42f"
+    ],
+    "产品编码规则.xlsx": [
+      "9deb3d073e4f56f2"
+    ],
+    "产品roadmap-2021-0617-汇报版.pptx": [
+      "5d69cc352a303a65"
+    ],
+    "2021产品销售服务模式培训-v5.pptx": [
+      "40b37b6316ad0b3e"
+    ],
+    "v0.97.xlsx": [
+      "93d69556c0c3d7c2"
+    ],
+    "产品线销售模式+服务-beta": [
+      "93d69556c0c3d7c2"
+    ],
+    "各产品登录地址及演示账号信息.xlsx": [
+      "7f36fb5813f47cde"
+    ],
+    "产品报价及合同模板推进时间计划图.xlsx": [
+      "6c83be5b817a7ca0"
+    ],
+    "梆梆安全2021报价清单及说明v1.0-0708.xlsx": [
+      "64a7e3f493f1e70e"
+    ],
+    "梆梆安全产品服务报价体系2021-销管中心版本1.0.xlsx": [
+      "efc581b774f443eb"
+    ],
+    "2021产品销售服务模式培训-v7.pptx": [
+      "860cddc7f97d766b"
+    ],
+    "爱加密-app违法违规收集使用个人信息-合规评估白皮书v2.0.0.docx": [
+      "8bcaa3347aade276"
+    ],
+    "【3】（337号文）工业和信息化部关于开展app侵害用户权益专项整治工作的通知.pdf": [
+      "ea01e96826ba5eb6"
+    ],
+    "【5】（央行": [
+      "74f274289b1fe6f8"
+    ],
+    "237号文）中国人民银行关于发布金融行业标准加强移动金融客户端应用软件安全管理的通知.pdf": [
+      "74f274289b1fe6f8"
+    ],
+    "个人金融信息保护技术规范.pdf": [
+      "ef664e7f62e69991"
+    ],
+    "【14】jr∕t": [
+      "ef664e7f62e69991"
+    ],
+    "0171-2020": [
+      "ef664e7f62e69991"
+    ],
+    "【7】中华人民共和国个人信息保护法（全文）.pdf": [
+      "73356f0957d857b4"
+    ],
+    "参考条文小结.xlsx": [
+      "166bc07e44917bbd"
+    ],
+    "【1】（191号文）关于印发《app违法违规收集使用个人信息行为认定方法》的通知-中央网信办.pdf": [
+      "bfe3a324383fe60e"
+    ],
+    "【6】（165号文）关于开展互联网行业市场秩序专项整治行动的通知.pdf": [
+      "40e3ea439e0a7a07"
+    ],
+    "【2】（164号文）工业和信息化部关于开展纵深推进app侵害用户权益专项整治行动的通知.pdf": [
+      "dd8519bf542402ab"
+    ],
+    "移动互联网应用程序（app）收集个人信息基本要求_20220512_152653.pdf": [
+      "29726eaf484f6f81"
+    ],
+    "41391-2022": [
+      "29726eaf484f6f81"
+    ],
+    "信息安全技术": [
+      "29726eaf484f6f81"
+    ],
+    "gb_t": [
+      "29726eaf484f6f81"
+    ],
+    "bangcle-产品服务报价2020-对照编号版.xlsx": [
+      "993ecec4a87140e4"
+    ],
+    "java安全编码规范": [
+      "ae961af8356fd661"
+    ],
+    "20200820.docx": [
+      "ae961af8356fd661"
+    ],
+    "20200824.docx": [
+      "5fef0a8fedf640a7",
+      "36f8a88df8489d69"
+    ],
+    "ios安全编码规范": [
+      "5fef0a8fedf640a7"
+    ],
+    "工行软件安全开发体系建设-第一阶段汇报b7.pptx": [
+      "f48dd5f4145b4c87"
+    ],
+    "android安全编码规范": [
+      "36f8a88df8489d69"
+    ],
+    "移动应用安全常用攻击工具及思路.pptx": [
+      "2ed0f38e25e96e77"
+    ],
+    "安全设计培训v2.pptx": [
+      "7d3040f46020c0c9"
+    ],
+    "移动应用常见漏洞v2.pptx": [
+      "856b1fa444029e01"
+    ],
+    "license控制点清单.xlsx": [
+      "ab7eee98ab0033b8"
+    ],
+    "梆梆授权管理平台用户使用手册v1.0.docx": [
+      "ec59a0672d82adc8"
+    ]
+  }
+}

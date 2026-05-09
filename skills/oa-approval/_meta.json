@@ -1,0 +1,20 @@
+{
+  "name": "oa-approval",
+  "version": "1.0.0",
+  "author": "Ella 🦊",
+  "created": "2026-04-23",
+  "updated": "2026-04-23",
+  "category": "enterprise",
+  "tags": [
+    "OA",
+    "合同审批",
+    "泛微",
+    "浏览器自动化",
+    "playwright"
+  ],
+  "responsible_agent": "ella",
+  "security_level": "medium",
+  "recommended_provider": "DeepSeek",
+  "requires_user_confirmation": true,
+  "supports_batch": false
+}

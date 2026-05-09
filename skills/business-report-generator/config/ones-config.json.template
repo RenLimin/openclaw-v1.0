@@ -1,0 +1,18 @@
+{
+    "comment": "ONES 系统配置模板 - 请复制为 ones-config.json 并填写实际配置",
+    "base_url": "https://ones.bangcle.com",
+    "username": "your-email@bangcle.com",
+    "password_or_token": "your-password-or-api-token",
+    "filters": {
+        "签约项目统计": {
+            "filter_id": "填写筛选器ID",
+            "export_columns": ["任务ID", "任务标题", "项目经理", "部门", "交付状态", "计划交付日期", "实际交付日期"]
+        },
+        "POC&提前实施统计": {
+            "filter_id": "填写筛选器ID"
+        },
+        "签约项目异常处置": {
+            "filter_id": "填写筛选器ID"
+        }
+    }
+}

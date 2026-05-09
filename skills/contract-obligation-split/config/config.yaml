@@ -1,0 +1,293 @@
+# 履约义务拆分技能 - 配置文件
+# =============================================
+
+# 技能路径配置
+# =============================================
+skill_paths:
+  ocr_engine: "../ocr-engine/scripts"
+  clause_split: "../contract-clause-split/scripts"
+  excel_engine: "../excel-engine/scripts"
+
+# OCR 引擎配置
+# =============================================
+ocr:
+  default_engine: "tesseract"
+  languages: "chi_sim+eng"
+  dpi: 300
+  clean_noise: true
+  auto_correct: true
+  assess_quality: true
+
+# 义务类型定义
+# =============================================
+obligation_types:
+  - code: "payment"
+    name: "付款义务"
+    keywords:
+      - "支付"
+      - "付款"
+      - "款项"
+      - "金额"
+      - "人民币"
+      - "元整"
+      - "转账"
+    core_features:
+      - "甲方应在"
+      - "乙方应支付"
+      - "支付方式"
+      - "支付时间"
+
+  - code: "delivery"
+    name: "交付义务"
+    keywords:
+      - "交付"
+      - "交货"
+      - "提供"
+      - "送达"
+      - "到货"
+      - "发货"
+    core_features:
+      - "乙方应在"
+      - "交付时间"
+      - "交付地点"
+      - "交付方式"
+
+  - code: "acceptance"
+    name: "验收义务"
+    keywords:
+      - "验收"
+      - "检验"
+      - "检测"
+      - "确认"
+      - "合格"
+    core_features:
+      - "验收标准"
+      - "验收时间"
+      - "验收方式"
+      - "验收合格"
+
+  - code: "warranty"
+    name: "质保义务"
+    keywords:
+      - "质保"
+      - "保修"
+      - "质量保证"
+      - "保修期"
+      - "质保期"
+    core_features:
+      - "质保期"
+      - "保修期"
+      - "质量保证期"
+      - "免费维修"
+
+  - code: "confidentiality"
+    name: "保密义务"
+    keywords:
+      - "保密"
+      - "泄露"
+      - "机密"
+      - "秘密"
+    core_features:
+      - "保密义务"
+      - "保密期限"
+      - "保密范围"
+      - "不得泄露"
+
+  - code: "liability"
+    name: "违约责任"
+    keywords:
+      - "违约"
+      - "赔偿"
+      - "违约金"
+      - "赔偿损失"
+    core_features:
+      - "违约责任"
+      - "违约金"
+      - "赔偿损失"
+      - "承担违约责任"
+
+  - code: "other"
+    name: "其他义务"
+    keywords: []
+    core_features: []
+
+# 字段提取规则
+# =============================================
+extraction_rules:
+  # 履行时间提取
+  performance_time:
+    - pattern: "([0-9]{4}[-年][0-9]{1,2}[-月][0-9]{1,2}日?)"
+      desc: "YYYY-MM-DD 格式日期"
+    - pattern: "([0-9]{1,2})[个]?月内"
+      desc: "X个月内"
+    - pattern: "([0-9]{1,2})[个]?工作日内"
+      desc: "X个工作日内"
+    - pattern: "([0-9]{1,2})[天日]内"
+      desc: "X天内"
+    - pattern: "合同生效后([0-9]{1,2})[个]?工作日"
+      desc: "合同生效后X个工作日"
+
+  # 责任方提取
+  responsible_party:
+    - pattern: "(甲方)[应应当]"
+      desc: "甲方责任"
+    - pattern: "(乙方)[应应当]"
+      desc: "乙方责任"
+    - pattern: "(双方)[应应当]"
+      desc: "双方责任"
+
+  # 金额提取
+  amount:
+    - pattern: "人民币[\\s]*([0-9,]+[\\.]?[0-9]*)[\\s]*元"
+      desc: "人民币金额"
+    - pattern: "([0-9,]+[\\.]?[0-9]*)[\\s]*元整"
+      desc: "金额大写匹配"
+    - pattern: "([0-9]{1,3}(?:,[0-9]{3})*(?:\\.[0-9]+)?)%"
+      desc: "比例百分比"
+
+# 风险评估规则
+# =============================================
+risk_assessment:
+  high_risk:
+    threshold: 80
+    conditions:
+      - "缺失核心付款义务条款"
+      - "违约金比例超过每日0.3%"
+      - "质保期短于标准要求50%以上"
+      - "删除了标准保密义务"
+    legal_basis:
+      - "民法典第509条（全面履行义务）"
+      - "民法典第577条（违约责任）"
+
+  medium_risk:
+    threshold: 50
+    conditions:
+      - "付款期限长于标准要求30%以上"
+      - "交付期限长于标准要求30%以上"
+      - "违约金比例超过每日0.1%"
+      - "质保期短于标准要求30%以上"
+    legal_basis:
+      - "民法典第510条（合同约定不明）"
+      - "民法典第582条（瑕疵履行）"
+
+  low_risk:
+    threshold: 0
+    conditions:
+      - "非核心条款文字表述差异"
+      - "不影响权利义务的格式调整"
+    legal_basis:
+      - "民法典第466条（合同解释）"
+
+# 差异类型定义
+# =============================================
+difference_types:
+  - code: "added"
+    name: "新增义务"
+    description: "合同中增加了标准产品未约定的义务"
+    suggestion: "评估新增义务的影响，必要时协商调整"
+
+  - code: "removed"
+    name: "删除义务"
+    description: "合同中删除了标准产品约定的核心义务"
+    suggestion: "必须评估风险，建议协商恢复或补充"
+
+  - code: "content_changed"
+    name: "内容变更"
+    description: "义务内容与标准定义存在差异"
+    suggestion: "评估差异的影响，必要时协商调整"
+
+  - code: "time_changed"
+    name: "期限变更"
+    description: "履行期限与标准定义存在差异"
+    suggestion: "评估期限变更的可行性和影响"
+
+  - code: "amount_changed"
+    name: "金额变更"
+    description: "金额或比例与标准定义存在差异"
+    suggestion: "评估金额变更的合理性和影响"
+
+# 义务去重合并规则
+# =============================================
+deduplication:
+  similarity_threshold: 0.8
+  merge_same_type: true
+  merge_cross_page: true
+  max_merge_distance: 3  # 条款间最大距离（跨n条仍合并）
+
+# 标准产品义务库（示例）
+# =============================================
+product_library:
+  - product_code: "AS-SERVER-001"
+    product_name: "标准服务器交付"
+    obligations:
+      - type: "delivery"
+        content: "乙方应在合同生效后30个工作日内完成服务器交付"
+        performance_time: "合同生效后30个工作日内"
+        responsible_party: "乙方"
+        amount: ""
+
+      - type: "acceptance"
+        content: "甲方应在收到服务器后7个工作日内完成验收"
+        performance_time: "收到后7个工作日内"
+        responsible_party: "甲方"
+        amount: ""
+
+      - type: "payment"
+        content: "甲方应在验收合格后15个工作日内支付100%款项"
+        performance_time: "验收合格后15个工作日内"
+        responsible_party: "甲方"
+        amount: "100%"
+
+      - type: "warranty"
+        content: "乙方提供3年7×24小时质保服务"
+        performance_time: "3年"
+        responsible_party: "乙方"
+        amount: ""
+
+  - product_code: "AS-SOFTWARE-001"
+    product_name: "标准软件许可"
+    obligations:
+      - type: "delivery"
+        content: "乙方应在合同生效后5个工作日内交付软件许可密钥"
+        performance_time: "合同生效后5个工作日内"
+        responsible_party: "乙方"
+        amount: ""
+
+      - type: "payment"
+        content: "甲方应在收到许可密钥后10个工作日内支付100%款项"
+        performance_time: "收到后10个工作日内"
+        responsible_party: "甲方"
+        amount: "100%"
+
+      - type: "warranty"
+        content: "乙方提供1年免费升级和技术支持服务"
+        performance_time: "1年"
+        responsible_party: "乙方"
+        amount: ""
+
+      - type: "confidentiality"
+        content: "双方应对技术信息承担保密义务，期限5年"
+        performance_time: "5年"
+        responsible_party: "双方"
+        amount: ""
+
+# Excel 输出配置
+# =============================================
+excel_output:
+  sheet_names:
+    obligation_summary: "履约义务汇总"
+    difference_report: "差异比对报告"
+    original_clauses: "合同条款原文"
+
+  highlight_color: "FFFF0000"  # 红色高亮（ARGB格式）
+  header_row: 1
+  data_start_row: 2
+
+# 审核报告配置
+# =============================================
+audit_report:
+  include_risk_summary: true
+  include_difference_details: true
+  include_legal_basis: true
+  include_recommendations: true
+  output_format: "markdown"

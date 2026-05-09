@@ -1,0 +1,86 @@
+{
+  "output": {
+    "default_format": "markdown",
+    "supported_formats": ["markdown", "json", "csv", "excel"],
+    "output_dir": "~/output/contracts/"
+  },
+  "clause_categories": {
+    "basic_info": {
+      "name": "基本信息",
+      "keywords": ["合同名称", "合同编号", "签订日期", "签订地点", "甲方", "乙方"]
+    },
+    "parties": {
+      "name": "主体信息",
+      "keywords": ["甲方", "乙方", "名称", "地址", "法定代表人", "联系方式"]
+    },
+    "definitions": {
+      "name": "定义条款",
+      "keywords": ["定义", "指", "下称", "简称", "含义"]
+    },
+    "subject": {
+      "name": "标的条款",
+      "keywords": ["标的", "服务内容", "货物", "产品", "数量", "质量"]
+    },
+    "price": {
+      "name": "价格条款",
+      "keywords": ["价款", "金额", "费用", "支付", "付款", "人民币", "元"]
+    },
+    "performance": {
+      "name": "履行条款",
+      "keywords": ["履行", "交付", "期限", "时间", "地点", "方式"]
+    },
+    "rights_obligations": {
+      "name": "权利义务",
+      "keywords": ["权利", "义务", "有权", "应当", "负责", "承担"]
+    },
+    "liability": {
+      "name": "违约责任",
+      "keywords": ["违约", "责任", "违约金", "赔偿", "滞纳金"]
+    },
+    "confidentiality": {
+      "name": "保密条款",
+      "keywords": ["保密", "机密", "秘密", "泄露", "披露"]
+    },
+    "dispute_resolution": {
+      "name": "争议解决",
+      "keywords": ["争议", "纠纷", "管辖", "法院", "仲裁", "诉讼"]
+    },
+    "modification": {
+      "name": "变更解除",
+      "keywords": ["变更", "修改", "解除", "终止", "提前结束"]
+    },
+    "other": {
+      "name": "其他条款",
+      "keywords": ["不可抗力", "通知", "生效", "附件", "未尽事宜"]
+    }
+  },
+  "risk_keywords": {
+    "high": ["全部责任", "所有损失", "无限责任", "高额违约金", "每日 0.5%", "双倍赔偿"],
+    "medium": ["单方解除", "最终解释权", "不得异议", "不得主张"],
+    "low": ["建议", "可以", "酌情"]
+  },
+  "extraction_rules": {
+    "contract_amount": {
+      "patterns": ["人民币\\s*([\\d,]+\\.?\\d*)\\s*元", "金额[：:]\\s*([\\d,]+\\.?\\d*)"],
+      "description": "合同金额提取正则"
+    },
+    "contract_date": {
+      "patterns": ["(\\d{4}年\\d{1,2}月\\d{1,2}日)", "(\\d{4}-\\d{1,2}-\\d{1,2})"],
+      "description": "合同日期提取正则"
+    }
+  },
+  "processing": {
+    "batch_size": 1,
+    "delay_between_clauses_min": 3,
+    "delay_between_clauses_max": 8,
+    "page_parse_delay_min": 1,
+    "page_parse_delay_max": 2,
+    "max_file_size_mb": 10,
+    "max_pages": 50
+  },
+  "security": {
+    "local_processing_only": true,
+    "no_third_party_upload": true,
+    "log_sanitization": true
+  }
+}

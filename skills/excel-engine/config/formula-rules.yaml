@@ -1,0 +1,86 @@
+# 公式处理规则配置
+# ===================
+
+# 检测规则
+detection:
+  # 分析的行数（从数据起始行开始）
+  analyze_rows: 50
+  
+  # 判定为公式列的阈值（连续公式行数）
+  formula_column_threshold: 3
+  
+  # 公式开头字符
+  formula_prefix: "="
+  
+  # 需要特别检测的公式模式
+  formula_patterns:
+    - "SUM"
+    - "VLOOKUP"
+    - "INDEX"
+    - "MATCH"
+    - "IF"
+    - "COUNT"
+    - "AVERAGE"
+
+# 保护规则
+protection:
+  # 默认跳过公式列写入
+  skip_formula_columns: true
+  
+  # 保留公式的原始格式
+  preserve_format: true
+  
+  # 写入数据时的安全模式（只写非公式单元格）
+  safe_write_mode: true
+
+# 校验规则
+validation:
+  # 写入后校验公式完整性
+  verify_after_write: true
+  
+  # 公式变更报告详细程度
+  # basic: 只报告变更数量
+  # detailed: 报告每个变更的位置
+  report_level: "detailed"
+  
+  # 允许的公式变更类型
+  # none: 不允许任何变更
+  # relative: 允许相对引用变更（如 A1 -> A2）
+  # any: 允许任何变更（不推荐）
+  allowed_change_type: "relative"
+
+# 自动刷新规则
+auto_refresh:
+  # 保存后标记需要刷新（Excel打开时自动计算）
+  mark_for_refresh: true
+  
+  # 强制全表计算标记
+  force_full_calculation: false
+
+# 常见公式列关键字（用于辅助识别）
+common_formula_keywords:
+  - "合计"
+  - "总计"
+  - "小计"
+  - "比例"
+  - "百分比"
+  - "率"
+  - "差异"
+  - "差额"
+  - "均值"
+  - "平均"
+  - "金额"
+  - "数量"
+  - "总价"
+  - "单价"
+
+# 排除规则（不认为是公式列的情况）
+exclusions:
+  # 只有单个公式的列不认为是公式列
+  single_formula_not_column: true
+  
+  # 表头行的公式忽略
+  ignore_header_formulas: true
+  
+  # 汇总行的公式单独处理
+  treat_summary_separately: true

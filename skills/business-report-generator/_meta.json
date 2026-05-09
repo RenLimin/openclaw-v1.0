@@ -1,0 +1,25 @@
+{
+  "name": "business-report-generator",
+  "version": "1.0.0",
+  "author": "Aaron 🦉",
+  "created": "2026-04-23",
+  "updated": "2026-04-23",
+  "category": "business",
+  "tags": [
+    "report",
+    "经营报告",
+    "周报",
+    "月报",
+    "数据分析",
+    "Word",
+    "Excel",
+    "可视化"
+  ],
+  "responsible_agent": "aaron",
+  "security_level": "medium",
+  "recommended_provider": "DeepSeek",
+  "requires_user_confirmation": true,
+  "supports_batch": false,
+  "local_processing_only": true,
+  "sensitive_data": true
+}

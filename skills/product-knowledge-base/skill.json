@@ -1,0 +1,11 @@
+{
+  "name": "产品知识库查询",
+  "version": "1.0.0",
+  "description": "梆梆安全产品和服务知识库，支持按产品线、产品名称、功能、部署、售后等维度查询",
+  "author": "Jerry",
+  "tags": ["产品", "知识库", "查询", "文档"],
+  "entry": "main.py",
+  "env": {
+    "KB_PATH": "/Users/bangcle/.openclaw/workspace/training-data/product-kb"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "templates": {
+    "dir": "~/templates/reports/",
+    "default_format": "word",
+    "available_templates": {
+      "weekly": "weekly-report.md",
+      "monthly": "monthly-report.md",
+      "project": "project-report.md",
+      "financial": "financial-report.md",
+      "hr": "hr-report.md",
+      "data": "data-report.md"
+    }
+  },
+  "data_sources": {
+    "excel": {
+      "sheet_names": {
+        "sales": "销售数据",
+        "cost": "成本数据",
+        "hr": "人力数据",
+        "project": "项目数据"
+      }
+    },
+    "date_format": "%Y-%m-%d"
+  },
+  "report_styles": {
+    "company_name": "公司名称",
+    "company_name_en": "Company Name",
+    "logo_path": "~/assets/logo.png",
+    "font": "微软雅黑",
+    "font_size_title": 16,
+    "font_size_heading": 14,
+    "font_size_body": 12,
+    "primary_color": "#1F4E79",
+    "secondary_color": "#5B9BD5",
+    "accent_color": "#FFC000",
+    "page_size": "A4",
+    "margin": {
+      "top": 2.54,
+      "bottom": 2.54,
+      "left": 3.17,
+      "right": 3.17
+    },
+    "toc": true,
+    "page_numbers": true,
+    "header": true,
+    "footer": true
+  },
+  "charts": {
+    "dpi": 300,
+    "figure_size": [10, 6],
+    "style": "default",
+    "show_grid": true,
+    "show_legend": true,
+    "color_palette": ["#1F4E79", "#5B9BD5", "#A5A5A5", "#FFC000", "#70AD47"],
+    "font_family": ["SimHei", "Microsoft YaHei", "sans-serif"]
+  },
+  "processing": {
+    "section_delay_min": 3,
+    "section_delay_max": 10,
+    "max_data_rows": 10000,
+    "max_file_size_mb": 10,
+    "chart_threads": 2
+  },
+  "security": {
+    "sanitize_sensitive_data": true,
+    "sensitive_keywords": ["工资", "薪资", "薪酬", "密码", "密钥", "token"],
+    "local_processing_only": true,
+    "auto_backup": true,
+    "backup_retention_days": 30
+  },
+  "output": {
+    "default_dir": "~/output/reports/",
+    "backup_dir": "~/output/reports/backup/",
+    "image_dir": "~/output/reports/images/"
+  },
+  "kpi_definitions": {
+    "revenue": {
+      "name": "营业收入",
+      "unit": "万元",
+      "target": 1000
+    },
+    "profit_margin": {
+      "name": "利润率",
+      "unit": "%",
+      "target": 20
+    },
+    "project_completion": {
+      "name": "项目完成率",
+      "unit": "%",
+      "target": 90
+    },
+    "employee_satisfaction": {
+      "name": "员工满意度",
+      "unit": "分",
+      "target": 85
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "产品技术": [
+    "ones_sample_001",
+    "ones_sample_002"
+  ],
+  "应用安全": [
+    "ones_sample_001"
+  ],
+  "威胁感知": [
+    "ones_sample_002"
+  ],
+  "服务交付": [
+    "ones_sample_003"
+  ],
+  "咨询服务": [
+    "ones_sample_003"
+  ],
+  "产品文档": [
+    "68dfd489b474c177",
+    "848cebe614fc559e",
+    "6f724bceee61a542",
+    "597f40e4aa8ca150",
+    "4357e0a18c7fa0ed",
+    "b5b2eefd0f06a1dc",
+    "5050fa3e804b83cb",
+    "64b4c1b313996b1f",
+    "012a107ac21a8491",
+    "f142730dca92f742",
+    "05df885537445fe4",
+    "f037dd576688b42f",
+    "9deb3d073e4f56f2",
+    "5d69cc352a303a65",
+    "40b37b6316ad0b3e",
+    "93d69556c0c3d7c2",
+    "7f36fb5813f47cde",
+    "6c83be5b817a7ca0",
+    "64a7e3f493f1e70e",
+    "efc581b774f443eb",
+    "860cddc7f97d766b",
+    "8bcaa3347aade276",
+    "ea01e96826ba5eb6",
+    "74f274289b1fe6f8",
+    "ef664e7f62e69991",
+    "73356f0957d857b4",
+    "166bc07e44917bbd",
+    "bfe3a324383fe60e",
+    "40e3ea439e0a7a07",
+    "dd8519bf542402ab",
+    "29726eaf484f6f81",
+    "993ecec4a87140e4",
+    "ae961af8356fd661",
+    "5fef0a8fedf640a7",
+    "f48dd5f4145b4c87",
+    "36f8a88df8489d69",
+    "2ed0f38e25e96e77",
+    "7d3040f46020c0c9",
+    "856b1fa444029e01",
+    "ab7eee98ab0033b8",
+    "ec59a0672d82adc8"
+  ],
+  "Excel": [
+    "68dfd489b474c177",
+    "848cebe614fc559e",
+    "6f724bceee61a542",
+    "4357e0a18c7fa0ed",
+    "5050fa3e804b83cb",
+    "64b4c1b313996b1f",
+    "f142730dca92f742",
+    "05df885537445fe4",
+    "9deb3d073e4f56f2",
+    "93d69556c0c3d7c2",
+    "7f36fb5813f47cde",
+    "6c83be5b817a7ca0",
+    "64a7e3f493f1e70e",
+    "efc581b774f443eb",
+    "166bc07e44917bbd",
+    "993ecec4a87140e4",
+    "ab7eee98ab0033b8"
+  ],
+  "PDF": [
+    "597f40e4aa8ca150",
+    "b5b2eefd0f06a1dc",
+    "ea01e96826ba5eb6",
+    "74f274289b1fe6f8",
+    "ef664e7f62e69991",
+    "73356f0957d857b4",
+    "bfe3a324383fe60e",
+    "40e3ea439e0a7a07",
+    "dd8519bf542402ab",
+    "29726eaf484f6f81"
+  ],
+  "Word": [
+    "012a107ac21a8491",
+    "8bcaa3347aade276",
+    "ae961af8356fd661",
+    "5fef0a8fedf640a7",
+    "36f8a88df8489d69",
+    "ec59a0672d82adc8"
+  ],
+  "PowerPoint": [
+    "f037dd576688b42f",
+    "5d69cc352a303a65",
+    "40b37b6316ad0b3e",
+    "860cddc7f97d766b",
+    "f48dd5f4145b4c87",
+    "2ed0f38e25e96e77",
+    "7d3040f46020c0c9",
+    "856b1fa444029e01"
+  ]
+}

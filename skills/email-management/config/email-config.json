@@ -1,0 +1,72 @@
+{
+  "imap": {
+    "server": "imap.qiye.163.com",
+    "port": 993,
+    "ssl": true,
+    "username": "limin.ren@bangcle.com",
+    "keychain_service": "openclaw-email-iris-password"
+  },
+  "smtp": {
+    "server": "smtp.qiye.163.com",
+    "port": 465,
+    "ssl": true,
+    "username": "limin.ren@bangcle.com",
+    "keychain_service": "openclaw-email-iris-password"
+  },
+  "folders": {
+    "monitor": [
+      "INBOX"
+    ],
+    "processed": "已处理",
+    "important": "重要邮件"
+  },
+  "classification": {
+    "rules": [
+      {
+        "level": "P0",
+        "name": "审批提醒",
+        "from_patterns": ["oa@*", "workflow@*"],
+        "subject_patterns": ["审批", "待审批", "请审批", "待审核", "审批提醒"],
+        "priority": 100
+      },
+      {
+        "level": "P1",
+        "name": "工作邮件",
+        "from_domain": ["company.com"],
+        "subject_patterns": ["项目", "会议", "周报", "月报", "计划", "评审"],
+        "priority": 80
+      },
+      {
+        "level": "P2",
+        "name": "普通邮件",
+        "from_patterns": ["*@*"],
+        "priority": 50
+      },
+      {
+        "level": "P3",
+        "name": "通知广告",
+        "subject_patterns": ["订阅", "推广", "优惠", "新闻", "公告"],
+        "priority": 20
+      }
+    ]
+  },
+  "processing": {
+    "default_limit": 20,
+    "max_limit": 50,
+    "email_analysis_delay_min": 1,
+    "email_analysis_delay_max": 3,
+    "batch_delay_seconds": 1,
+    "min_check_interval_minutes": 5
+  },
+  "security": {
+    "local_processing_only": true,
+    "sanitize_sensitive_content": true,
+    "allowed_attachment_types": [".pdf", ".doc", ".docx", ".xls", ".xlsx", ".txt", ".csv", ".jpg", ".png"],
+    "max_attachment_size_mb": 20,
+    "block_executable_attachments": true
+  },
+  "output": {
+    "report_dir": "~/output/email-reports/",
+    "attachment_dir": "~/Downloads/email-attachments/"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "ones_url": "https://ones.bangcle.com/project/",
+  "graphql_api": "https://ones.bangcle.com/project/api/project/team/{team_uuid}/items/graphql",
+  "login_api": "https://ones.bangcle.com/project/api/project/auth/login",
+  "team_uuid": "RZxvwUZ8",
+  "org_uuid": "8Pircvjf",
+  "auth": {
+    "username": "",
+    "password_keychain_service": "openclaw-oliver-ones",
+    "username_keychain_service": "openclaw-browser-oliver-ones-username"
+  },
+  "filters": {
+    "5wY9X4m8": {
+      "name": "2026周报-签约项目统计",
+      "output_file": "2026周报-签约项目统计"
+    },
+    "KxnjPRY7": {
+      "name": "2026周报-POC&提前实施统计",
+      "output_file": "2026周报-POC&提前实施统计"
+    },
+    "NWPaa48w": {
+      "name": "2026-签约项目异常处置",
+      "output_file": "2026-签约项目异常处置"
+    },
+    "4HUSuBfm": {
+      "name": "2026-项目督办任务",
+      "output_file": "2026-项目督办任务"
+    },
+    "QB9dmWEV": {
+      "name": "交付PM2026-履约义务台账",
+      "output_file": "交付PM2026-履约义务台账"
+    },
+    "ERg8awuY": {
+      "name": "交付PM2026-督办任务",
+      "output_file": "交付PM2026-督办任务"
+    },
+    "Edoaoz2N": {
+      "name": "交付PM2026-驻场任务",
+      "output_file": "交付PM2026-驻场任务"
+    }
+  },
+  "field_mapping": {
+    "BI履约ID": "_5Z9BH2RM",
+    "客户名称": "_F4awkERN",
+    "最终用户名称": "_RnWqUALs",
+    "责任销售": "_7AMdfvRA",
+    "负责人": "_QqTC625G",
+    "实际开始日期": "_TmDTXaHw",
+    "实际结项日期": "_5wdMuxor",
+    "预估交付完成日期": "_EAnxnS4w",
+    "异常类型": "subIssueType",
+    "异常描述": "_AD8Pn6jU",
+    "异常原因": "_8EtPpE2P",
+    "交付状态": "_S1zmfk8T",
+    "履约状态": "_31sdx2dv",
+    "处理阶段": "_Rn9ubjEt",
+    "服务到期日期": "_CdFzQPZ5",
+    "实际服务开始日期": "_HZmEU9ts",
+    "实际服务结束日期": "_LmgVLpKp",
+    "预估验收完成日期": "_VBMvd7sF"
+  },
+  "graphql_fields": [
+    "number",
+    "name",
+    "key",
+    "uuid",
+    "path",
+    "position",
+    "status { uuid name category }",
+    "assign { uuid name key avatar }",
+    "project { uuid name key }",
+    "issueType { uuid manhourStatisticMode }",
+    "issueTypeScope { uuid }",
+    "subIssueType",
+    "parent { uuid }",
+    "deadline",
+    "estimatedHours",
+    "remainingManhour",
+    "totalEstimatedHours",
+    "totalRemainingHours",
+    "subTaskCount",
+    "subTaskDoneCount",
+    "serverUpdateStamp"
+  ],
+  "output": {
+    "default_format": "csv",
+    "default_dir": "/Users/bangcle/.openclaw/workspace/output/ones-data",
+    "csv_bom": true,
+    "json_pretty": true
+  },
+  "retry": {
+    "max_retries": 3,
+    "retry_delay_seconds": 5,
+    "page_load_timeout_seconds": 30
+  }
+}

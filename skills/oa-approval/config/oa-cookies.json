@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ecology_JSessionid",
+    "value": "aaaGifoAtKdnxhJW-8Q2z",
+    "domain": "oa.bangcle.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "aaaGifoAtKdnxhJW-8Q2z",
+    "domain": "oa.bangcle.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "__randcode__",
+    "value": "61785c46-618c-4d27-b111-d82c18673e77",
+    "domain": "oa.bangcle.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]

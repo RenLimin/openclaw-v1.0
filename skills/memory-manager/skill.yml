@@ -1,0 +1,45 @@
+
+name: memory-manager
+description: 🧠 记忆管理技能 - 永久记录成功经验、失败教训和Rex的要求，确保知识不流失
+author: Jerry 🦞
+version: 1.0.0
+created: 2026-04-29
+
+triggers:
+  - on_session_start: 会话启动时自动执行自检
+  - on_requirement: Rex提出新要求时自动记录
+  - on_session_end: 会话结束时提醒梳理记忆
+  - on_p0_fixed: P0级问题解决后生成经验库
+
+commands:
+  - name: memory-check
+    description: 执行记忆自检，确保读完所有必要记忆
+    usage: skill memory-manager memory-check
+    
+  - name: record-requirement
+    description: 记录Rex的新要求到 MEMORY.md
+    usage: skill memory-manager record-requirement "<要求原文>"
+    
+  - name: end-session
+    description: 会话结束梳理，生成6项记忆总结
+    usage: skill memory-manager end-session
+    
+  - name: new-lesson
+    description: 生成新的经验库文件
+    usage: skill memory-manager new-lesson "<经验库名称>"
+    
+  - name: search
+    description: 语义搜索所有记忆文件
+    usage: skill memory-manager search "<关键词>"
+
+core_rules:
+  - 会话启动必须执行 memory-check，禁止跳过
+  - Rex提出的任何要求必须在10分钟内执行 record-requirement
+  - P0级问题解决后24小时内必须执行 new-lesson 生成经验库
+  - 任何会话结束前必须执行 end-session 完成记忆梳理
+  - 违反以上规则视为严重失职
+
+files:
+  - MEMORY.md: 永久长期记忆，Rex的硬性要求 + 经验库索引
+  - training-reports/经验库-*.md: 领域经验库，核心流程成功经验+失败教训
+  - memory/YYYY-MM-DD.md: 每日会话记忆，6项梳理

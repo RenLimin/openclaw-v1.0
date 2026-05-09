@@ -1,0 +1,75 @@
+{
+    "oa_url": "https://iam.bangcle.com",
+    "output_dir": "/Users/bangcle/.openclaw/workspace/output/contract-parse",
+    "ocr": {
+        "default_engine": "tesseract",
+        "clean_noise": true,
+        "auto_correct": true
+    },
+    "risk_threshold": {
+        "high_risk_keywords": [
+            "无权",
+            "豁免",
+            "免责",
+            "无限",
+            "永久",
+            "全部",
+            "任何",
+            "绝对",
+            "无条件"
+        ],
+        "medium_risk_keywords": [
+            "可能",
+            "适当",
+            "合理",
+            "协商",
+            "酌情",
+            "视情况",
+            "原则上"
+        ]
+    },
+    "obligation_types": [
+        {
+            "code": "product_delivery",
+            "name": "产品交付义务",
+            "category": "标的条款",
+            "revenue_recognition": "控制权转移时确认",
+            "keywords": ["交付", "提供", "供货", "发货", "产品", "设备"]
+        },
+        {
+            "code": "service_performance",
+            "name": "服务履行义务",
+            "category": "标的条款",
+            "revenue_recognition": "按履约进度确认",
+            "keywords": ["服务", "咨询", "实施", "运维", "支持", "培训"]
+        },
+        {
+            "code": "acceptance_cooperation",
+            "name": "验收配合义务",
+            "category": "验收条款",
+            "revenue_recognition": "验收合格时确认",
+            "keywords": ["验收", "检验", "测试", "合格"]
+        },
+        {
+            "code": "after_sales_service",
+            "name": "售后服务义务",
+            "category": "售后条款",
+            "revenue_recognition": "按服务期间分期确认",
+            "keywords": ["保修", "维护", "售后", "质保", "维修"]
+        },
+        {
+            "code": "confidentiality_obligation",
+            "name": "保密义务",
+            "category": "保密条款",
+            "revenue_recognition": "作为合同承诺，不单独确认收入",
+            "keywords": ["保密", "机密", "秘密"]
+        },
+        {
+            "code": "payment_obligation",
+            "name": "收款权利（对方付款义务）",
+            "category": "价格条款",
+            "revenue_recognition": "按约定收款节点确认",
+            "keywords": ["支付", "付款", "结算", "款项"]
+        }
+    ]
+}

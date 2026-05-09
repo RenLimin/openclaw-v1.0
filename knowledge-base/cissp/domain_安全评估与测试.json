@@ -1,0 +1,27 @@
+{
+  "count": 1,
+  "documents": [
+    {
+      "file_name": "网络安全攻防技术体系解读V2.pdf",
+      "relative_path": "Industrial Reference/网络安全攻防技术体系解读V2.pdf",
+      "absolute_path": "/Users/bangcle/Bangcle Workspace/02. Learning/CISSP/Industrial Reference/网络安全攻防技术体系解读V2.pdf",
+      "file_hash": "9d7a61febd317772fa22af8db89eb5fa",
+      "file_size": 3304645,
+      "modified_time": "2023-10-24T16:18:53.419320",
+      "domains": [
+        "安全评估与测试",
+        "软件开发安全"
+      ],
+      "chapter_count": 1,
+      "chapters": [
+        {
+          "number": "3.1",
+          "title": "•其他各种思维导图"
+        }
+      ],
+      "content_preview": "解读网络安全攻防技术\nEASTHOME\n01课程介绍\nCOURSE INTRODUCTION\n•网络安全技术栈体系\n•安全竞赛、挖洞、代审\n•攻防技术能力提升途径\n•网络安全主流认证证书\n02网络安全技术栈体系\nNetwork Security Technology System\n•先给安全⼯程师下⼀个定义，⼴义的安全⼯程师，涵盖了现在绝⼤\n多数安全圈⼦⾥师傅所做的⼯作，包括：安全服务⼯程师、安全研\n究员、代码审计⼯程师、红队、渗透测试岗等等。\n•⽽⼀个安全⼯程师的核⼼是什么？\n•安全⼯程师的核⼼竞争⼒，不在于他拥有多少个 0day，掌握多少种\n安全技术，熟练于多少种漏洞利⽤的⽅式和⼯具。⽽是在于他对于\n安全理解的深度，以及由此引申的看待安全问题的⻆度和⾼度。\n•这⾥可以参考体 -⽤-术的逻辑体系来思考这个问题。\n•体：安全核⼼，安全思维，漏洞产⽣的根本原因，漏洞的抽象共性。\n（整个安全的底层基础）\n•⽤：漏洞的挖掘思维，代码的审计思维，安全开发的思维。（某⼀\n个⻔类的共性）\n•术：漏洞利⽤的⼯具使⽤，什么代码、什么框架⽤什么⼯具。遇到\n什么站，拿什么打。（骚操作、技巧）\n•这种安全研",
+      "page_count": 25,
+      "indexed_at": "2026-04-27T22:11:28.049918"
+    }
+  ]
+}
